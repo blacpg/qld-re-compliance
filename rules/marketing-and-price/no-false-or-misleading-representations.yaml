@@ -43,7 +43,7 @@ sources:
     pinpoint: "s 18 \"Misleading or deceptive conduct\"; s 30 \"False or misleading representations about sale etc. of land\""
     source_role: primary
     url: "https://www.legislation.gov.au/C2004A00109/latest/text"
-    quote: "s 18: misleading or deceptive or is likely to mislead or deceive; s 30: in connection with the sale or grant ... of an interest in land"
+    quote: "misleading or deceptive or is likely to mislead or deceive (s 18); in connection with the sale ... of an interest in land (s 30)"
   - source_id: SRC-ACCC-RE
     pinpoint: "false or misleading representations about price"
     source_role: supporting
