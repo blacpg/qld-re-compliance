@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/blacpg/qld-re-compliance/schema/source.schema.json",
+  "title": "Source register",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sources"],
+  "properties": {
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "title",
+          "jurisdiction",
+          "type",
+          "authority_tier",
+          "publisher",
+          "official_url",
+          "version_or_as_at",
+          "retrieved_date",
+          "licence",
+          "pinpoint_style"
+        ],
+        "properties": {
+          "source_id": { "type": "string", "pattern": "^SRC-[A-Z0-9-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "jurisdiction": { "type": "string", "enum": ["QLD", "CTH"] },
+          "type": {
+            "type": "string",
+            "enum": ["act", "regulation", "statutory_form", "regulator_guidance", "industry_commentary", "internal_policy", "case"]
+          },
+          "authority_tier": {
+            "type": "string",
+            "enum": ["legislation", "regulation", "statutory_form", "regulator_guidance", "industry_commentary", "internal_policy"]
+          },
+          "publisher": { "type": "string", "minLength": 1 },
+          "official_url": { "type": "string", "format": "uri" },
+          "version_or_as_at": { "type": "string", "minLength": 1 },
+          "retrieved_date": { "type": ["string", "null"], "format": "date" },
+          "licence": { "type": "string", "minLength": 1 },
+          "pinpoint_style": { "type": "string", "minLength": 1 },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

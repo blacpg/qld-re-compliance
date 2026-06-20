@@ -1,2 +1,24 @@
+# Private Blac overlay — never commit real internal policy
 internal/
+
+# OS / editor noise
+.DS_Store
 *.DS_Store
+*~
+.idea/
+.vscode/
+
+# Never commit downloaded source artefacts (Crown-copyright forms, legislation PDFs)
+sources/_downloads/
+*.pdf
+
+# Never commit client data of any kind
+clients/
+*client*.csv
+*client*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

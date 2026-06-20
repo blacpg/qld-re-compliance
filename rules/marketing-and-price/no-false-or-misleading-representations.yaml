@@ -1,0 +1,85 @@
+id: RULE-MKTG-001
+title: Do not make false or misleading representations about a property or its price
+jurisdiction: QLD
+module: marketing-and-price
+question_types:
+  - rule_check
+  - agent_script
+  - risk_assessment
+
+status: active
+verification_status: partially_verified
+verification_note: >-
+  The principle is well established: agents must not make false or misleading
+  representations about property, including price. Sources in support: the
+  Property Occupations Act 2014 (a "false representations about property"
+  provision reported in commentary as s 212) and the Australian Consumer Law
+  (s 18 misleading or deceptive conduct; s 30 false or misleading representations
+  about the sale of land). The s 212 heading was seen in a secondary index but
+  not confirmed on the official Act in this session, and the ACL pinpoints were
+  not fetched in-session. Confirm the exact pinpoints before marking verified.
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - Advertising or describing a property, its features, or its price.
+  - An agent asks whether a marketing claim or price statement is allowed.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  Do not state or imply anything false or misleading about a property or its
+  price. This applies to advertised prices, price guides, features, and any claim
+  likely to influence a buyer.
+
+detail: >-
+  Two layers apply. Queensland's Property Occupations Act 2014 prohibits false
+  representations about property. The Australian Consumer Law separately prohibits
+  misleading or deceptive conduct and false or misleading representations about
+  the sale of land. A statement can breach one or both.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "false representations about property (reported as s 212; pinpoint unverified)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-ACL
+    pinpoint: "s 18; s 30 (pinpoints unverified in-session)"
+    source_role: primary
+    url: "https://www.legislation.gov.au/C2004A00109/latest/text"
+    quote: null
+  - source_id: SRC-ACCC-RE
+    pinpoint: "false or misleading representations about price"
+    source_role: supporting
+    url: "https://www.accc.gov.au/business/advertising-and-promotions/false-or-misleading-claims"
+    quote: null
+
+agent_action:
+  - "Make sure every price and feature claim is accurate and able to be substantiated."
+  - "If you are unsure whether a claim could mislead, do not make it."
+
+agent_wording:
+  safe_version: "This property is listed at [accurate listing detail]."
+  avoid_saying:
+    - "Stating or implying a price the vendor would not actually accept."
+    - "Inventing features, comparable sales, or interest levels to influence a buyer."
+
+exceptions: []
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-MKTG-002
+  - RULE-OFFERS-001
+
+last_source_check: 2026-06-20
+next_review_due: 2026-09-18
+tags:
+  - marketing
+  - price
+  - misleading-conduct

@@ -1,0 +1,72 @@
+id: RULE-FORM6-002
+title: An appointment must meet the Act's requirements or it is ineffective
+jurisdiction: QLD
+module: form-6-appointment
+question_types:
+  - rule_check
+  - document_review
+  - checklist
+
+status: active
+verification_status: needs_review
+verification_note: >-
+  The appointment-required principle (s 102) is verified. The specific section
+  setting out the general requirements for an appointment, and the provision
+  making a non-compliant appointment ineffective, were reported in secondary
+  commentary as s 104 and s 112(4) of the Property Occupations Act 2014 but could
+  NOT be confirmed against the official source in this session. Treat the exact
+  pinpoints as unverified until checked on legislation.qld.gov.au.
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - Reviewing whether a Form 6 appointment is valid and complete.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  An appointment must satisfy the requirements set by the Property Occupations
+  Act 2014. If it does not, it may be ineffective, which can affect the agent's
+  authority to act and entitlement to commission. Confirm the exact requirements
+  against the Act before relying on this rule.
+
+detail: >-
+  Secondary commentary indicates the general requirements for an appointment are
+  in section 104, and that a non-compliant appointment is ineffective under
+  section 112(4). These section numbers are not yet verified here. The verified
+  anchor is that an appointment is required under section 102.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 104 (unverified); s 112(4) (unverified)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+
+agent_action:
+  - "Check the appointment is fully completed: parties, property, service, commission, expenses, term and signatures."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions: []
+penalty: null
+
+human_escalation_required: true
+escalation_reason:
+  - possible commission recovery issue
+
+related_rules:
+  - RULE-FORM6-001
+  - RULE-COMM-001
+
+last_source_check: 2026-06-20
+next_review_due: 2026-09-18
+tags:
+  - appointment
+  - form-6
+  - validity

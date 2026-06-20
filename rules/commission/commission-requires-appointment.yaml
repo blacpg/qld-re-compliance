@@ -1,0 +1,71 @@
+id: RULE-COMM-001
+title: No entitlement to commission without a valid written appointment
+jurisdiction: QLD
+module: commission
+question_types:
+  - rule_check
+  - risk_assessment
+
+status: active
+verification_status: partially_verified
+verification_note: >-
+  Verified: an agent must be appointed under the Property Occupations Act 2014
+  s 102 before acting. NOT yet verified in this session: the specific section
+  that restricts recovery of a reward or expense (commission) where the agent was
+  not properly appointed. Secondary commentary refers to a "restriction on
+  recovery of reward or expense" provision (reported as around s 89). Confirm the
+  exact pinpoint on legislation.qld.gov.au before relying on the section number.
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent wants to know whether they can claim commission on a sale.
+  - Reviewing whether commission is recoverable.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  An agent that is not validly appointed in writing risks losing the right to
+  recover commission. A valid Form 6 appointment is a precondition to acting and
+  to claiming a fee.
+
+detail: >-
+  The verified basis is that appointment is required (s 102). The Act also
+  restricts recovery of a reward or expense where the agent was not properly
+  appointed; the exact section for that restriction is not verified here. Because
+  the consequence is loss of commission, this is treated as high risk and
+  escalated.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 102 (appointment, verified); recovery-of-reward restriction (pinpoint unverified)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+
+agent_action:
+  - "Confirm a valid Form 6 is in place before doing any work you expect to be paid for."
+  - "If a sale has happened on a defective or missing appointment, get advice before invoicing."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions: []
+penalty: null
+
+human_escalation_required: true
+escalation_reason:
+  - possible commission recovery issue
+
+related_rules:
+  - RULE-FORM6-001
+  - RULE-COMM-002
+
+last_source_check: 2026-06-20
+next_review_due: 2026-09-18
+tags:
+  - commission
+  - appointment

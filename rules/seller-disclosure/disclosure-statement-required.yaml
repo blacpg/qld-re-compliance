@@ -1,0 +1,79 @@
+id: RULE-DISC-001
+title: Seller must give the buyer a Form 2 disclosure statement before the buyer signs
+jurisdiction: QLD
+module: seller-disclosure
+question_types:
+  - rule_check
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - A lot (property) is being sold and a contract is being prepared.
+  - An agent asks what the seller must disclose before signing.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+  - The transaction is within an exclusion to the scheme (confirm against the Act and Regulation).
+
+requirement: >-
+  Before the buyer signs the contract, the seller must give the buyer a
+  disclosure statement (the approved Form 2) and each document prescribed by
+  regulation. Get the disclosure done before signing, not after.
+
+detail: >-
+  The Property Law Act 2023 (Qld), Part 7 Division 4 "Seller disclosure for sales
+  of lots", section 99 ("Seller must give buyer disclosure documents") requires
+  that, before a contract for the sale of a lot is signed by the buyer, the seller
+  give the buyer a disclosure statement and each document prescribed by
+  regulation. The statement must be in the approved form (s 99(2)), which is the
+  Form 2. The scheme commenced on 1 August 2025.
+
+sources:
+  - source_id: SRC-PLA-2023
+    pinpoint: "Part 7 div 4; s 99; s 99(2)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2023-027"
+    quote: "Before a contract for the sale of a lot is signed by the buyer, the seller must give the buyer ... a disclosure statement"
+  - source_id: SRC-FORM-2
+    pinpoint: "approved form (Form 2)"
+    source_role: supporting
+    url: "https://www.publications.qld.gov.au/dataset/property-law-act-2023-forms"
+    quote: null
+  - source_id: SRC-PL-REG-2024
+    pinpoint: "prescribed documents (pinpoint pending verification)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2024-0211"
+    quote: null
+
+agent_action:
+  - "Make sure the seller gives the buyer the completed Form 2 and the prescribed certificates BEFORE the buyer signs."
+  - "Confirm which prescribed documents are required from the Property Law Regulation 2024."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions:
+  - "The scheme has exclusions and specific cases; confirm whether the sale is covered before assuming disclosure is or is not required."
+
+penalty: null
+
+human_escalation_required: true
+escalation_reason:
+  - seller disclosure defect
+
+related_rules:
+  - RULE-DISC-002
+
+last_source_check: 2026-06-20
+next_review_due: 2026-08-19
+tags:
+  - seller-disclosure
+  - form-2
+  - property-law-act-2023

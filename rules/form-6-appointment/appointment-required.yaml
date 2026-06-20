@@ -1,0 +1,66 @@
+id: RULE-FORM6-001
+title: A Form 6 appointment is required before an agent performs services
+jurisdiction: QLD
+module: form-6-appointment
+question_types:
+  - rule_check
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - A property agent is to act for a client to sell residential property in Queensland.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  An agent must be appointed in writing using the approved Form 6 before acting
+  for a client. Acting without a valid appointment puts the agent's entitlement
+  to commission at risk.
+
+detail: >-
+  The Property Occupations Act 2014 (Qld) provides for the appointment of a
+  property agent at section 102 ("Appointment of agent"). The appointment is the
+  written authority for the agent to act, and is given on the approved Form 6.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 102"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-FORM-6
+    pinpoint: "the approved form"
+    source_role: supporting
+    url: null
+    quote: null
+
+agent_action:
+  - "Make sure a completed, signed Form 6 is in place before you market the property or perform any service for the seller."
+  - "Do not start work on the basis of a verbal go-ahead."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions: []
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-FORM6-002
+  - RULE-COMM-001
+
+last_source_check: 2026-06-20
+next_review_due: 2026-09-18
+tags:
+  - appointment
+  - form-6

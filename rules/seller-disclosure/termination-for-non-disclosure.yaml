@@ -1,0 +1,74 @@
+id: RULE-DISC-002
+title: Non-disclosure can give the buyer a right to terminate before settlement
+jurisdiction: QLD
+module: seller-disclosure
+question_types:
+  - rule_check
+  - risk_assessment
+
+status: active
+verification_status: needs_review
+verification_note: >-
+  Verified: the seller must give the Form 2 disclosure statement before signing
+  (PLA 2023 s 99). NOT verified in this session: the exact section that gives the
+  buyer a right to terminate where the seller failed to give the statement, or
+  where it was inaccurate or incomplete on a material matter. Secondary
+  commentary reports a buyer right to terminate at any time before settlement,
+  with termination as the only remedy (no compensation), and points to a section
+  around s 104. Confirm the exact pinpoint on legislation.qld.gov.au before
+  relying on the section number.
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - The seller did not give the Form 2, or gave one that was wrong or incomplete.
+  - Assessing the consequence of a disclosure failure.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  If the seller fails to give a compliant disclosure statement before signing, or
+  it is inaccurate or incomplete on a material matter the buyer did not know
+  about, the buyer may have a right to terminate the contract before settlement.
+  This is a serious consequence; get advice.
+
+detail: >-
+  The verified obligation is in PLA 2023 s 99. The remedy for a failure is
+  understood from commentary to be a buyer right to terminate before settlement,
+  with termination as the only remedy. The precise termination section is not yet
+  verified here and is flagged for checking.
+
+sources:
+  - source_id: SRC-PLA-2023
+    pinpoint: "Part 7 div 4; termination provision (pinpoint unverified, reported as ~s 104)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2023-027"
+    quote: null
+
+agent_action:
+  - "Treat a missing or defective Form 2 as a serious risk to the contract."
+  - "Refer the seller to a solicitor before settlement if disclosure may be defective."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions: []
+penalty: null
+
+human_escalation_required: true
+escalation_reason:
+  - contract termination consequence
+  - seller disclosure defect
+
+related_rules:
+  - RULE-DISC-001
+
+last_source_check: 2026-06-20
+next_review_due: 2026-08-19
+tags:
+  - seller-disclosure
+  - termination
+  - property-law-act-2023

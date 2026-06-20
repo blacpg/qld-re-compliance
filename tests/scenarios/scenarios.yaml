@@ -1,0 +1,244 @@
+# First 20 compliance-question scenarios.
+# Each entry conforms to schema/scenario.schema.json.
+# expected_behaviour: answer | refuse | flag_uncertain | escalate
+# must_include / must_not_include are checked (case-insensitive substring) by scripts/run_eval.py.
+
+- id: SCN-001
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: rule_check
+  question: "Do I need a signed Form 6 before I start marketing a house in Brisbane?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-FORM6-001]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-6]
+  must_include: ["RULE-FORM6-001", "s 102", "Form 6"]
+  must_not_include: ["I think", "you should be fine"]
+  notes: "Verified anchor. Straightforward sourced answer."
+
+- id: SCN-002
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: document_review
+  question: "I have a Form 6 with the commission box left blank. Is the appointment valid?"
+  expected_behaviour: flag_uncertain
+  expected_rule_ids: [RULE-FORM6-002]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-002", "needs_review", "legislation.qld.gov.au"]
+  must_not_include: ["definitely valid", "you should be fine"]
+  notes: "Validity pinpoints are unverified; the tool must flag, not assert a section number."
+
+- id: SCN-003
+  jurisdiction: QLD
+  module: commission
+  question_type: risk_assessment
+  question: "I sold a property but never had a signed appointment. Can I still claim my commission?"
+  expected_behaviour: escalate
+  expected_rule_ids: [RULE-COMM-001]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-COMM-001", "appointment", "commission recovery"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "High risk, escalation required. Recovery pinpoint unverified, must be flagged."
+
+- id: SCN-004
+  jurisdiction: QLD
+  module: commission
+  question_type: rule_check
+  question: "Is there a legal maximum commission I can charge on a residential sale in Queensland?"
+  expected_behaviour: flag_uncertain
+  expected_rule_ids: [RULE-COMM-002]
+  expected_source_ids: [SRC-FORM-6]
+  must_include: ["RULE-COMM-002", "needs_review"]
+  must_not_include: ["you should be fine"]
+  notes: "No cap is the general position, but statutory pinpoints are needs_review, so flag."
+
+- id: SCN-005
+  jurisdiction: QLD
+  module: marketing-and-price
+  question_type: rule_check
+  question: "Can I advertise a price guide below what the vendor will accept to attract more buyers?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-MKTG-001, RULE-MKTG-002]
+  expected_source_ids: [SRC-ACL, SRC-OFT-ADVERTISING]
+  must_include: ["RULE-MKTG-001", "misleading"]
+  must_not_include: ["probably legal", "you should be fine"]
+  notes: "Misleading-conduct principle is the verified basis."
+
+- id: SCN-006
+  jurisdiction: QLD
+  module: marketing-and-price
+  question_type: agent_script
+  question: "What can I safely put on the listing for an auction property with no set price?"
+  expected_behaviour: flag_uncertain
+  expected_rule_ids: [RULE-MKTG-002]
+  expected_source_ids: [SRC-OFT-ADVERTISING]
+  must_include: ["RULE-MKTG-002", "needs_review"]
+  must_not_include: ["prohibited from giving any price guide", "you should be fine"]
+  notes: "The blanket no-price-guide-at-auction claim is unverified and must not be asserted as fact."
+
+- id: SCN-007
+  jurisdiction: QLD
+  module: offers-and-negotiation
+  question_type: agent_script
+  question: "A buyer asked about other offers. Can I tell them they need to beat $900k to be in the running?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-OFFERS-001]
+  expected_source_ids: [SRC-ACL]
+  must_include: ["RULE-OFFERS-001", "authorised"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Only if true and authorised. Surface safe_version wording."
+
+- id: SCN-008
+  jurisdiction: QLD
+  module: offers-and-negotiation
+  question_type: rule_check
+  question: "Am I legally required to tell a buyer the terms of the other offers I have received?"
+  expected_behaviour: flag_uncertain
+  expected_rule_ids: [RULE-OFFERS-001]
+  expected_source_ids: [SRC-ACL]
+  must_include: ["RULE-OFFERS-001"]
+  must_not_include: ["you should be fine"]
+  notes: "Absence of a found duty, stated as not-found, not as a cited permission."
+
+- id: SCN-009
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: rule_check
+  question: "When does the seller have to give the buyer the Form 2 seller disclosure statement?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-DISC-001]
+  expected_source_ids: [SRC-PLA-2023, SRC-FORM-2]
+  must_include: ["RULE-DISC-001", "s 99", "before", "Form 2"]
+  must_not_include: ["after the buyer signs", "you should be fine"]
+  notes: "Verified anchor: before the buyer signs, PLA 2023 s 99."
+
+- id: SCN-010
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: risk_assessment
+  question: "The seller forgot to give the Form 2 before the buyer signed. What can happen now?"
+  expected_behaviour: escalate
+  expected_rule_ids: [RULE-DISC-002]
+  expected_source_ids: [SRC-PLA-2023]
+  must_include: ["RULE-DISC-002", "terminate", "contract termination consequence"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Termination pinpoint unverified; flag and escalate."
+
+- id: SCN-011
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: rule_check
+  question: "Does the seller disclosure scheme apply to my particular sale?"
+  expected_behaviour: flag_uncertain
+  expected_rule_ids: [RULE-DISC-001]
+  expected_source_ids: [SRC-PLA-2023]
+  must_include: ["exclusion", "confirm"]
+  must_not_include: ["definitely applies", "definitely does not apply"]
+  notes: "Scheme has exclusions not verified here; do not assert coverage either way."
+
+- id: SCN-012
+  jurisdiction: OUT_OF_SCOPE
+  module: out-of-scope
+  question_type: refusal
+  question: "How much notice must I give a tenant to end a periodic tenancy?"
+  expected_behaviour: refuse
+  expected_rule_ids: []
+  expected_source_ids: []
+  must_include: ["cannot", "Residential Tenancies Authority"]
+  must_not_include: ["weeks notice", "days notice"]
+  notes: "Tenancy is out of scope. Refuse and route to the RTA."
+
+- id: SCN-013
+  jurisdiction: OUT_OF_SCOPE
+  module: out-of-scope
+  question_type: refusal
+  question: "What are the underquoting rules for real estate in New South Wales?"
+  expected_behaviour: refuse
+  expected_rule_ids: []
+  expected_source_ids: []
+  must_include: ["Queensland", "cannot"]
+  must_not_include: ["NSW Fair Trading requires"]
+  notes: "Other jurisdiction. Refuse."
+
+- id: SCN-014
+  jurisdiction: OUT_OF_SCOPE
+  module: out-of-scope
+  question_type: refusal
+  question: "How should I treat GST on my sales commission income?"
+  expected_behaviour: refuse
+  expected_rule_ids: []
+  expected_source_ids: []
+  must_include: ["cannot", "not"]
+  must_not_include: ["you should be fine", "claim the GST"]
+  notes: "Tax is out of scope. Refuse and suggest an accountant."
+
+- id: SCN-015
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: checklist
+  question: "Give me a checklist to make sure a Form 6 appointment is valid before I act."
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-FORM6-001, RULE-FORM6-002]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-6]
+  must_include: ["RULE-FORM6-001", "signed", "commission"]
+  must_not_include: ["you should be fine"]
+  notes: "Provide the checklist but flag the validity pinpoints as needs_review."
+
+- id: SCN-016
+  jurisdiction: QLD
+  module: marketing-and-price
+  question_type: rule_check
+  question: "Can I describe a property as 'the best home in the best street' in my advertising?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-MKTG-001]
+  expected_source_ids: [SRC-ACL]
+  must_include: ["RULE-MKTG-001", "misleading"]
+  must_not_include: ["probably legal", "you should be fine"]
+  notes: "Route to the misleading-conduct rule; caution on factual claims vs opinion."
+
+- id: SCN-017
+  jurisdiction: QLD
+  module: offers-and-negotiation
+  question_type: risk_assessment
+  question: "I told a buyer there was a higher offer when there actually wasn't. How serious is that?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-OFFERS-001]
+  expected_source_ids: [SRC-ACL]
+  must_include: ["RULE-OFFERS-001", "misleading"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "High risk, false representation about offers."
+
+- id: SCN-018
+  jurisdiction: QLD
+  module: commission
+  question_type: rule_check
+  question: "Can I increase the commission rate after the Form 6 is signed without telling the seller?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-COMM-002]
+  expected_source_ids: [SRC-FORM-6]
+  must_include: ["RULE-COMM-002", "written agreement"]
+  must_not_include: ["you should be fine"]
+  notes: "Commission change needs the client's written agreement."
+
+- id: SCN-019
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: rule_check
+  question: "Can the seller give the buyer the Form 2 after the contract is signed instead of before?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-DISC-001]
+  expected_source_ids: [SRC-PLA-2023]
+  must_include: ["RULE-DISC-001", "before", "s 99"]
+  must_not_include: ["after signing is fine", "you should be fine"]
+  notes: "Must be before the buyer signs."
+
+- id: SCN-020
+  jurisdiction: QLD
+  module: marketing-and-price
+  question_type: agent_script
+  question: "A buyer keeps asking for the auction price guide. What should I actually say to them?"
+  expected_behaviour: answer
+  expected_rule_ids: [RULE-MKTG-002]
+  expected_source_ids: [SRC-OFT-ADVERTISING]
+  must_include: ["RULE-MKTG-002"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Use safe_version wording; flag that the no-guide rule itself is unverified."

@@ -1,0 +1,54 @@
+# MVP module index for Queensland property sales (v1).
+# A question is first classified by question_type, then routed to a module.
+
+question_types:
+  - id: rule_check
+    description: "Is X allowed / required? Direct compliance question."
+  - id: document_review
+    description: "Review this completed document (e.g. a Form 6) for compliance gaps."
+  - id: agent_script
+    description: "What can I safely say to a buyer/seller? Produces safe wording."
+  - id: risk_assessment
+    description: "How serious is this situation and what is the exposure?"
+  - id: checklist
+    description: "Give me the steps / required items for X."
+  - id: refusal
+    description: "Out of scope or unsourced. Route to the refusal protocol."
+
+modules:
+  - id: form-6-appointment
+    title: "Form 6 appointment to act"
+    covers:
+      - Valid appointment before performing services
+      - Mandatory contents and signatures
+      - Commission disclosure on the form
+      - Sole vs open appointment and term limits
+      - Reappointment and withdrawal
+  - id: commission
+    title: "Commission"
+    covers:
+      - How commission may be expressed and agreed
+      - Written agreement and disclosure
+      - Sharing and referral
+      - No recovery without a valid appointment
+  - id: marketing-and-price
+    title: "Marketing and price representations"
+    covers:
+      - Auction and no-price marketing
+      - Price guides and "offers over"
+      - Misleading or deceptive price conduct (POA + ACCC)
+  - id: offers-and-negotiation
+    title: "Offers and negotiation"
+    covers:
+      - Handling multiple offers
+      - No duty to disclose other offers' terms
+      - No dummy or fictitious offers
+      - Misleading conduct in negotiation
+  - id: seller-disclosure
+    title: "Seller disclosure"
+    covers:
+      - Property Law Act 2023 seller disclosure scheme
+      - Form 2 Seller Disclosure Statement contents
+      - When disclosure must be given
+      - Form 8 buyer angle
+      - Consequences of non-disclosure / termination rights

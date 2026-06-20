@@ -1,0 +1,29 @@
+# REDACTED EXAMPLE of the private Blac overlay.
+#
+# The REAL version of this file lives in internal/ which is gitignored and is
+# NEVER committed to the public repo. This example exists only to show the shape.
+#
+# Internal policy is authority_tier: internal_policy. When the skill uses it, any
+# statement derived from it must be phrased "Blac policy requires X", never
+# "the law requires X".
+
+policies:
+  - id: BLAC-POLICY-MULTIPLE-OFFERS-001
+    jurisdiction: QLD
+    linked_public_rules:
+      - RULE-OFFERS-001
+    authority_tier: internal_policy
+    policy: "All multiple-offer situations must be confirmed in writing before the seller signs."
+    reason: "House standard to reduce dispute risk."
+    owner: "REDACTED"
+    risk_level: medium
+
+  - id: BLAC-POLICY-FORM6-001
+    jurisdiction: QLD
+    linked_public_rules:
+      - RULE-FORM6-001
+    authority_tier: internal_policy
+    policy: "REDACTED — example only. Real internal escalation contacts and house rules go in internal/."
+    reason: "REDACTED"
+    owner: "REDACTED"
+    risk_level: low

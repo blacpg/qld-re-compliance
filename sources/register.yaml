@@ -1,0 +1,134 @@
+# Source register. A rule may only cite a source_id listed here.
+# Sources must be the official publisher. version_or_as_at pins currency.
+# Crown-copyright text is cited and linked, never reproduced.
+
+sources:
+  - source_id: SRC-POA-2014
+    title: "Property Occupations Act 2014 (Qld)"
+    jurisdiction: QLD
+    type: act
+    authority_tier: legislation
+    publisher: "Office of the Queensland Parliamentary Counsel"
+    official_url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    version_or_as_at: "current as at 1 August 2025"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland (Crown copyright). Cited and linked, not reproduced."
+    pinpoint_style: "s 102"
+    notes: "s 102 'Appointment of agent' confirmed against the official source on 2026-06-20."
+
+  - source_id: SRC-PO-REG-2014
+    title: "Property Occupations Regulation 2014 (Qld)"
+    jurisdiction: QLD
+    type: regulation
+    authority_tier: regulation
+    publisher: "Office of the Queensland Parliamentary Counsel"
+    official_url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2014-0251"
+    version_or_as_at: "current as at the date of last check"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland (Crown copyright). Cited and linked, not reproduced."
+    pinpoint_style: "s 12 / sch 1"
+    notes: "Approved-form and prescribed-detail provisions sit in the Regulation. Pinpoints pending verification."
+
+  - source_id: SRC-PLA-2023
+    title: "Property Law Act 2023 (Qld)"
+    jurisdiction: QLD
+    type: act
+    authority_tier: legislation
+    publisher: "Office of the Queensland Parliamentary Counsel"
+    official_url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2023-027"
+    version_or_as_at: "current as at 1 August 2025"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland (Crown copyright). Cited and linked, not reproduced."
+    pinpoint_style: "s 99"
+    notes: "Seller disclosure scheme in Part 7 Division 4 'Seller disclosure for sales of lots'. s 99 'Seller must give buyer disclosure documents' confirmed against the official source on 2026-06-20. Commenced 1 August 2025."
+
+  - source_id: SRC-PL-REG-2024
+    title: "Property Law Regulation 2024 (Qld)"
+    jurisdiction: QLD
+    type: regulation
+    authority_tier: regulation
+    publisher: "Office of the Queensland Parliamentary Counsel"
+    official_url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2024-0211"
+    version_or_as_at: "current as at 1 August 2025"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland (Crown copyright). Cited and linked, not reproduced."
+    pinpoint_style: "s 5 / sch"
+    notes: "Prescribes the documents and detail required for seller disclosure. Pinpoints pending verification."
+
+  - source_id: SRC-FORM-6
+    title: "Form 6 — Appointment and reappointment of a property agent, resident letting agent or property auctioneer (Qld OFT)"
+    jurisdiction: QLD
+    type: statutory_form
+    authority_tier: statutory_form
+    publisher: "Queensland Office of Fair Trading"
+    official_url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/legal-requirements-for-the-property-industry/appointment-to-act-as-a-property-agent"
+    version_or_as_at: "as at retrieved_date"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland. Form not reproduced; linked to the official OFT page."
+    pinpoint_style: "Part 3 (commission) / Part 4 (term)"
+    notes: "Approved form under the Property Occupations Act 2014. Field-level structure to be confirmed from the official form."
+
+  - source_id: SRC-FORM-2
+    title: "Form 2 — Seller Disclosure Statement (Property Law Act 2023)"
+    jurisdiction: QLD
+    type: statutory_form
+    authority_tier: statutory_form
+    publisher: "Queensland Government (Property Law Act 2023 forms)"
+    official_url: "https://www.publications.qld.gov.au/dataset/property-law-act-2023-forms"
+    version_or_as_at: "effective from 1 August 2025"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland. Form not reproduced; linked to the official forms page."
+    pinpoint_style: "section of the form"
+    notes: "Approved disclosure statement under PLA 2023 s 99(2)."
+
+  - source_id: SRC-OFT-ADVERTISING
+    title: "Property advertising (Queensland Office of Fair Trading guidance)"
+    jurisdiction: QLD
+    type: regulator_guidance
+    authority_tier: regulator_guidance
+    publisher: "Queensland Office of Fair Trading"
+    official_url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/best-practice-for-the-property-industry/property-advertising"
+    version_or_as_at: "as at retrieved_date"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland. Cited and linked."
+    pinpoint_style: "page section"
+    notes: "Confirmed 2026-06-20: page states an 'offers over' price should be the minimum the vendor is willing to accept, and frames price conduct under the Australian Consumer Law. It does NOT state a blanket no-price-guide-at-auction rule."
+
+  - source_id: SRC-OFT-APPOINTMENT
+    title: "Appointment to act as a property agent (Queensland Office of Fair Trading guidance)"
+    jurisdiction: QLD
+    type: regulator_guidance
+    authority_tier: regulator_guidance
+    publisher: "Queensland Office of Fair Trading"
+    official_url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/legal-requirements-for-the-property-industry/appointment-to-act-as-a-property-agent"
+    version_or_as_at: "as at retrieved_date"
+    retrieved_date: 2026-06-20
+    licence: "© State of Queensland. Cited and linked."
+    pinpoint_style: "page section"
+    notes: "OFT guidance on appointing an agent and the Form 6."
+
+  - source_id: SRC-ACL
+    title: "Australian Consumer Law (Competition and Consumer Act 2010 (Cth), Schedule 2)"
+    jurisdiction: CTH
+    type: act
+    authority_tier: legislation
+    publisher: "Office of Parliamentary Counsel (Cth)"
+    official_url: "https://www.legislation.gov.au/C2004A00109/latest/text"
+    version_or_as_at: "current as at retrieved_date"
+    retrieved_date: 2026-06-20
+    licence: "© Commonwealth of Australia. Cited and linked, not reproduced."
+    pinpoint_style: "s 18 / s 30"
+    notes: "s 18 (misleading or deceptive conduct) and s 30 (false or misleading representations about sale of land) are the usual hooks for price/representation conduct. Exact pinpoints pending in-session verification."
+
+  - source_id: SRC-ACCC-RE
+    title: "ACCC guidance — real estate and false or misleading representations about price"
+    jurisdiction: CTH
+    type: regulator_guidance
+    authority_tier: regulator_guidance
+    publisher: "Australian Competition and Consumer Commission"
+    official_url: "https://www.accc.gov.au/business/advertising-and-promotions/false-or-misleading-claims"
+    version_or_as_at: "as at retrieved_date"
+    retrieved_date: 2026-06-20
+    licence: "© Commonwealth of Australia (CC BY). Cited and linked."
+    pinpoint_style: "page section"
+    notes: "ACCC guidance that agents must not mislead consumers about price or to encourage higher offers. Exact landing URL to be confirmed."

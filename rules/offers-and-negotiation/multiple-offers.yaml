@@ -1,0 +1,85 @@
+id: RULE-OFFERS-001
+title: Handling multiple offers without misleading buyers
+jurisdiction: QLD
+module: offers-and-negotiation
+question_types:
+  - rule_check
+  - agent_script
+  - risk_assessment
+
+status: active
+verification_status: partially_verified
+verification_note: >-
+  The verified principle is the misleading-conduct prohibition (see RULE-MKTG-001:
+  Property Occupations Act 2014 false-representation provision and Australian
+  Consumer Law s 18 / s 30, exact pinpoints pending). NOT verified by statute in
+  this session: that there is no positive duty to disclose the terms of other
+  offers. That reflects the general position (there is no QLD statutory duty
+  compelling disclosure of competing offers' terms), but it is stated here as the
+  absence of a found obligation, not a cited permission. Confirm before relying.
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent is handling more than one offer on a property.
+  - An agent asks what they can tell a buyer about other offers.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  You must not mislead a buyer about offers. Do not invent offers, overstate
+  competing offers, or pressure a buyer with claims you cannot substantiate. You
+  are generally not required to disclose the terms of other offers, but anything
+  you do say must be true and authorised.
+
+detail: >-
+  The binding constraint is the prohibition on false or misleading conduct.
+  Telling a buyer there is a higher offer that does not exist, or that they must
+  "beat" a figure that is not real or authorised, risks breaching that
+  prohibition. Choosing not to disclose competing offers is different from
+  actively misleading.
+
+sources:
+  - source_id: SRC-ACL
+    pinpoint: "s 18; s 30 (pinpoints unverified in-session)"
+    source_role: primary
+    url: "https://www.legislation.gov.au/C2004A00109/latest/text"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "false representations about property (reported as s 212; unverified)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-ACCC-RE
+    pinpoint: "must not mislead to encourage higher offers"
+    source_role: supporting
+    url: "https://www.accc.gov.au/business/advertising-and-promotions/false-or-misleading-claims"
+    quote: null
+
+agent_action:
+  - "Only tell a buyer what is true and what the vendor has authorised you to say."
+  - "If asked about other offers, you can decline to disclose their terms; do not fabricate or inflate them."
+
+agent_wording:
+  safe_version: "There are other interested parties, but I can't disclose the terms of their offers. I'd encourage you to put forward your best offer."
+  avoid_saying:
+    - "'We already have an offer over $900k' unless that is true and you are authorised to say it."
+    - "'You'll need to beat $900k' if that figure is not accurate or not authorised."
+
+exceptions: []
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-MKTG-001
+
+last_source_check: 2026-06-20
+next_review_due: 2026-09-18
+tags:
+  - offers
+  - negotiation
+  - misleading-conduct

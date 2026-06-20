@@ -1,0 +1,71 @@
+id: RULE-COMM-002
+title: Commission must be agreed and stated in the appointment
+jurisdiction: QLD
+module: commission
+question_types:
+  - rule_check
+  - checklist
+
+status: active
+verification_status: needs_review
+verification_note: >-
+  The Form 6 includes a section where commission is stated and agreed, and
+  Queensland no longer caps residential sales commission. The exact statutory and
+  Form 6 pinpoints for how commission must be expressed and disclosed were not
+  confirmed against the official Act, Regulation, and form in this session.
+  Confirm before marking verified.
+risk_level: medium
+authority_tier: statutory_form
+
+applies_when:
+  - Setting or reviewing the commission on a sale appointment.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  Commission must be agreed with the client and recorded in the Form 6
+  appointment. It cannot be left vague or varied without the client's written
+  agreement.
+
+detail: >-
+  Commission for residential sales in Queensland is not capped, so it is whatever
+  is agreed and recorded in the appointment. The precise statutory requirements
+  for expressing and disclosing commission are pending verification.
+
+sources:
+  - source_id: SRC-FORM-6
+    pinpoint: "commission section of the form (field reference pending verification)"
+    source_role: primary
+    url: null
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "commission provisions (pinpoint unverified)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+
+agent_action:
+  - "Record the agreed commission clearly in the Form 6 before acting."
+  - "Get the client's written agreement to any change in commission."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions: []
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-COMM-001
+  - RULE-FORM6-001
+
+last_source_check: 2026-06-20
+next_review_due: 2026-09-18
+tags:
+  - commission
+  - form-6
