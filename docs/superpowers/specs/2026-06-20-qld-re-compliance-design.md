@@ -214,7 +214,9 @@ A rule may only cite a `source_id` that already exists in `sources/register.yaml
 ## 7. Modules and question_type classifier
 
 ### question_type (first-level classifier, before module selection)
-`rule_check | document_review | agent_script | risk_assessment | checklist | refusal`
+`rule_check | document_review | agent_script | risk_assessment | checklist`
+
+Refusal is **not** a question type; it is an outcome. The way an answer resolves is recorded separately as `answer_outcome`: `answered | refused_unsourced | refused_out_of_scope | escalated | uncertain`. Any question_type can end in any outcome (a `document_review` can be answered, uncertain, escalated, or refused).
 
 ### MVP modules (v1, QLD property sales only)
 | Module | Covers |
@@ -297,7 +299,8 @@ No paid templates. No REIQ member-only content. No contract templates unless cle
 
 - Default: `next_review_due` = `last_source_check` + 90 days.
 - **Seller disclosure** reviewed more often (60-day cadence): the QLD seller disclosure scheme commenced 1 August 2025 and is likely to keep generating guidance updates, so it carries extra caution.
-- `check_stale_sources.py` enforces the cadence in CI.
+- **Event-triggered review** (`event_triggered_review`, default true): a rule must also be reviewed before its due date whenever an official source changes (legislative amendment, new/updated OFT page, new approved form version, relevant court decision, or regulator guidance that shifts interpretation). The rule is: every 60/90 days, or earlier on a source change.
+- `check_stale_sources.py` enforces the time window and cadence-per-module in CI, and prints a standing event-triggered-review reminder.
 
 ---
 

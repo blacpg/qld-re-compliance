@@ -21,6 +21,16 @@ Every rule carries `last_source_check` and `next_review_due`. `check_stale_sourc
 4. Update `version_or_as_at`, `retrieved_date`, `last_source_check`, and `next_review_due`.
 5. If the source changed, update the rule and, if needed, change `verification_status` or `status`.
 
-## On commencement or amendment
+## Event-triggered review
 
-When an Act or Regulation amendment commences, treat affected rules as `needs_review` immediately, regardless of the scheduled date.
+Cadence is not only time-based. Rules carry `event_triggered_review` (default `true`), which means a rule must be reviewed **before** its `next_review_due` whenever an official source changes, including:
+
+- a legislative amendment (Act or Regulation);
+- a new or updated OFT page or guidance;
+- a new version of an approved form (e.g. a revised Form 2 or Form 6);
+- a relevant court decision;
+- regulator guidance that changes the practical interpretation.
+
+So the rule is: **review every 60 / 90 days, or earlier if an official source changes.**
+
+`check_stale_sources.py` enforces the time window and prints a standing reminder about event-triggered review (a script cannot detect external events). When such an event occurs, set the affected rules to `needs_review` immediately, regardless of the scheduled date.

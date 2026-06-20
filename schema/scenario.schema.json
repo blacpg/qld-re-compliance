@@ -4,7 +4,7 @@
   "title": "Test scenario",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "jurisdiction", "module", "question_type", "question", "expected_behaviour"],
+  "required": ["id", "jurisdiction", "module", "question_type", "question", "expected_outcome"],
   "properties": {
     "id": { "type": "string", "pattern": "^SCN-[0-9]{3}$" },
     "jurisdiction": { "type": "string", "enum": ["QLD", "OUT_OF_SCOPE"] },
@@ -21,12 +21,12 @@
     },
     "question_type": {
       "type": "string",
-      "enum": ["rule_check", "document_review", "agent_script", "risk_assessment", "checklist", "refusal"]
+      "enum": ["rule_check", "document_review", "agent_script", "risk_assessment", "checklist"]
     },
     "question": { "type": "string", "minLength": 1 },
-    "expected_behaviour": {
+    "expected_outcome": {
       "type": "string",
-      "enum": ["answer", "refuse", "flag_uncertain", "escalate"]
+      "enum": ["answered", "refused_unsourced", "refused_out_of_scope", "escalated", "uncertain"]
     },
     "expected_rule_ids": { "type": "array", "items": { "type": "string" } },
     "expected_source_ids": { "type": "array", "items": { "type": "string" } },

@@ -1,6 +1,9 @@
 # MVP module index for Queensland property sales (v1).
-# A question is first classified by question_type, then routed to a module.
+# A question is first classified by question_type (what the user is asking for),
+# then routed to a module. The way the answer resolves is recorded separately as
+# answer_outcome.
 
+# question_type = the user's task type.
 question_types:
   - id: rule_check
     description: "Is X allowed / required? Direct compliance question."
@@ -12,8 +15,21 @@ question_types:
     description: "How serious is this situation and what is the exposure?"
   - id: checklist
     description: "Give me the steps / required items for X."
-  - id: refusal
-    description: "Out of scope or unsourced. Route to the refusal protocol."
+
+# answer_outcome = how an answer resolves, AFTER routing and source-checking.
+# Any question_type can end in any of these (a document_review can be answered,
+# uncertain, escalated, or refused).
+answer_outcomes:
+  - id: answered
+    description: "A sourced answer was given from a matching, sufficiently verified rule."
+  - id: refused_unsourced
+    description: "No cited rule covered the question; refused rather than guessing."
+  - id: refused_out_of_scope
+    description: "Topic outside QLD property sales (tenancy, other state, tax); refused and routed."
+  - id: escalated
+    description: "Answered but flagged for human escalation (e.g. commission recovery, termination)."
+  - id: uncertain
+    description: "Matching rule exists but is unverified / needs_review; flagged as not settled."
 
 modules:
   - id: form-6-appointment

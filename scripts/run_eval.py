@@ -57,7 +57,7 @@ def main() -> int:
         print("not part of CI. Set the key and re-run to actually exercise the skill.")
         print("\nScenarios that WOULD be run:")
         for s in load_scenarios():
-            print(f"  {s['id']}  [{s['expected_behaviour']}]  {s['question'][:70]}")
+            print(f"  {s['id']}  [{s['expected_outcome']}]  {s['question'][:70]}")
         return 0
 
     # Real invocation is intentionally left to the maintainer's harness, so this
