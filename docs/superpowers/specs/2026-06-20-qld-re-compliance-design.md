@@ -145,6 +145,7 @@ question_types:
 
 status: active
 verification_status: verified
+verification_note: null         # required (non-empty) when verification_status != verified
 risk_level: high
 authority_tier: legislation
 
