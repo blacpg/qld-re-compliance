@@ -8,14 +8,8 @@ question_types:
   - checklist
 
 status: active
-verification_status: needs_review
-verification_note: >-
-  The appointment-required principle (s 102) is verified. The specific section
-  setting out the general requirements for an appointment, and the provision
-  making a non-compliant appointment ineffective, were reported in secondary
-  commentary as s 104 and s 112(4) of the Property Occupations Act 2014 but could
-  NOT be confirmed against the official source in this session. Treat the exact
-  pinpoints as unverified until checked on legislation.qld.gov.au.
+verification_status: verified
+verification_note: null
 risk_level: high
 authority_tier: legislation
 
@@ -33,14 +27,15 @@ requirement: >-
   against the Act before relying on this rule.
 
 detail: >-
-  Secondary commentary indicates the general requirements for an appointment are
-  in section 104, and that a non-compliant appointment is ineffective under
-  section 112(4). These section numbers are not yet verified here. The verified
-  anchor is that an appointment is required under section 102.
+  The Property Occupations Act 2014 (Qld) sets the general content an appointment
+  must include at section 104 ("General content of appointment"), and section
+  112(4) ("Other ineffective appointments and reappointments") makes an
+  appointment ineffective from when it is made if it does not comply with section
+  104. An appointment is required under section 102.
 
 sources:
   - source_id: SRC-POA-2014
-    pinpoint: "s 104 (unverified); s 112(4) (unverified)"
+    pinpoint: "s 104 'General content of appointment'; s 112(4) 'Other ineffective appointments and reappointments'"
     source_role: primary
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
     quote: null
