@@ -10,13 +10,11 @@ question_types:
 status: active
 verification_status: partially_verified
 verification_note: >-
-  The verified principle is the misleading-conduct prohibition (see RULE-MKTG-001:
-  Property Occupations Act 2014 false-representation provision and Australian
-  Consumer Law s 18 / s 30, exact pinpoints pending). NOT verified by statute in
-  this session: that there is no positive duty to disclose the terms of other
-  offers. That reflects the general position (there is no QLD statutory duty
-  compelling disclosure of competing offers' terms), but it is stated here as the
-  absence of a found obligation, not a cited permission. Confirm before relying.
+  Verified: agents must not make false, misleading or deceptive statements about
+  offers (POA s 212; ACL s 18 and s 30). NOT a statutory rule: there is no
+  positive duty to disclose the existence or terms of other offers. No official
+  source was found creating such a duty; this absence of obligation is not itself
+  a statutory permission. Rule kept partially_verified for that reason.
 risk_level: high
 authority_tier: legislation
 
@@ -29,29 +27,30 @@ does_not_apply_when:
   - The question relates to another jurisdiction.
 
 requirement: >-
-  You must not mislead a buyer about offers. Do not invent offers, overstate
-  competing offers, or pressure a buyer with claims you cannot substantiate. You
-  are generally not required to disclose the terms of other offers, but anything
-  you do say must be true and authorised.
+  You must not make false, misleading or deceptive statements about offers. Do not
+  invent or overstate competing offers. If you choose to discuss other offers, what
+  you say must be true and authorised. No official source was found creating a
+  general positive duty to disclose the existence or terms of other offers.
 
 detail: >-
-  The binding constraint is the prohibition on false or misleading conduct.
-  Telling a buyer there is a higher offer that does not exist, or that they must
-  "beat" a figure that is not real or authorised, risks breaching that
-  prohibition. Choosing not to disclose competing offers is different from
-  actively misleading.
+  The binding constraint is the prohibition on false or misleading conduct (POA
+  s 212; ACL s 18, and s 30 for representations about land). Telling a buyer there
+  is a higher offer that does not exist, or that they must "beat" a figure that is
+  not real or authorised, risks breaching it. Choosing not to disclose competing
+  offers is different from actively misleading; the absence of a disclosure duty is
+  not a statutory permission.
 
 sources:
   - source_id: SRC-ACL
-    pinpoint: "s 18; s 30 (pinpoints unverified in-session)"
+    pinpoint: "s 18 \"Misleading or deceptive conduct\"; s 30 \"False or misleading representations about sale etc. of land\""
     source_role: primary
     url: "https://www.legislation.gov.au/C2004A00109/latest/text"
-    quote: null
+    quote: "must not, in trade or commerce, engage in conduct that is misleading or deceptive or is likely to mislead or deceive"
   - source_id: SRC-POA-2014
-    pinpoint: "false representations about property (reported as s 212; unverified)"
+    pinpoint: "s 212 \"False representations about property\""
     source_role: primary
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
-    quote: null
+    quote: "false or misleading relating to the letting, exchange or sale of real property"
   - source_id: SRC-ACCC-RE
     pinpoint: "must not mislead to encourage higher offers"
     source_role: supporting
