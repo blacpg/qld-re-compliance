@@ -69,12 +69,12 @@
   module: marketing-and-price
   question_type: agent_script
   question: "What can I safely put on the listing for an auction property with no set price?"
-  expected_outcome: uncertain
+  expected_outcome: answered
   expected_rule_ids: [RULE-MKTG-002]
-  expected_source_ids: [SRC-OFT-ADVERTISING]
-  must_include: ["RULE-MKTG-002", "needs_review"]
-  must_not_include: ["prohibited from giving any price guide", "you should be fine"]
-  notes: "The blanket no-price-guide-at-auction claim is unverified and must not be asserted as fact."
+  expected_source_ids: [SRC-POA-2014, SRC-PO-REG-2014]
+  must_include: ["RULE-MKTG-002", "price guide", "s 216"]
+  must_not_include: ["you should be fine"]
+  notes: "Auction price-guide ban is verified (POA s 216/s 214; PO Reg 2014 reg 10). Lead with the rule's safe_version prescribed statement."
 
 - id: SCN-007
   jurisdiction: QLD
@@ -239,7 +239,7 @@
   question: "A buyer keeps asking for the auction price guide. What should I actually say to them?"
   expected_outcome: answered
   expected_rule_ids: [RULE-MKTG-002]
-  expected_source_ids: [SRC-OFT-ADVERTISING]
-  must_include: ["RULE-MKTG-002"]
+  expected_source_ids: [SRC-POA-2014, SRC-PO-REG-2014]
+  must_include: ["RULE-MKTG-002", "price guide", "s 216"]
   must_not_include: ["you should be fine", "probably legal"]
-  notes: "Use safe_version wording; flag that the no-guide rule itself is unverified."
+  notes: "Auction price-guide ban is verified (POA s 216/s 214; PO Reg 2014 reg 10). Use the safe_version prescribed statement."
