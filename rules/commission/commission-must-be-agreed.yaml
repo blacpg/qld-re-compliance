@@ -7,15 +7,8 @@ question_types:
   - checklist
 
 status: active
-verification_status: partially_verified
-verification_note: >-
-  Verified against the Property Occupations Act 2014: an appointment must state
-  the fees, charges and any commission, when they become payable, authorised
-  expenses, and any rebate/discount/benefit (s 104); a percentage commission must
-  be worked out on the actual sale price (s 105). No statutory cap on residential
-  sales commission was found. GST is not addressed in the Act or Regulation. Form
-  6 field-level detail is not yet confirmed against the official form, so the rule
-  remains partially_verified.
+verification_status: verified
+verification_note: null
 risk_level: medium
 authority_tier: legislation
 
@@ -38,8 +31,8 @@ detail: >-
   is what is agreed and stated in the appointment. Section 104 sets out what the
   appointment must state about fees, charges, commission, timing, expenses and any
   rebate or benefit; section 105 requires a percentage commission to be calculated
-  on the actual sale price, not an estimate. The exact Form 6 field labels are
-  still to be confirmed against the official form.
+  on the actual sale price, not an estimate. The Form 6 records these in Part 7
+  (commission) and Part 8 (fees, charges, expenses, rebates and benefits).
 
 sources:
   - source_id: SRC-POA-2014
@@ -48,10 +41,10 @@ sources:
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
     quote: "the fees, charges and any commission payable for the service"
   - source_id: SRC-FORM-6
-    pinpoint: "commission section of the form (field labels pending verification)"
+    pinpoint: "Form 6 Part 7 (Commission); Part 8 (fees, charges, expenses, rebates/discounts/benefits)"
     source_role: supporting
-    url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/legal-requirements-for-the-property-industry/appointment-to-act-as-a-property-agent"
-    quote: null
+    url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms/resource/c795afc7-6a5a-473e-a6e0-855bea83aa5b"
+    quote: "the commission including GST payable for the service"
 
 agent_action:
   - "State the commission, fees, charges, when they are payable, and authorised expenses in the Form 6 before acting (s 104)."

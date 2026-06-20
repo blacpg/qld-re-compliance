@@ -61,12 +61,12 @@ sources:
     type: statutory_form
     authority_tier: statutory_form
     publisher: "Queensland Office of Fair Trading"
-    official_url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/legal-requirements-for-the-property-industry/appointment-to-act-as-a-property-agent"
-    version_or_as_at: "as at retrieved_date"
-    retrieved_date: 2026-06-20
+    official_url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms/resource/c795afc7-6a5a-473e-a6e0-855bea83aa5b"
+    version_or_as_at: "V1, effective 1 May 2024"
+    retrieved_date: 2026-06-21
     licence: "© State of Queensland. Form not reproduced; linked to the official OFT page."
-    pinpoint_style: "Part 3 (commission) / Part 4 (term)"
-    notes: "Approved form under the Property Occupations Act 2014. Field-level structure to be confirmed from the official form."
+    pinpoint_style: "Part 7 (Commission); Part 8 (fees, charges, expenses, rebates/discounts/benefits)"
+    notes: "Approved form under the Property Occupations Act 2014. Form 6 V1 verified 2026-06-21 from publications.qld.gov.au: Part 7 covers commission ('the commission including GST payable for the service') and when it is payable; Part 8 covers authorised fees, charges and expenses and the agent's rebate/discount/benefit. Aligns with POA s 104/s 105."
 
   - source_id: SRC-FORM-2
     title: "Form 2 — Seller Disclosure Statement (Property Law Act 2023)"
