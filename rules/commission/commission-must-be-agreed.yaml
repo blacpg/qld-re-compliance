@@ -7,15 +7,17 @@ question_types:
   - checklist
 
 status: active
-verification_status: needs_review
+verification_status: partially_verified
 verification_note: >-
-  The Form 6 includes a section where commission is stated and agreed, and
-  Queensland no longer caps residential sales commission. The exact statutory and
-  Form 6 pinpoints for how commission must be expressed and disclosed were not
-  confirmed against the official Act, Regulation, and form in this session.
-  Confirm before marking verified.
+  Verified against the Property Occupations Act 2014: an appointment must state
+  the fees, charges and any commission, when they become payable, authorised
+  expenses, and any rebate/discount/benefit (s 104); a percentage commission must
+  be worked out on the actual sale price (s 105). No statutory cap on residential
+  sales commission was found. GST is not addressed in the Act or Regulation. Form
+  6 field-level detail is not yet confirmed against the official form, so the rule
+  remains partially_verified.
 risk_level: medium
-authority_tier: statutory_form
+authority_tier: legislation
 
 applies_when:
   - Setting or reviewing the commission on a sale appointment.
@@ -25,30 +27,35 @@ does_not_apply_when:
   - The question relates to another jurisdiction.
 
 requirement: >-
-  Commission must be agreed with the client and recorded in the Form 6
-  appointment. It cannot be left vague or varied without the client's written
-  agreement.
+  The appointment must state the fees, charges and any commission for the service,
+  when they become payable, the authorised expenses, and any rebate, discount or
+  benefit the agent may receive (Property Occupations Act 2014 s 104). If
+  commission is a percentage, it must be worked out on the actual sale price
+  (s 105).
 
 detail: >-
-  Commission for residential sales in Queensland is not capped, so it is whatever
-  is agreed and recorded in the appointment. The precise statutory requirements
-  for expressing and disclosing commission are pending verification.
+  Commission for residential sales in Queensland is not capped by statute, so it
+  is what is agreed and stated in the appointment. Section 104 sets out what the
+  appointment must state about fees, charges, commission, timing, expenses and any
+  rebate or benefit; section 105 requires a percentage commission to be calculated
+  on the actual sale price, not an estimate. The exact Form 6 field labels are
+  still to be confirmed against the official form.
 
 sources:
-  - source_id: SRC-FORM-6
-    pinpoint: "commission section of the form (field reference pending verification)"
-    source_role: primary
-    url: null
-    quote: null
   - source_id: SRC-POA-2014
-    pinpoint: "commission provisions (pinpoint unverified)"
-    source_role: supporting
+    pinpoint: "s 104 \"General content of appointment\"; s 105 (percentage commission worked out on the actual sale price)"
+    source_role: primary
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "the fees, charges and any commission payable for the service"
+  - source_id: SRC-FORM-6
+    pinpoint: "commission section of the form (field labels pending verification)"
+    source_role: supporting
+    url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/legal-requirements-for-the-property-industry/appointment-to-act-as-a-property-agent"
     quote: null
 
 agent_action:
-  - "Record the agreed commission clearly in the Form 6 before acting."
-  - "Get the client's written agreement to any change in commission."
+  - "State the commission, fees, charges, when they are payable, and authorised expenses in the Form 6 before acting (s 104)."
+  - "If commission is a percentage, make sure the form works it out on the actual sale price, not an estimate (s 105)."
 
 agent_wording:
   safe_version: null
