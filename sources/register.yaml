@@ -114,11 +114,11 @@ sources:
     authority_tier: legislation
     publisher: "Office of Parliamentary Counsel (Cth)"
     official_url: "https://www.legislation.gov.au/C2004A00109/latest/text"
-    version_or_as_at: "current as at retrieved_date"
-    retrieved_date: 2026-06-20
+    version_or_as_at: "Compilation No. 164, 27 May 2026"
+    retrieved_date: 2026-06-21
     licence: "© Commonwealth of Australia. Cited and linked, not reproduced."
     pinpoint_style: "s 18 / s 30"
-    notes: "s 18 (misleading or deceptive conduct) and s 30 (false or misleading representations about sale of land) are the usual hooks for price/representation conduct. Exact pinpoints pending in-session verification."
+    notes: "s 18 'Misleading or deceptive conduct' and s 30 'False or misleading representations about sale etc. of land' operative wording confirmed from the official Federal Register EPUB for Compilation No. 164 (27 May 2026)."
 
   - source_id: SRC-ACCC-RE
     title: "ACCC guidance — real estate and false or misleading representations about price"

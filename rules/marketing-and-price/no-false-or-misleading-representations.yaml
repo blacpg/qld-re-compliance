@@ -8,10 +8,8 @@ question_types:
   - risk_assessment
 
 status: active
-verification_status: partially_verified
-verification_note: >-
-  POA limb verified at s 212; ACL s 18/s 30 limb still pending (Task 5); remains
-  partially_verified until ACL confirmed.
+verification_status: verified
+verification_note: null
 risk_level: high
 authority_tier: legislation
 
@@ -42,10 +40,10 @@ sources:
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
     quote: "false or misleading relating to the letting, exchange or sale of real property"
   - source_id: SRC-ACL
-    pinpoint: "s 18; s 30 (pinpoints unverified in-session)"
+    pinpoint: "s 18 \"Misleading or deceptive conduct\"; s 30 \"False or misleading representations about sale etc. of land\""
     source_role: primary
     url: "https://www.legislation.gov.au/C2004A00109/latest/text"
-    quote: null
+    quote: "s 18: misleading or deceptive or is likely to mislead or deceive; s 30: in connection with the sale or grant ... of an interest in land"
   - source_id: SRC-ACCC-RE
     pinpoint: "false or misleading representations about price"
     source_role: supporting
