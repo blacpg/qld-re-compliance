@@ -10,14 +10,8 @@ question_types:
 status: active
 verification_status: partially_verified
 verification_note: >-
-  The principle is well established: agents must not make false or misleading
-  representations about property, including price. Sources in support: the
-  Property Occupations Act 2014 (a "false representations about property"
-  provision reported in commentary as s 212) and the Australian Consumer Law
-  (s 18 misleading or deceptive conduct; s 30 false or misleading representations
-  about the sale of land). The s 212 heading was seen in a secondary index but
-  not confirmed on the official Act in this session, and the ACL pinpoints were
-  not fetched in-session. Confirm the exact pinpoints before marking verified.
+  POA limb verified at s 212; ACL s 18/s 30 limb still pending (Task 5); remains
+  partially_verified until ACL confirmed.
 risk_level: high
 authority_tier: legislation
 
@@ -35,17 +29,18 @@ requirement: >-
   likely to influence a buyer.
 
 detail: >-
-  Two layers apply. Queensland's Property Occupations Act 2014 prohibits false
-  representations about property. The Australian Consumer Law separately prohibits
-  misleading or deceptive conduct and false or misleading representations about
-  the sale of land. A statement can breach one or both.
+  Two layers apply. Queensland's Property Occupations Act 2014 prohibits false or
+  misleading representations relating to the letting, exchange or sale of real
+  property (s 212). The Australian Consumer Law separately prohibits misleading or
+  deceptive conduct and false or misleading representations about the sale of
+  land. A statement can breach one or both.
 
 sources:
   - source_id: SRC-POA-2014
-    pinpoint: "false representations about property (reported as s 212; pinpoint unverified)"
+    pinpoint: "s 212 \"False representations about property\""
     source_role: primary
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
-    quote: null
+    quote: "false or misleading relating to the letting, exchange or sale of real property"
   - source_id: SRC-ACL
     pinpoint: "s 18; s 30 (pinpoints unverified in-session)"
     source_role: primary
