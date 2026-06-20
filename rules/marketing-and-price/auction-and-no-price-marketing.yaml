@@ -1,5 +1,5 @@
 id: RULE-MKTG-002
-title: Auction and "no price / offers over" marketing
+title: No price guide for auction properties; honest pricing for no-price listings
 jurisdiction: QLD
 module: marketing-and-price
 question_types:
@@ -7,17 +7,10 @@ question_types:
   - agent_script
 
 status: active
-verification_status: needs_review
-verification_note: >-
-  Verified from OFT guidance (2026-06-20): where an "offers over" price is used,
-  it should be the minimum amount the vendor is willing to accept, and price
-  conduct is governed by the Australian Consumer Law. NOT verified: the claim,
-  seen in secondary commentary, that an agent is prohibited from giving ANY price
-  guide once a property is going to auction. The OFT property-advertising page
-  did not state a blanket no-price-guide-at-auction rule. Do not present that as
-  settled law until confirmed.
-risk_level: medium
-authority_tier: regulator_guidance
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
 
 applies_when:
   - Marketing a property for auction, or without a fixed price, or as "offers over".
@@ -27,39 +20,60 @@ does_not_apply_when:
   - The question relates to another jurisdiction.
 
 requirement: >-
-  If you advertise "offers over" a figure, that figure should be the minimum the
-  vendor is genuinely willing to accept. Any price signal you give, including for
-  an auction property, must not be misleading under the Australian Consumer Law.
+  For a property that is to be, may be, or is being offered for sale by auction,
+  the agent must not disclose a price guide for the property (Property Occupations
+  Act 2014 s 216; the auctioneer equivalent is s 214). For a genuine no-price
+  non-auction listing or an "offers over" figure, pricing must be honest and not
+  misleading, and an "offers over" figure should be the minimum the vendor will
+  genuinely accept.
 
 detail: >-
-  The verified guidance is about honesty of the price signal, not a blanket ban.
-  The proposition that no price guide may be given for an auction property is
-  unverified and is flagged for checking. Until confirmed, rely on the
-  misleading-conduct principle in RULE-MKTG-001.
+  Under the Property Occupations Act 2014 a real estate agent must not disclose a
+  price guide for a property that is to be, may be, or is being offered for sale
+  by auction (s 216(2)(c)); the same prohibition applies to the auctioneer
+  (s 214(2)(c)). A limited exception allows giving the price to an electronic
+  listings provider that will not publish it, where the listing carries the
+  prescribed statement. The Property Occupations Regulation 2014 reg 10 prescribes
+  that statement: "This property is being sold by auction or without a price and
+  therefore a price guide can not be provided." For genuine no-price non-auction
+  listings there is no blanket ban; pricing must simply be honest and not
+  misleading or a false representation (see RULE-MKTG-001).
 
 sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 216(2)(c) \"Real estate agent not to disclose reserve or other price\"; s 214(2)(c) \"Auctioneer not to disclose reserve or other price\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "must not disclose ... a price guide for the offered property"
+  - source_id: SRC-PO-REG-2014
+    pinpoint: "reg 10 (prescribed statement)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2014-0251"
+    quote: "a price guide can not be provided"
   - source_id: SRC-OFT-ADVERTISING
     pinpoint: "offers-over guidance"
-    source_role: primary
+    source_role: supporting
     url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/best-practice-for-the-property-industry/property-advertising"
     quote: null
   - source_id: SRC-ACL
-    pinpoint: "s 18 (pinpoint unverified in-session)"
+    pinpoint: "s 18; s 30"
     source_role: supporting
     url: "https://www.legislation.gov.au/C2004A00109/latest/text"
     quote: null
 
 agent_action:
-  - "If you use 'offers over', set it at the minimum the vendor will genuinely accept."
-  - "For an auction property, do not give a price signal you cannot stand behind; check current OFT advice before quoting a guide."
+  - "For an auction property, do not disclose a price guide; you can use the prescribed statement that a price guide cannot be provided."
+  - "For an 'offers over' or genuine no-price listing, set any figure at the minimum the vendor will genuinely accept and keep it honest."
 
 agent_wording:
-  safe_version: "This property is going to auction. I'm not able to give you a figure the vendor has not authorised."
+  safe_version: "This property is being sold by auction or without a price and therefore a price guide can not be provided."
   avoid_saying:
-    - "Quoting an 'offers over' figure below what the vendor will actually accept."
-    - "Asserting a precise auction price guide as if it were authorised and accurate when it is not."
+    - "Disclosing a price guide for a property that is to be, may be, or is being offered for sale by auction."
+    - "Quoting an 'offers over' figure below what the vendor will genuinely accept."
 
-exceptions: []
+exceptions:
+  - "Limited exception: the price may be given to an electronic listings provider that will not publish it, where the listing carries the prescribed statement (POA s 216 / s 214; PO Reg 2014 reg 10)."
+
 penalty: null
 
 human_escalation_required: false
