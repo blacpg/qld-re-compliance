@@ -7,16 +7,8 @@ question_types:
   - risk_assessment
 
 status: active
-verification_status: needs_review
-verification_note: >-
-  Verified: the seller must give the Form 2 disclosure statement before signing
-  (PLA 2023 s 99). NOT verified in this session: the exact section that gives the
-  buyer a right to terminate where the seller failed to give the statement, or
-  where it was inaccurate or incomplete on a material matter. Secondary
-  commentary reports a buyer right to terminate at any time before settlement,
-  with termination as the only remedy (no compensation), and points to a section
-  around s 104. Confirm the exact pinpoint on legislation.qld.gov.au before
-  relying on the section number.
+verification_status: verified
+verification_note: null
 risk_level: high
 authority_tier: legislation
 
@@ -29,23 +21,23 @@ does_not_apply_when:
   - The question relates to another jurisdiction.
 
 requirement: >-
-  If the seller fails to give a compliant disclosure statement before signing, or
-  it is inaccurate or incomplete on a material matter the buyer did not know
-  about, the buyer may have a right to terminate the contract before settlement.
-  This is a serious consequence; get advice.
+  Under PLA 2023 s 104 the buyer may terminate the contract before settlement
+  where the seller did not give a compliant disclosure statement before the buyer
+  signed, or where the disclosure was inaccurate or incomplete and the statutory
+  compound test is met. This is a serious consequence; get advice.
 
-detail: >-
-  The verified obligation is in PLA 2023 s 99. The remedy for a failure is
-  understood from commentary to be a buyer right to terminate before settlement,
-  with termination as the only remedy. The precise termination section is not yet
-  verified here and is flagged for checking.
+detail: |-
+  Section 104 ("Buyer may terminate contract if seller fails to disclose or makes inaccurate disclosure") gives the buyer a right to terminate. The right is triggered if either of the following applies:
+  - the seller fails to give the disclosure documents before the buyer signs the contract; or
+  - the disclosure is inaccurate or incomplete AND all of these are satisfied: the matter is material; the buyer was not aware of the correct state of affairs at signing; and the buyer would not have signed the contract had they known.
+  The termination notice must be given before settlement.
 
 sources:
   - source_id: SRC-PLA-2023
-    pinpoint: "Part 7 div 4; termination provision (pinpoint unverified, reported as ~s 104)"
+    pinpoint: "s 104 \"Buyer may terminate contract if seller fails to disclose or makes inaccurate disclosure\" (Pt 7 div 4)"
     source_role: primary
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2023-027"
-    quote: null
+    quote: "The buyer ... may terminate the contract ... The termination notice may be given at any time before settlement"
 
 agent_action:
   - "Treat a missing or defective Form 2 as a serious risk to the contract."
@@ -55,7 +47,8 @@ agent_wording:
   safe_version: null
   avoid_saying: []
 
-exceptions: []
+exceptions:
+  - "The s 104 termination right does not apply where the same disclosure failure is also a failure under another Act that gives the buyer a remedy (s 104(4))."
 penalty: null
 
 human_escalation_required: true
