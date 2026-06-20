@@ -36,11 +36,11 @@ sources:
     authority_tier: legislation
     publisher: "Office of the Queensland Parliamentary Counsel"
     official_url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2023-027"
-    version_or_as_at: "current as at 1 August 2025"
+    version_or_as_at: "current as at 28 April 2026"
     retrieved_date: 2026-06-20
     licence: "© State of Queensland (Crown copyright). Cited and linked, not reproduced."
     pinpoint_style: "s 99"
-    notes: "Seller disclosure scheme in Part 7 Division 4 'Seller disclosure for sales of lots'. s 99 'Seller must give buyer disclosure documents' confirmed against the official source on 2026-06-20. Commenced 1 August 2025."
+    notes: "Seller disclosure scheme in Part 7 Division 4 'Seller disclosure for sales of lots'. Commenced 1 August 2025. s 99 'Seller must give buyer disclosure documents' confirmed against the official source on 2026-06-20, and re-confirmed against the 28 April 2026 reprint with the RULE-DISC-001 operative wording unchanged from the 1 August 2025 reprint."
 
   - source_id: SRC-PL-REG-2024
     title: "Property Law Regulation 2024 (Qld)"
