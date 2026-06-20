@@ -5,3 +5,4 @@ Append-only record of pinpoint verifications. Each entry: date, official source,
 | Date | Source | Provision checked | Method | Outcome | Rule(s) |
 |---|---|---|---|---|---|
 | 2026-06-20 | Property Occupations Act 2014 (Qld), as at 1 Aug 2025 | s 102 "Appointment"; s 104 "General content of appointment"; s 112(4) "Other ineffective appointments and reappointments" | Official PDF download + text extract | VERIFIED (number+heading+operative text) | RULE-FORM6-001 (re-confirmed), RULE-FORM6-002 (promote) |
+| 2026-06-20 | Property Occupations Act 2014 (Qld), as at 1 Aug 2025 | s 89 "Restriction on recovery of reward or expense—no proper authorisation etc." | Official PDF grep + read of extracted text; confirmed number, heading, operative precondition s 89(1)(c) | verified | RULE-COMM-001 |

@@ -7,14 +7,8 @@ question_types:
   - risk_assessment
 
 status: active
-verification_status: partially_verified
-verification_note: >-
-  Verified: an agent must be appointed under the Property Occupations Act 2014
-  s 102 before acting. NOT yet verified in this session: the specific section
-  that restricts recovery of a reward or expense (commission) where the agent was
-  not properly appointed. Secondary commentary refers to a "restriction on
-  recovery of reward or expense" provision (reported as around s 89). Confirm the
-  exact pinpoint on legislation.qld.gov.au before relying on the section number.
+verification_status: verified
+verification_note: null
 risk_level: high
 authority_tier: legislation
 
@@ -27,27 +21,29 @@ does_not_apply_when:
   - The question relates to another jurisdiction.
 
 requirement: >-
-  An agent that is not validly appointed in writing risks losing the right to
-  recover commission. A valid Form 6 appointment is a precondition to acting and
-  to claiming a fee.
+  A person is not entitled to recover a reward or expense unless they were
+  properly appointed under the Act. In practical agency terms the reward is
+  usually the commission the agent is seeking to recover, so acting without a
+  valid Form 6 appointment puts that recovery at risk.
 
 detail: >-
-  The verified basis is that appointment is required (s 102). The Act also
-  restricts recovery of a reward or expense where the agent was not properly
-  appointed; the exact section for that restriction is not verified here. Because
-  the consequence is loss of commission, this is treated as high risk and
-  escalated.
+  Section 89 ("Restriction on recovery of reward or expense—no proper
+  authorisation etc.") provides that a person is not entitled to sue for, recover
+  or keep a reward or expense unless they were properly appointed under part 4
+  (which includes the appointment under s 102). The Act's term is "reward or
+  expense"; in practice the reward is commonly the commission the agent is
+  seeking. The consequence is treated as high risk and escalated.
 
 sources:
   - source_id: SRC-POA-2014
-    pinpoint: "s 102 (appointment, verified); recovery-of-reward restriction (pinpoint unverified)"
+    pinpoint: "s 89 \"Restriction on recovery of reward or expense—no proper authorisation etc.\"; s 102 (appointment)"
     source_role: primary
     url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
-    quote: null
+    quote: "not entitled to sue for, recover or keep a reward or expense"
 
 agent_action:
-  - "Confirm a valid Form 6 is in place before doing any work you expect to be paid for."
-  - "If a sale has happened on a defective or missing appointment, get advice before invoicing."
+  - "Confirm a valid Form 6 appointment is in place before doing any work for which you expect a reward or expense."
+  - "If a sale has happened on a defective or missing appointment, get advice before claiming any reward or expense."
 
 agent_wording:
   safe_version: null
