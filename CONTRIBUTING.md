@@ -32,3 +32,39 @@ The behavioural eval (`scripts/run_eval.py`) needs an API key and is run on dema
 ## Authority tiers
 
 Read [docs/authority-tiers.md](docs/authority-tiers.md). Get the tier right — it controls how strongly the rule can be stated.
+
+## Branch protection and push policy
+
+`main` is protected: non-admin contributors must open a pull request, and the
+`validate` CI check must pass before a change can be merged.
+
+**Admins may direct-push only low-risk documentation/planning changes** — for
+example `docs/` scope notes, typo fixes, and other non-runtime commentary.
+
+**A pull request with green CI is required (for everyone, including admins)** for
+any change that touches:
+
+- `skill/`
+- `rules/`
+- `sources/register.yaml`
+- `schema/`
+- `modules/`
+- `tests/scenarios/`
+- `scripts/`
+- `.github/workflows/`
+- `README.md`
+- `LICENSE`
+- `CONTRIBUTING.md`
+- any public-content, privacy, safety, or verification policy file, including:
+  - `docs/public-content-policy.md`
+  - `docs/pii-and-private-data.md`
+  - `SECURITY.md`
+  - `docs/source-ingestion-standard.md`
+  - `docs/review-cadence.md`
+
+Why: rule, source, and runtime changes affect what the skill tells agents, so they
+must pass the verify-or-flag gate via CI before publication. `CONTRIBUTING.md` is
+included because, once this policy lives here, it is governance — changes to the
+governance rule should not use the docs-only direct-push path. `enforce_admins` is
+intentionally left OFF during early development to allow the docs-only fast path;
+this policy is the discipline that compensates for that escape hatch.
