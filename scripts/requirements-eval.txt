@@ -1,0 +1,5 @@
+# Dependencies for the on-demand behavioural eval (scripts/run_eval.py).
+# NOT needed for CI or the deterministic validators (those use scripts/requirements.txt).
+# Install with: pip install -r scripts/requirements-eval.txt
+pyyaml>=6.0
+anthropic
