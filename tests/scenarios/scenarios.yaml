@@ -387,3 +387,15 @@
   must_include: ["RULE-COMM-004", "GST", "conjunction", "ATO"]
   must_not_include: ["you must remit", "claim the GST", "expressly permitted"]
   notes: "Partially verified: Form 6 records commission GST-inclusive and s 102(6) recognises conjunction selling; no POA/Reg prohibition on commission-sharing was found (state as an absence, not a permission); substantive GST treatment is Commonwealth tax law, out of scope - route to the ATO. must_not_include guards against the tool giving substantive tax advice."
+
+- id: SCN-033
+  jurisdiction: QLD
+  module: offers-and-negotiation
+  question_type: rule_check
+  question: "Do I have to present every offer to my seller?"
+  expected_outcome: [uncertain, refused_unsourced]
+  expected_rule_ids: [RULE-OFFERS-002]
+  expected_source_ids: [SRC-PO-REG-2014, SRC-POA-2014]
+  must_include: ["RULE-OFFERS-002", "instructions"]
+  must_not_include: ["you must present every offer", "you can withhold any offer"]
+  notes: "Partially verified: no express POA/Reg duty to present offers was found (state as an absence, not a permission to withhold); the closest sourced hooks are PO Reg s 22 (follow the client's lawful instructions) and s 18 (conflict). Any general best-interests/fiduciary duty is common law (POA s 231 preserves civil remedies), out of scope - route to the OFT or a solicitor. must_not_include guards against a false flat assertion in either direction."

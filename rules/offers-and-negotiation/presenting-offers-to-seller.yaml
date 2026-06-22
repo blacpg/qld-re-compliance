@@ -1,0 +1,104 @@
+id: RULE-OFFERS-002
+title: Presenting offers to the seller
+jurisdiction: QLD
+module: offers-and-negotiation
+question_types:
+  - rule_check
+  - risk_assessment
+
+status: active
+verification_status: partially_verified
+verification_note: >-
+  No express statutory duty to convey, present or communicate offers (or all
+  offers) to the seller was found in the Property Occupations Act 2014 or the
+  Property Occupations Regulation 2014 after an exhaustive search. State this as
+  a found absence, not as a permission to withhold offers. The closest sourced
+  obligations are PO Reg 2014 s 22 (the agent must follow the client's lawful
+  instructions) and s 18 (the agent must not act where its duty or interests
+  conflict with the client's). Any general best-interests or fiduciary duty to
+  pass on offers would arise at COMMON LAW; POA s 231 preserves civil remedies,
+  and common law is outside this rulebook's scope. For the common-law position,
+  route the agent to the OFT or a solicitor.
+risk_level: medium
+authority_tier: regulation
+
+applies_when:
+  - A seller or agent asks whether the agent must present every offer to the seller.
+  - An agent is deciding whether to pass a particular offer on to the seller.
+
+does_not_apply_when:
+  - The question is whether the agent may mislead a buyer about offers (see RULE-OFFERS-001).
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  No express provision in the Property Occupations Act 2014 or Regulation was
+  found requiring an agent to present offers (or all offers) to the seller. This
+  is an absence of a found statutory duty, not a statutory permission to withhold
+  offers. Where the seller has instructed the agent to present all offers, PO Reg
+  s 22 requires the agent to act on that lawful instruction, and s 18 prohibits
+  the agent acting where its duty or interests conflict with the client's. A
+  general best-interests or fiduciary duty to pass on offers, if it exists, is a
+  common-law question this rulebook does not cover.
+
+detail: >-
+  The sourced hooks are conduct standards in the Regulation, empowered by POA
+  s 235. PO Reg s 22 ties the agent to the client's lawful instructions, so a
+  seller instruction to present all offers makes presenting them a compliance
+  obligation by that route. PO Reg s 18 addresses conflicts of duty or interest.
+  POA s 231 confirms civil remedies (including at common law) are not affected by
+  the Act, so any general agency or fiduciary duty to act in the client's interest
+  arises outside the statutory scheme. Because that turns on common law, direct
+  the agent to the OFT or a solicitor rather than asserting a duty or a freedom
+  to withhold.
+
+sources:
+  - source_id: SRC-PO-REG-2014
+    pinpoint: "s 22 \"Property agent to act in accordance with client's instructions\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2014-0251"
+    quote: "A property agent must act in accordance with a client's instructions unless it is contrary to this division or otherwise unlawful to do so."
+  - source_id: SRC-PO-REG-2014
+    pinpoint: "s 18 \"Conflict of duty or interest\""
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2014-0251"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 235 (regulation may provide conduct standards for real estate agents)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 231 \"Civil remedies not affected\""
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+
+agent_action:
+  - "Do not state that the POA or Regulation expressly requires you to present every offer; no such provision was found."
+  - "Do not state that you are free to withhold offers; the absence of a found duty is not a statutory permission."
+  - "If the seller has instructed you to present all offers, present them: PO Reg s 22 requires you to follow that lawful instruction."
+  - "For whether a general best-interests or fiduciary duty obliges you to pass on offers, refer the question to the OFT or a solicitor (common law, out of scope)."
+
+agent_wording:
+  safe_version: "Queensland's property agent laws don't set out an express rule that you must present every offer, but they're not a green light to withhold them either. If your seller has instructed you to pass on all offers, you must follow that instruction. Whether you owe a broader duty to do so is a common-law question - check with the OFT or a solicitor."
+  avoid_saying:
+    - "'You must present every offer to the seller' as a flat statement of statutory law."
+    - "'You can withhold any offer you like' as if the Act permits it."
+
+exceptions: []
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-OFFERS-001
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - offers
+  - negotiation
+  - client-instructions
+  - common-law-boundary
