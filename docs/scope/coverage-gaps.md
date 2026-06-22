@@ -56,6 +56,7 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
 ## Priority 2 — common, in-scope, not yet covered
 
 ### GAP-004 · Auction conduct
+- **✅ BUILT — new `auction-conduct` module (RULE-AUC-001/002/003), 2026-06-22.**
 - **Questions refused today:** "Do I need a licensed auctioneer?", "How is the reserve
   handled?", "Do bidders have to register?", "What counts as dummy bidding?"
 - **Not a module yet.** Candidate new module: `auction-conduct`.
@@ -63,6 +64,7 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
   price-guide sections already used); auctioneer licensing provisions.
 
 ### GAP-005 · Seller disclosure — Form 2 contents and exemptions
+- **✅ BUILT — RULE-DISC-003 (contents) + RULE-DISC-004 (exceptions), 2026-06-22.**
 - **Questions refused/incomplete today:** "What exactly must the Form 2 contain?",
   "Which sales are exempt from the disclosure scheme?"
 - **Partial:** RULE-DISC-001 establishes the obligation but lists prescribed documents
@@ -71,6 +73,7 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
   Regulation 2024 (Qld) prescribed documents and exclusions (SRC-PL-REG-2024).
 
 ### GAP-006 · Commission — GST, expense recovery, sharing/referral
+- **✅ BUILT — RULE-COMM-003 (expenses) + RULE-COMM-004 (rebates/conjunction/GST, partially_verified), 2026-06-22.**
 - **Questions refused/incomplete today:** "Is commission quoted including GST?", "Can I
   recover marketing expenses that weren't itemised in the Form 6?", "Can I share
   commission with / pay a referral fee to another agent?"
@@ -79,6 +82,7 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
   GST treatment per the form wording; referral/sharing provisions.
 
 ### GAP-007 · Duty to present offers to the seller
+- **✅ BUILT — RULE-OFFERS-002 (verified absence of an express statutory duty), 2026-06-22.**
 - **Question refused today:** "Do I have to present every offer to my seller?"
 - **Note:** RULE-OFFERS-001 covers *not misleading buyers* about offers, but says nothing
   about an agent's duty toward the *seller* to pass on offers.
@@ -89,14 +93,17 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
 ## Priority 3 — known scope gaps (also tracked elsewhere)
 
 ### GAP-008 · Form 7 — beneficial-interest disclosure
+- **✅ BUILT — RULE-INT-001 (new `interest-disclosure` module), 2026-06-22.**
 - Agent acquiring a beneficial interest / related-party purchase. Sales-side gap noted
   in `docs/HANDOVER.md` §12. Candidate sources: POA 2014; Form 7.
 
 ### GAP-009 · Form 8 — disclosure to a potential buyer
+- **✅ BUILT — RULE-INT-002, 2026-06-22.**
 - **Declared but unbuilt:** `modules.yaml` seller-disclosure → "Form 8 buyer angle".
   Sales-side gap noted in HANDOVER §12. Candidate sources: POA 2014; Form 8.
 
 ### GAP-010 · Trust account / deposit handling
+- **✅ BUILT — new `trust-accounting` module (RULE-TRUST-001/002), 2026-06-22.**
 - "Where does the deposit go / how is it held?" In the original design, not built.
   Candidate sources: Agents Financial Administration Act 2014 (Qld) (NOT yet registered).
 
