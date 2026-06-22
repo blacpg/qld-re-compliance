@@ -1,0 +1,142 @@
+id: RULE-INT-001
+title: Obtaining a beneficial interest in the client's property (Form 7)
+jurisdiction: QLD
+module: interest-disclosure
+question_types:
+  - rule_check
+  - risk_assessment
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent (or a salesperson the agent employs) wants to buy, or otherwise acquire an interest in, a property the agent is appointed to sell.
+  - The agent or an associate is in any way concerned in obtaining a benefit from the property the agent is selling for the client.
+  - An agent asks whether they can buy their own listing, or take an option over it.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  A property agent commits an offence if the agent obtains a beneficial interest
+  in the property the agent is appointed to sell, and the same offence extends to
+  a real estate salesperson the agent employs (Property Occupations Act 2014 (Qld)
+  s 155(2)-(3); max 200 penalty units or 3 years imprisonment). It is NOT an
+  offence only if, before the contract is entered into, the agent obtains the
+  client's written acknowledgement in the approved form (the Form 7) that the
+  client is aware the agent is interested in obtaining a beneficial interest and
+  consents; AND the agent acts fairly and honestly in relation to the sale; AND
+  the client is in substantially as good a position as if the property were sold
+  at fair market value (s 155(4)). The position is stricter for options:
+  obtaining from the client an option to purchase a property in which the agent
+  has a beneficial interest is an offence with NO fair-value / acknowledgement
+  defence, so the option route is effectively absolute (s 154).
+
+detail: >-
+  Under the Property Occupations Act 2014 (Qld), "obtain" is defined inclusively
+  to cover "being in any way concerned in obtaining" (s 152), so an agent does not
+  need to be the named buyer to be caught. Section 153 sets out what counts as a
+  "beneficial interest": a licensee or real estate salesperson is taken to have a
+  beneficial interest where, for example, the purchase is made for the agent or an
+  associate, via an option, or through certain corporations or partnerships in
+  which they participate (these are inclusive, non-exhaustive examples - do not
+  treat the list as closed).
+
+  Section 155 ("Beneficial interest - other than options") makes it an offence for
+  the property agent to obtain a beneficial interest in the property (s 155(2),
+  max 200 penalty units or 3 years imprisonment), and extends that offence to a
+  real estate salesperson employed by the agent (s 155(3)). The exception in
+  s 155(4) is cumulative: it is not an offence only where, before the contract is
+  entered into, the agent obtains the client's written acknowledgement IN THE
+  APPROVED FORM that the client is aware the agent is interested in obtaining a
+  beneficial interest and consents, AND the agent acts fairly and honestly in
+  relation to the sale, AND the client is in substantially as good a position as
+  if the property were sold at fair market value. The approved-form written
+  acknowledgement is the Form 7.
+
+  Options are treated separately and more strictly. Section 154 ("Beneficial
+  interest - options") makes it an offence for the agent to obtain from the client
+  an option to purchase the property in which the agent has a beneficial interest,
+  and the agent must not sell the property if the agent obtains a beneficial
+  interest in an option. There is no fair-value / acknowledgement defence to the
+  option offence, so unlike s 155 it is effectively absolute. On a conviction
+  under s 155(2) or (3), where the beneficial interest is in the form of
+  commission, the court may order the return of the interest (s 156).
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 152 ('obtain' includes being in any way concerned in obtaining)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "obtain includes being in any way concerned in obtaining"
+  - source_id: SRC-POA-2014
+    pinpoint: "s 153 'Meaning of beneficial interest' (inclusive, non-exhaustive examples)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 155(2)-(3) (offence for agent and employed salesperson; max 200 penalty units or 3 years)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 155(4) (cumulative exception: approved-form acknowledgement + consent + fair and honest + substantially as good a position as fair market value)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 154 'Beneficial interest - options' (option offence; no fair-value / acknowledgement defence)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 156 (on conviction under s 155(2)/(3), court may order return of an interest in the form of commission)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-FORM-7
+    pinpoint: "the approved form (written acknowledgement under POA s 155(4)(a))"
+    source_role: supporting
+    url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms"
+    quote: null
+
+agent_action:
+  - "Do not buy, or have an associate buy, a property you are appointed to sell unless every limb of POA s 155(4) is met before the contract is entered into."
+  - "Before the contract is entered into, obtain the client's written acknowledgement and consent on the approved Form 7, act fairly and honestly, and ensure the client is in substantially as good a position as a fair-market-value sale."
+  - "Never take an option over your own listing in which you have a beneficial interest: s 154 has no defence."
+  - "Treat employed salespeople buying a listing the same way: the offence extends to them (s 155(3))."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: null
+  avoid_saying:
+    - "Telling the client you can buy the listing yourself as long as you 'just disclose it' verbally - the s 155(4) acknowledgement must be in the approved form and the fair-value and fair-and-honest limbs must also be met."
+    - "Suggesting an option over your own listing is fine if disclosed - s 154 has no defence."
+    - "you should be fine"
+
+exceptions:
+  - "It is not an offence under s 155 only where ALL of s 155(4) is met before the contract: client's written acknowledgement and consent in the approved form, the agent acts fairly and honestly, and the client is in substantially as good a position as a fair-market-value sale."
+  - "There is NO equivalent exception for the option offence in s 154."
+
+penalty: "Maximum 200 penalty units or 3 years imprisonment (POA s 155(2)). On conviction, the court may order return of a beneficial interest in the form of commission (s 156)."
+
+human_escalation_required: true
+escalation_reason:
+  - complaint or OFT risk
+
+related_rules:
+  - RULE-INT-002
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - beneficial-interest
+  - form-7
+  - disclosure
+  - property-occupations-act-2014
+  - conflict-of-interest

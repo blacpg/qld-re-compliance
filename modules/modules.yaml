@@ -83,3 +83,11 @@ modules:
       - Reserve price must be given to the auctioneer in writing before the auction; CMA before helping set it
       - Seller bidding only if the conditions of sale notify the seller's right to bid
       - Bidders must be registered (name, address, ID, unique identifier) and the register kept 5 years
+  - id: interest-disclosure
+    title: "Agent interest and benefit disclosure"
+    covers:
+      - Agent (or employed salesperson) obtaining a beneficial interest in the client's property and the cumulative Form 7 acknowledgement / fair-value defence
+      - The stricter, defence-less option offence (no buying via an option over your own listing)
+      - Disclosing to a prospective buyer a referral relationship and any benefit, on the Form 8, before the contract
+      - What "obtain", "beneficial interest" and "benefit" cover
+      - Offence consequences only (no statutory recovery / disgorgement remedy for an undisclosed buyer benefit)

@@ -399,3 +399,27 @@
   must_include: ["RULE-OFFERS-002", "instructions"]
   must_not_include: ["you must present every offer", "you can withhold any offer"]
   notes: "Partially verified: no express POA/Reg duty to present offers was found (state as an absence, not a permission to withhold); the closest sourced hooks are PO Reg s 22 (follow the client's lawful instructions) and s 18 (conflict). Any general best-interests/fiduciary duty is common law (POA s 231 preserves civil remedies), out of scope - route to the OFT or a solicitor. must_not_include guards against a false flat assertion in either direction."
+
+- id: SCN-034
+  jurisdiction: QLD
+  module: interest-disclosure
+  question_type: risk_assessment
+  question: "Can I buy the house I'm selling for my own client if I tell them I'm interested?"
+  expected_outcome: [escalated, answered]
+  expected_rule_ids: [RULE-INT-001]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-7]
+  must_include: ["RULE-INT-001", "s 155", "Form 7", "beneficial interest", "fair market value"]
+  must_not_include: ["you should be fine", "just disclose it verbally", "as long as you tell them"]
+  notes: "Verified: obtaining a beneficial interest in the client's property is an offence (POA s 155(2)-(3), max 200 penalty units or 3 years), unless ALL of s 155(4) is met before the contract - written acknowledgement and consent in the approved Form 7, agent acts fairly and honestly, and the client is in substantially as good a position as a fair-market-value sale. The defence is cumulative and the acknowledgement must be in the approved form, so a verbal 'I'm interested' is not enough. Options (s 154) have no defence at all. High risk = escalate (complaint or OFT risk)."
+
+- id: SCN-035
+  jurisdiction: QLD
+  module: interest-disclosure
+  question_type: rule_check
+  question: "I refer my buyers to a mortgage broker who pays me a referral fee. Do I have to tell the buyer, and what happens if I don't?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-INT-002]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-8]
+  must_include: ["RULE-INT-002", "s 157", "Form 8", "before", "200 penalty units"]
+  must_not_include: ["the buyer can recover the benefit", "you must repay the fee", "you should be fine", "verbal disclosure is enough"]
+  notes: "Verified: POA s 157(1) requires a residential property agent to disclose a referred-entity relationship, whether they derive/expect a benefit and its amount/value, and the entity's name; the disclosure is effective only if given on the approved Form 8 and acknowledged in writing on it before the contract (s 157(3)); 'benefit' is monetary or other (s 157(4)). Verified absence: the only stated consequence is the 200-penalty-unit offence - there is NO statutory recovery/disgorgement remedy. must_not_include guards against asserting a non-existent recovery remedy."
