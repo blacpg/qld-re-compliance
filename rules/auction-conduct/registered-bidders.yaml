@@ -1,0 +1,97 @@
+id: RULE-AUC-003
+title: Bidders must be registered to bid at a property auction
+jurisdiction: QLD
+module: auction-conduct
+question_types:
+  - rule_check
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: medium
+authority_tier: legislation
+
+applies_when:
+  - Registering bidders for a property auction.
+  - Keeping or handling the auction bidder register.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  Only registered bidders may bid at a property auction. A registered bidder is a
+  person who is registered, as prescribed under a regulation, as a bidder for the
+  auction (Property Occupations Act 2014 s 159). The auctioneer must keep a
+  register of each bidder registered to bid (PO Reg 2014 s 23(1)) and must inform
+  persons considering bidding that only bids from registered bidders will be
+  accepted (s 23(2)(a)). The auctioneer may register a person only if they give
+  their name and address and produce satisfactory evidence of identity
+  (s 23(4)), must assign a unique bidder identifier and record the name, address
+  and identifier (s 23(5)), and must keep the register for at least 5 years
+  (s 23(7)). The auctioneer must not disclose a registered bidder's identity
+  except to an inspector or a court (s 25).
+
+detail: >-
+  Under the Property Occupations Act 2014 s 159, "registered bidder, for an
+  auction, means a person who is registered, as prescribed under a regulation, as
+  a bidder for the auction." The Property Occupations Regulation 2014 s 23
+  "Registration of bidders and related obligations for auction" sets the
+  mechanics: the auctioneer must keep a register of each bidder registered to bid
+  (s 23(1)); must inform persons considering bidding that only bids from
+  registered bidders will be accepted (s 23(2)(a)); may register a person only if
+  they give name and address and produce satisfactory evidence of identity
+  (s 23(4)); must assign a unique bidder identifier and record name, address and
+  identifier (s 23(5)); and must keep the register for at least 5 years
+  (s 23(7)). On confidentiality, PO Reg 2014 s 25 provides the auctioneer must
+  not disclose a registered bidder's identity except to an inspector or a court,
+  with a limited exception allowing disclosure to the seller or seller's agent to
+  negotiate after the property is passed in.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 159 (definition of registered bidder)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "a person who is registered, as prescribed under a regulation, as a bidder for the auction"
+  - source_id: SRC-PO-REG-2014
+    pinpoint: "s 23(1), s 23(2)(a), s 23(4), s 23(5), s 23(7) \"Registration of bidders and related obligations for auction\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2014-0251"
+    quote: "only bids from registered bidders will be accepted"
+  - source_id: SRC-PO-REG-2014
+    pinpoint: "s 25 (confidentiality of bidder identity)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2014-0251"
+    quote: null
+
+agent_action:
+  - "Register each bidder before the auction: take their name and address and sight satisfactory evidence of identity."
+  - "Assign each registered bidder a unique identifier, record name, address and identifier in the register, and tell people that only registered bidders' bids will be accepted."
+  - "Keep the bidder register for at least 5 years and do not disclose a bidder's identity except to an inspector or a court."
+
+agent_wording:
+  safe_version: "Only registered bidders can bid, so I'll need your name, address and ID to register you before the auction."
+  avoid_saying:
+    - "Accepting bids from people who have not registered."
+    - "Disclosing a registered bidder's identity outside the permitted exceptions."
+
+exceptions:
+  - "Limited exception: the auctioneer may disclose a registered bidder's identity to the seller or seller's agent to negotiate after the property is passed in (PO Reg 2014 s 25)."
+
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-AUC-001
+  - RULE-AUC-002
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - auction
+  - bidder-registration
+  - recordkeeping

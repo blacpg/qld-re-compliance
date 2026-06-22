@@ -303,3 +303,39 @@
   must_include: ["RULE-FORM6-004", "90", "ineffective"]
   must_not_include: ["you should be fine", "probably legal", "six months is fine"]
   notes: "Verified: a sole or exclusive residential agency term must be not more than 90 days (POA s 110(1)); a term over 90 days is ineffective from when it is made (s 112(1)). The 90-day limit does not apply to a commercial scale appointment (s 110(2)/s 112(2)). Confirm pinpoints on legislation.qld.gov.au."
+
+- id: SCN-026
+  jurisdiction: QLD
+  module: auction-conduct
+  question_type: rule_check
+  question: "Can one of my unlicensed sales staff call the auction on Saturday if I'm not available?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-AUC-001]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-AUC-001", "auctioneer", "licence"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: conducting a property auction is an auctioneer-licence activity (POA s 25); acting as a property agent without the licence is an offence (s 98); s 55(2)/s 56(2) require the auction be conducted by an employed licensee."
+
+- id: SCN-027
+  jurisdiction: QLD
+  module: auction-conduct
+  question_type: rule_check
+  question: "The seller wants to place a few bids of their own to push the price up at the auction. Is that allowed?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-AUC-002]
+  expected_source_ids: [SRC-POA-2014, SRC-PO-REG-2014]
+  must_include: ["RULE-AUC-002", "reserve", "right to bid"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: seller bidding only if the notified conditions of sale include the seller's right to bid (POA s 229A); the auctioneer must disclose a seller/seller's-agent bid and not accept one above the reserve (PO Reg 2014 s 24(2)/(3)); written reserve notice required before auction (POA s 213(3))."
+
+- id: SCN-028
+  jurisdiction: QLD
+  module: auction-conduct
+  question_type: checklist
+  question: "What do I need to do to register bidders before a property auction?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-AUC-003]
+  expected_source_ids: [SRC-POA-2014, SRC-PO-REG-2014]
+  must_include: ["RULE-AUC-003", "register", "identity"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: only registered bidders may bid (POA s 159); auctioneer must keep a register, take name/address and satisfactory evidence of identity, assign a unique identifier, and keep the register 5 years (PO Reg 2014 s 23)."

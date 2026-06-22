@@ -76,3 +76,10 @@ modules:
       - 0.25% termination penalty and termination during the period
       - Waiving or shortening the cooling-off period
       - Auction exclusion (no cooling-off on a contract formed at auction) and passed-in / negotiated contracts
+  - id: auction-conduct
+    title: "Auction conduct"
+    covers:
+      - A property auction must be conducted by a licensed auctioneer
+      - Reserve price must be given to the auctioneer in writing before the auction; CMA before helping set it
+      - Seller bidding only if the conditions of sale notify the seller's right to bid
+      - Bidders must be registered (name, address, ID, unique identifier) and the register kept 5 years

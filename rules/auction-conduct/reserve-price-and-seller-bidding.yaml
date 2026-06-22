@@ -1,0 +1,106 @@
+id: RULE-AUC-002
+title: Reserve price and seller bidding at auction
+jurisdiction: QLD
+module: auction-conduct
+question_types:
+  - rule_check
+  - checklist
+  - agent_script
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - Setting or handling the reserve price for a property auction.
+  - The seller (or the seller's agent) wants to bid at the auction.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+  - The question is about disclosing a price guide for the auction (see RULE-MKTG-002).
+
+requirement: >-
+  Before the property is auctioned the auctioneer must obtain a written notice
+  from the seller stating the reserve price, or stating that no reserve is set
+  (in which case it sells for the highest bid) (Property Occupations Act 2014
+  s 213(3)). The auctioneer must not help the seller decide the reserve price
+  unless the auctioneer first gives the seller a comparative market analysis
+  (s 213(4)). The seller may bid, and the auctioneer may accept the seller's bid,
+  only if the conditions of sale notified to prospective bidders include a
+  condition that the sale is subject to the seller's right to bid (s 229A); if the
+  seller or seller's agent bids, the auctioneer must disclose to the other bidders
+  that the bid is made by the seller or seller's agent (PO Reg 2014 s 24(2)) and
+  must not accept a seller / seller's-agent bid higher than the reserve price
+  (s 24(3)).
+
+detail: >-
+  Under the Property Occupations Act 2014 s 213 "Representation of price of
+  property to seller—auctioneer", before the property is auctioned the auctioneer
+  must obtain a written notice from the seller stating the reserve price, or that
+  no reserve is set, in which case the property sells for the highest bid
+  (s 213(3)). The auctioneer must not help the seller decide the reserve price
+  unless the auctioneer first gives the seller a comparative market analysis
+  (s 213(4)) — maximum penalty 540 penalty units. On seller bidding, s 229A
+  "Disclosure of seller's right to bid at auction" provides the seller may bid,
+  and the auctioneer may accept the seller's bid, only if the conditions of sale
+  notified to prospective bidders include a condition that the sale is subject to
+  the seller's right to bid; if a property is sold in contravention the contract
+  is voidable by the buyer before settlement (s 229A(3)), and a bid of the seller
+  includes a bid made on behalf of the seller (s 229A(4)). The Property
+  Occupations Regulation 2014 s 24 "Bids by seller" adds that if the seller or
+  seller's agent bids, the auctioneer must disclose to the other bidders that the
+  bid is made by the seller or seller's agent (s 24(2)), and must not accept a
+  bid from the seller or seller's agent that is higher than the reserve price
+  (s 24(3)). The separate prohibition on disclosing a price guide for an auction
+  property sits in RULE-MKTG-002 (POA s 216 / s 214) and is not restated here.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 213(3); s 213(4) \"Representation of price of property to seller—auctioneer\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "must not help the seller decide the reserve price unless the auctioneer first gives the seller a comparative market analysis"
+  - source_id: SRC-POA-2014
+    pinpoint: "s 229A \"Disclosure of seller's right to bid at auction\" (incl. s 229A(3), s 229A(4))"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "the sale is subject to the seller's right to bid"
+  - source_id: SRC-PO-REG-2014
+    pinpoint: "s 24(2); s 24(3) \"Bids by seller\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2014-0251"
+    quote: "must not accept a bid from the seller ... higher than the reserve price"
+
+agent_action:
+  - "Get a written notice from the seller stating the reserve price (or that no reserve is set) before the auction starts."
+  - "Do not help the seller set the reserve unless you have first given them a comparative market analysis."
+  - "Allow seller bidding only if the notified conditions of sale state the sale is subject to the seller's right to bid; disclose any seller / seller's-agent bid to the other bidders and never accept a seller bid above the reserve."
+
+agent_wording:
+  safe_version: "The seller's reserve must be given to me in writing before the auction, and any bid by or for the seller is only allowed if the conditions of sale say the sale is subject to the seller's right to bid."
+  avoid_saying:
+    - "Helping the seller pick a reserve price without first giving them a comparative market analysis."
+    - "Taking a seller or seller's-agent bid without disclosing it, or accepting one above the reserve."
+
+exceptions: []
+
+penalty: "Auctioneer helping set the reserve without first giving a CMA: max 540 penalty units (POA s 213(4)). Sale in contravention of the seller's-right-to-bid disclosure is voidable by the buyer before settlement (POA s 229A(3))."
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-MKTG-002
+  - RULE-AUC-001
+  - RULE-AUC-003
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - auction
+  - reserve-price
+  - seller-bidding
+  - vendor-bid
