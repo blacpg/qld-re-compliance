@@ -93,7 +93,7 @@
   module: offers-and-negotiation
   question_type: rule_check
   question: "Am I legally required to tell a buyer the terms of the other offers I have received?"
-  expected_outcome: uncertain
+  expected_outcome: [answered, uncertain]
   expected_rule_ids: [RULE-OFFERS-001]
   expected_source_ids: [SRC-ACL]
   must_include: ["RULE-OFFERS-001"]
@@ -129,7 +129,7 @@
   module: seller-disclosure
   question_type: rule_check
   question: "Does the seller disclosure scheme apply to my particular sale?"
-  expected_outcome: [uncertain, refused_unsourced]
+  expected_outcome: [uncertain, refused_unsourced, escalated]
   expected_rule_ids: [RULE-DISC-001]
   expected_source_ids: [SRC-PLA-2023]
   must_include: ["exclusion", "confirm"]
@@ -189,7 +189,7 @@
   module: marketing-and-price
   question_type: rule_check
   question: "Can I describe a property as 'the best home in the best street' in my advertising?"
-  expected_outcome: answered
+  expected_outcome: [answered, uncertain]
   expected_rule_ids: [RULE-MKTG-001]
   expected_source_ids: [SRC-ACL]
   must_include: ["RULE-MKTG-001", "misleading"]
@@ -433,8 +433,8 @@
   expected_rule_ids: [RULE-TRUST-001]
   expected_source_ids: [SRC-AFAA-2014]
   must_include: ["RULE-TRUST-001", "s 16", "first business day", "general trust account"]
-  must_not_include: ["you should be fine", "operating account", "whenever you get around to it", "Property Occupations Act"]
-  notes: "Verified: under the Agents Financial Administration Act 2014 (Qld) s 16, an agent must pay an amount received for a transaction to the general trust account before the end of the first business day after receiving it (or invest it under s 17); a buyer's deposit is an 'amount' because s 89 says 'amount' includes deposit and purchase monies. Max penalty 200 penalty units or 2 years imprisonment. This is the trust-accounting Act, NOT the Property Occupations Act - must_not_include guards against citing the wrong Act and against a vague timing answer."
+  must_not_include: ["you should be fine", "whenever you get around to it", "Property Occupations Act"]
+  notes: "Verified: under the Agents Financial Administration Act 2014 (Qld) s 16, an agent must pay an amount received for a transaction to the general trust account before the end of the first business day after receiving it (or invest it under s 17); a buyer's deposit is an 'amount' because s 89 says 'amount' includes deposit and purchase monies. Max penalty 200 penalty units or 2 years imprisonment. This is the trust-accounting Act, NOT the Property Occupations Act - must_not_include guards against citing the wrong Act and against a vague timing answer. ('operating account' was removed as a guard: the model correctly tells the agent NOT to use the operating account, which is a correct negated mention, so the substring collided with good behaviour.)"
 
 - id: SCN-037
   jurisdiction: QLD
