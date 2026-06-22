@@ -243,3 +243,63 @@
   must_include: ["RULE-MKTG-002", "price guide", "s 216"]
   must_not_include: ["you should be fine", "probably legal"]
   notes: "Auction price-guide ban is verified (POA s 216/s 214; PO Reg 2014 reg 10). Use the safe_version prescribed statement."
+
+- id: SCN-021
+  jurisdiction: QLD
+  module: cooling-off
+  question_type: rule_check
+  question: "If I switch my listing to auction, does the buyer still get a cooling-off period?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-COOL-001]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-COOL-001", "auction", "cooling-off"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: a contract formed on the fall of the hammer has no cooling-off (POA s 160(1)(b), s 160(3)); a passed-in then negotiated contract is not auction-formed so cooling-off applies again."
+
+- id: SCN-022
+  jurisdiction: QLD
+  module: cooling-off
+  question_type: agent_script
+  question: "For a normal private-treaty sale, what does the contract have to say about cooling-off?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-COOL-001]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-COOL-001", "warning statement", "cooling-off"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: warning statement required (POA s 165(2)); 5 business day period (s 166(1)); 0.25% termination penalty (s 159). Surface the safe_version wording."
+
+- id: SCN-023
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: rule_check
+  question: "I'm switching a property from private treaty to auction — do I need a new Form 6 or can I vary the existing one?"
+  expected_outcome: uncertain
+  expected_rule_ids: [RULE-FORM6-003]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-003", "Form 6", "approved form"]
+  must_not_include: ["just cross out", "you should be fine", "probably legal"]
+  notes: "Partially verified: the constraints (approved-form content or ineffective; 90-day reappointment) are sourced, but the Act does not prescribe new-vs-amend for a change of sale method and the OFT guidance is silent, so route to OFT/solicitor rather than asserting the mechanic."
+
+- id: SCN-024
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: checklist
+  question: "I'm renewing a sole agency on a house — what do I have to get right so the appointment stays effective?"
+  expected_outcome: uncertain
+  expected_rule_ids: [RULE-FORM6-003]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-003", "approved form", "90"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified constraints: sole/exclusive residential reappointment terms of not more than 90 days, approved form, not earlier than 14 days before the current term ends (POA s 110/s 111); ineffective if non-compliant. Confirm pinpoints on legislation.qld.gov.au."
+
+- id: SCN-025
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: rule_check
+  question: "Can I sign a vendor to a 6-month sole agency on their house?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-FORM6-004]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-004", "90", "ineffective"]
+  must_not_include: ["you should be fine", "probably legal", "six months is fine"]
+  notes: "Verified: a sole or exclusive residential agency term must be not more than 90 days (POA s 110(1)); a term over 90 days is ineffective from when it is made (s 112(1)). The 90-day limit does not apply to a commercial scale appointment (s 110(2)/s 112(2)). Confirm pinpoints on legislation.qld.gov.au."

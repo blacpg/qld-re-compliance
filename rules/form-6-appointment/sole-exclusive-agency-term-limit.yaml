@@ -1,0 +1,85 @@
+id: RULE-FORM6-004
+title: A sole or exclusive residential agency term must be 90 days or less, or the appointment is ineffective
+jurisdiction: QLD
+module: form-6-appointment
+question_types:
+  - rule_check
+  - document_review
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent is setting or checking the term of a sole or exclusive agency appointment to sell residential property.
+  - A vendor or agent asks how long a sole or exclusive residential agency can run for.
+
+does_not_apply_when:
+  - The appointment is a commercial scale appointment (the 90-day limit does not apply).
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  A sole or exclusive agency appointment to sell residential property in
+  Queensland must be for a term of not more than 90 days per (re)appointment. An
+  appointment whose term is more than 90 days is ineffective from the time it is
+  made, which puts your authority to act and your commission at risk. This 90-day
+  limit does not apply to a commercial scale appointment. It is also an offence to
+  reappoint earlier than 14 days before the current term ends.
+
+detail: >-
+  The Property Occupations Act 2014 (Qld) limits the term of a sole or exclusive
+  agency for the sale of residential property. A property agent may be reappointed
+  for one or more terms of not more than 90 days (s 110(1)), and that 90-day
+  limitation does not apply to a commercial scale appointment (s 110(2)). If the
+  term of the appointment is more than 90 days the appointment is, per s 112(1),
+  "ineffective from the time it is made if the term of the appointment is more than
+  90 days"; that consequence likewise does not apply to a commercial scale
+  appointment (s 112(2)). Separately, an agent commits an offence if reappointed
+  for the sale earlier than 14 days before the term of the sole or exclusive agency
+  ends (s 110(3)).
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 110(1) (reappointment terms of not more than 90 days); s 110(2) (90-day limit does not apply to a commercial scale appointment); s 110(3) (offence to reappoint earlier than 14 days before the term ends); s 112(1) (appointment ineffective from when made if the term is more than 90 days); s 112(2) (s 112(1) does not apply to a commercial scale appointment)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "ineffective from the time it is made if the term of the appointment is more than 90 days"
+
+agent_action:
+  - "Keep each sole or exclusive residential agency term to not more than 90 days (s 110(1)); a term over 90 days makes the appointment ineffective from when it is made (s 112(1))."
+  - "Do not reappoint for the sale earlier than 14 days before the current term ends; doing so is an offence (s 110(3))."
+  - "Remember the 90-day limit and the ineffectiveness consequence do not apply to a commercial scale appointment (s 110(2), s 112(2))."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: "For a sole or exclusive listing on a home, the appointment term can be no more than 90 days at a time. If it is set longer than 90 days the appointment is ineffective from the start, so I will keep the term to 90 days or less and reappoint correctly when it is due."
+  avoid_saying:
+    - "'Sure, we can sign you to a six-month sole agency'; a sole or exclusive residential agency term over 90 days is ineffective from when it is made (s 112(1))."
+    - "'You should be fine' or 'probably legal' about a term over 90 days; the Act makes it ineffective."
+
+exceptions:
+  - A commercial scale appointment is not subject to the 90-day term limit (s 110(2)) or the ineffectiveness consequence (s 112(2)).
+
+penalty: null
+
+human_escalation_required: true
+escalation_reason:
+  - possible commission recovery issue
+
+related_rules:
+  - RULE-FORM6-002
+  - RULE-FORM6-003
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - appointment
+  - form-6
+  - sole-agency
+  - exclusive-agency
+  - term-limit
+  - reappointment

@@ -1,0 +1,132 @@
+id: RULE-COOL-001
+title: Cooling-off period for residential contracts, the warning statement, and the auction exclusion
+jurisdiction: QLD
+module: cooling-off
+question_types:
+  - rule_check
+  - agent_script
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - A residential property is being sold by private treaty and the contract is being prepared.
+  - An agent asks whether the buyer gets a cooling-off period, how long it runs, or what the warning statement must say.
+  - An agent is deciding whether to switch a listing from private treaty to auction (or asks how auction changes cooling-off).
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  For a "relevant contract" for the sale of residential property, the buyer has a
+  statutory cooling-off period of 5 business days, starting on the day the buyer
+  receives a copy of the contract signed by both parties from the seller (Property
+  Occupations Act 2014 s 166(1)). The seller must ensure the proposed contract
+  includes conspicuous words to the effect that it may be subject to a 5 business
+  day cooling-off period and that a 0.25% termination penalty applies if the buyer
+  terminates during it (s 165(2)). Part 7 does NOT apply to a contract formed on a
+  sale by auction, or to a contract entered into by no later than 5pm on the second
+  clear business day after the property was passed in at auction with a registered
+  bidder (s 160(1)(b)).
+
+detail: >-
+  Under the Property Occupations Act 2014 (Qld), the cooling-off period for a
+  relevant contract is a period of 5 business days, starting on the day the buyer
+  receives a copy of the contract signed by both parties from the seller
+  (s 166(1)). The termination penalty is an amount equal to 0.25% of the purchase
+  price (s 159). Before the contract is signed, the seller must ensure the proposed
+  contract carries conspicuous "warning statement" words to the effect that the
+  contract may be subject to the 5 business day cooling-off period and that the
+  0.25% termination penalty applies if the buyer terminates during it (s 165(2)).
+  A buyer who has not waived the cooling-off period may terminate during it by
+  signed notice to the seller, and the seller may then deduct from the deposit an
+  amount not greater than the termination penalty (s 168(1)-(2)). A buyer may
+  waive the cooling-off period by written notice before entering the contract, or
+  shorten it by written notice (s 167).
+
+  Auction is the key exception. Part 7 does not apply to "a contract formed on a
+  sale by auction", nor to a contract entered into by no later than 5pm on the
+  second clear business day after the property was passed in at auction, with a
+  registered bidder for the auction (s 160(1)(b)). "Formed on a sale by auction"
+  means formed directly on the fall of the hammer or the end of a similar
+  competition (s 160(3)). The statutory example to s 160(3) makes clear that a
+  contract is NOT formed on a sale by auction where the property is passed in and a
+  bidder subsequently negotiates and purchases it, so cooling-off applies to that
+  later negotiated contract. Practical effect: a private-treaty residential buyer
+  generally gets the 5 business day cooling-off period and the contract must carry
+  the warning statement; a contract formed on the fall of the hammer at auction (or
+  a registered-bidder contract inside the s 160(1)(b)(ii) window) has no cooling-off
+  period; but if the property is passed in and a contract is later negotiated, that
+  is not an auction-formed contract and cooling-off applies again. This directly
+  affects switching a listing from private treaty to auction.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 166(1) (cooling-off period is 5 business days)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "The cooling-off period, for a relevant contract, is a period of 5 business days"
+  - source_id: SRC-POA-2014
+    pinpoint: "s 159 (termination penalty = 0.25% of the purchase price)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 165(2) (warning statement in the proposed contract)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 168(1)-(2) (terminate during the period; deduction not greater than the penalty)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 167 (waive or shorten by written notice)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 160(1)(b) (auction and passed-in registered-bidder exclusions); s 160(3) (formed on a sale by auction; statutory example)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "does not include ... a contract formed on a sale by auction"
+
+agent_action:
+  - "For a private-treaty residential sale, make sure the proposed contract carries the conspicuous warning statement (5 business day cooling-off; 0.25% termination penalty) before the buyer signs."
+  - "Tell a private-treaty buyer the 5 business day cooling-off period starts on the day they receive a copy of the contract signed by both parties from the seller."
+  - "If you switch the listing to auction, explain that a contract formed on the fall of the hammer has no cooling-off period; do not promise an auction buyer a cooling-off period."
+  - "If a property is passed in at auction and you later negotiate a contract, treat it as a relevant contract: cooling-off applies again unless a registered-bidder contract is entered by 5pm on the second clear business day after the property was passed in."
+
+agent_wording:
+  safe_version: "This contract may be subject to a statutory cooling-off period of 5 business days, and a termination penalty of 0.25% of the purchase price applies if you terminate the contract during that period."
+  avoid_saying:
+    - "Telling an auction buyer (a contract formed on the fall of the hammer) that they will get a cooling-off period."
+    - "Leaving the cooling-off warning statement out of a private-treaty residential contract."
+    - "you should be fine"
+
+exceptions:
+  - "Part 7 does not apply to a contract formed on a sale by auction (POA s 160(1)(b)(i), s 160(3))."
+  - "Part 7 does not apply to a contract entered into by no later than 5pm on the second clear business day after the property was passed in at auction, with a registered bidder for the auction (POA s 160(1)(b)(ii))."
+  - "The buyer may waive the cooling-off period (written notice before entering) or shorten it (written notice) (POA s 167)."
+
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-MKTG-002
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - cooling-off
+  - warning-statement
+  - auction
+  - property-occupations-act-2014
