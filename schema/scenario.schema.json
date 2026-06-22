@@ -26,8 +26,21 @@
     },
     "question": { "type": "string", "minLength": 1 },
     "expected_outcome": {
-      "type": "string",
-      "enum": ["answered", "refused_unsourced", "refused_out_of_scope", "escalated", "uncertain"]
+      "description": "A single acceptable outcome, or a list of acceptable outcomes when more than one resolution is legitimately correct (e.g. a rule that both answers and requires escalation).",
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["answered", "refused_unsourced", "refused_out_of_scope", "escalated", "uncertain"]
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["answered", "refused_unsourced", "refused_out_of_scope", "escalated", "uncertain"]
+          }
+        }
+      ]
     },
     "expected_rule_ids": { "type": "array", "items": { "type": "string" } },
     "expected_source_ids": { "type": "array", "items": { "type": "string" } },

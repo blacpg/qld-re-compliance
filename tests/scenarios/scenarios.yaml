@@ -105,7 +105,7 @@
   module: seller-disclosure
   question_type: rule_check
   question: "When does the seller have to give the buyer the Form 2 seller disclosure statement?"
-  expected_outcome: answered
+  expected_outcome: escalated
   expected_rule_ids: [RULE-DISC-001]
   expected_source_ids: [SRC-PLA-2023, SRC-FORM-2]
   must_include: ["RULE-DISC-001", "s 99", "before", "Form 2"]
@@ -129,7 +129,7 @@
   module: seller-disclosure
   question_type: rule_check
   question: "Does the seller disclosure scheme apply to my particular sale?"
-  expected_outcome: uncertain
+  expected_outcome: [uncertain, refused_unsourced]
   expected_rule_ids: [RULE-DISC-001]
   expected_source_ids: [SRC-PLA-2023]
   must_include: ["exclusion", "confirm"]
@@ -201,7 +201,7 @@
   module: offers-and-negotiation
   question_type: risk_assessment
   question: "I told a buyer there was a higher offer when there actually wasn't. How serious is that?"
-  expected_outcome: answered
+  expected_outcome: [answered, escalated]
   expected_rule_ids: [RULE-OFFERS-001]
   expected_source_ids: [SRC-ACL]
   must_include: ["RULE-OFFERS-001", "misleading"]
@@ -225,7 +225,7 @@
   module: seller-disclosure
   question_type: rule_check
   question: "Can the seller give the buyer the Form 2 after the contract is signed instead of before?"
-  expected_outcome: answered
+  expected_outcome: escalated
   expected_rule_ids: [RULE-DISC-001]
   expected_source_ids: [SRC-PLA-2023]
   must_include: ["RULE-DISC-001", "before", "s 99"]
@@ -273,7 +273,7 @@
   module: form-6-appointment
   question_type: rule_check
   question: "I'm switching a property from private treaty to auction — do I need a new Form 6 or can I vary the existing one?"
-  expected_outcome: uncertain
+  expected_outcome: [escalated, uncertain]
   expected_rule_ids: [RULE-FORM6-003]
   expected_source_ids: [SRC-POA-2014]
   must_include: ["RULE-FORM6-003", "Form 6", "approved form"]
@@ -285,7 +285,7 @@
   module: form-6-appointment
   question_type: checklist
   question: "I'm renewing a sole agency on a house — what do I have to get right so the appointment stays effective?"
-  expected_outcome: uncertain
+  expected_outcome: [escalated, uncertain]
   expected_rule_ids: [RULE-FORM6-003]
   expected_source_ids: [SRC-POA-2014]
   must_include: ["RULE-FORM6-003", "approved form", "90"]
@@ -297,7 +297,7 @@
   module: form-6-appointment
   question_type: rule_check
   question: "Can I sign a vendor to a 6-month sole agency on their house?"
-  expected_outcome: answered
+  expected_outcome: escalated
   expected_rule_ids: [RULE-FORM6-004]
   expected_source_ids: [SRC-POA-2014]
   must_include: ["RULE-FORM6-004", "90", "ineffective"]

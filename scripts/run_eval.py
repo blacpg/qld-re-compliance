@@ -23,6 +23,7 @@ Requires: pyyaml always; anthropic only when actually calling the model
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -176,21 +177,46 @@ def build_context(scenario, rule_index, register):
 # ---------------------------------------------------------------------------
 # Grading
 # ---------------------------------------------------------------------------
+_QUOTED_SPAN = re.compile(r'"[^"\n]*"|[“][^”\n]*[”]')
+_OUTCOME_LINE = re.compile(r"(?im)^\s*answer_outcome:\s*([a-z_]+)")
+
+
+def _strip_quoted(text: str) -> str:
+    """Blank out double-quoted spans (straight or curly).
+
+    A banned phrase quoted as a "don't say this" example is correct behaviour,
+    not a violation; a wishy-washy conclusion asserted in the model's own voice
+    is unquoted. must_not_include is checked against this quote-stripped text so
+    the grader stops penalising the model for telling agents what to avoid.
+    """
+    return _QUOTED_SPAN.sub(" ", text)
+
+
+def emitted_outcome(response_text: str):
+    """The value of the last `answer_outcome:` marker the model emitted, or None."""
+    matches = _OUTCOME_LINE.findall(response_text)
+    return matches[-1].strip().lower() if matches else None
+
+
 def grade(scenario, response_text: str):
     """Return list of failures. Empty list == pass."""
     failures = []
     lowered = response_text.lower()
+    unquoted = _strip_quoted(response_text).lower()
     for needle in scenario.get("must_include", []):
         if needle.lower() not in lowered:
             failures.append(f"missing required: {needle!r}")
     for banned in scenario.get("must_not_include", []):
-        if banned.lower() in lowered:
+        if banned.lower() in unquoted:
             failures.append(f"contains banned: {banned!r}")
     expected = scenario.get("expected_outcome")
     if expected:
-        marker = f"answer_outcome: {expected}"
-        if marker.lower() not in lowered:
-            failures.append(f"missing outcome marker: {marker!r}")
+        accepted = [expected] if isinstance(expected, str) else list(expected)
+        emitted = emitted_outcome(response_text)
+        if emitted is None:
+            failures.append(f"missing outcome marker (expected one of {accepted})")
+        elif emitted not in accepted:
+            failures.append(f"wrong outcome marker: got {emitted!r}, expected one of {accepted}")
     return failures
 
 
