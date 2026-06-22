@@ -76,3 +76,26 @@ modules:
       - 0.25% termination penalty and termination during the period
       - Waiving or shortening the cooling-off period
       - Auction exclusion (no cooling-off on a contract formed at auction) and passed-in / negotiated contracts
+  - id: auction-conduct
+    title: "Auction conduct"
+    covers:
+      - A property auction must be conducted by a licensed auctioneer
+      - Reserve price must be given to the auctioneer in writing before the auction; CMA before helping set it
+      - Seller bidding only if the conditions of sale notify the seller's right to bid
+      - Bidders must be registered (name, address, ID, unique identifier) and the register kept 5 years
+  - id: interest-disclosure
+    title: "Agent interest and benefit disclosure"
+    covers:
+      - Agent (or employed salesperson) obtaining a beneficial interest in the client's property and the cumulative Form 7 acknowledgement / fair-value defence
+      - The stricter, defence-less option offence (no buying via an option over your own listing)
+      - Disclosing to a prospective buyer a referral relationship and any benefit, on the Form 8, before the contract
+      - What "obtain", "beneficial interest" and "benefit" cover
+      - Offence consequences only (no statutory recovery / disgorgement remedy for an undisclosed buyer benefit)
+  - id: trust-accounting
+    title: "Trust accounting"
+    covers:
+      - A deposit / trust money must be paid into the general trust account before the end of the first business day after receipt (or invested), with "amount" including deposit and purchase monies
+      - No other payments into a trust account, and trust money is not available to the agent's creditors
+      - Trust money stays in the account until paid out as the Act permits; permitted drawings after a transaction is finalised (person entitled, agent's fee, expenses)
+      - Handling a disputed deposit: no pay-out without written notice from all parties or a started proceeding; 60-day notice option; pay the entitled person or pay into court
+      - Agents Financial Administration Act 2014, not the Property Occupations Act 2014

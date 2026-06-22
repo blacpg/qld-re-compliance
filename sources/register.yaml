@@ -81,6 +81,45 @@ sources:
     pinpoint_style: "section of the form"
     notes: "Approved disclosure statement under PLA 2023 s 99(2)."
 
+  - source_id: SRC-AFAA-2014
+    title: "Agents Financial Administration Act 2014 (Qld)"
+    jurisdiction: QLD
+    type: act
+    authority_tier: legislation
+    publisher: "Office of the Queensland Parliamentary Counsel"
+    official_url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    version_or_as_at: "current as at 1 March 2023"
+    retrieved_date: 2026-06-22
+    licence: "© State of Queensland (Crown copyright). Cited and linked, not reproduced."
+    pinpoint_style: "s 16 / s 21"
+    notes: "Trust-accounting Act for property agents (handling deposits / trust money). Key provisions verified 2026-06-22 from the official whole-Act text: s 16 (pay to general trust account before end of first business day), s 89 ('amount' includes deposit and purchase monies), s 18/s 20/s 21/s 22 (trust-account discipline and permitted drawings), ss 26-28 (disputed amounts)."
+
+  - source_id: SRC-FORM-7
+    title: "Form 7 — Beneficial interest disclosure (Qld OFT)"
+    jurisdiction: QLD
+    type: statutory_form
+    authority_tier: statutory_form
+    publisher: "Queensland Office of Fair Trading"
+    official_url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms"
+    version_or_as_at: "current OFT property transaction form"
+    retrieved_date: 2026-06-22
+    licence: "© State of Queensland. Form not reproduced; linked to the official OFT page."
+    pinpoint_style: "the approved form"
+    notes: "Approved form supporting the written acknowledgement required by POA 2014 s 155(4)(a)(i) (agent obtaining a beneficial interest)."
+
+  - source_id: SRC-FORM-8
+    title: "Form 8 — Disclosure to prospective buyer (Qld OFT)"
+    jurisdiction: QLD
+    type: statutory_form
+    authority_tier: statutory_form
+    publisher: "Queensland Office of Fair Trading"
+    official_url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms"
+    version_or_as_at: "current OFT property transaction form"
+    retrieved_date: 2026-06-22
+    licence: "© State of Queensland. Form not reproduced; linked to the official OFT page."
+    pinpoint_style: "the approved form"
+    notes: "Approved form supporting the disclosures to a prospective buyer required by POA 2014 s 157(3) (referred-entity benefit disclosure)."
+
   - source_id: SRC-OFT-ADVERTISING
     title: "Property advertising (Queensland Office of Fair Trading guidance)"
     jurisdiction: QLD

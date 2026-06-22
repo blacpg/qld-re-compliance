@@ -1,0 +1,116 @@
+id: RULE-INT-002
+title: Disclosing a benefit to a prospective buyer (Form 8)
+jurisdiction: QLD
+module: interest-disclosure
+question_types:
+  - rule_check
+  - agent_script
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: medium
+authority_tier: legislation
+
+applies_when:
+  - A residential property agent refers a prospective buyer to another entity for a professional service associated with the sale (e.g. a broker, conveyancer, building inspector).
+  - The agent derives, or expects to derive, a benefit from a referred entity in connection with the sale.
+  - An agent asks whether they must disclose a referral relationship, kickback, or benefit to a buyer, and how.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  A residential property agent must disclose to a prospective buyer any
+  relationship (personal or commercial) the agent has with a "referred entity"
+  the agent refers the buyer to for professional services associated with the
+  sale; whether the agent derives or expects a benefit from the referred entity
+  and, if so, the amount or value of the benefit; and the referred entity's name
+  (Property Occupations Act 2014 (Qld) s 157(1); max 200 penalty units). It also
+  extends to the amount, value or nature of a benefit an entity receives or
+  expects in connection with the sale; "benefit means monetary or other benefit"
+  (s 157(4)). The disclosure is effective only if it is given to the prospective
+  buyer in the approved form (the Form 8) before a contract of sale is entered
+  into AND acknowledged by the buyer in writing on the approved form before the
+  contract is entered into (s 157(3)).
+
+detail: >-
+  Under the Property Occupations Act 2014 (Qld) s 157 ("Disclosures to
+  prospective buyer"), a residential property agent must disclose to any
+  prospective buyer the matters in s 157(1): any relationship (personal or
+  commercial) the agent has with a referred entity the agent refers the buyer to
+  for professional services associated with the sale; whether the agent derives or
+  expects to derive a benefit from the referred entity and, if so, the amount or
+  value of that benefit; and the referred entity's name. The provision also
+  extends to the amount, value or nature of a benefit an entity receives or
+  expects to receive in connection with the sale. A failure to disclose carries a
+  maximum penalty of 200 penalty units. "Benefit" is defined as a "monetary or
+  other benefit" (s 157(4)).
+
+  Section 157(3) governs how the disclosure must be made for it to be effective:
+  it must be (a) given to the prospective buyer in the approved form before a
+  contract of sale is entered into; and (b) acknowledged by the buyer in writing
+  on the approved form before the contract is entered into. The approved form is
+  the Form 8.
+
+  Verified absence to respect: the Act states no provision making an undisclosed
+  s 157 benefit recoverable, and none barring the agent from keeping it. The only
+  stated consequence of non-disclosure is the 200-penalty-unit offence. Do not
+  assert that the buyer can recover the benefit or that the agent must disgorge it
+  - there is no sourced recovery or disgorgement remedy.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 157(1) (disclose referred-entity relationship, benefit and its amount/value, and the entity's name; max 200 penalty units)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 157(3) (effective only if given in the approved form and acknowledged in writing on the approved form, both before the contract)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+  - source_id: SRC-POA-2014
+    pinpoint: "s 157(4) (definition of benefit)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "benefit means monetary or other benefit"
+  - source_id: SRC-FORM-8
+    pinpoint: "the approved form (disclosure to prospective buyer under POA s 157(3))"
+    source_role: supporting
+    url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms"
+    quote: null
+
+agent_action:
+  - "Where you refer a buyer to a broker, conveyancer, inspector or similar for a service associated with the sale, disclose any relationship, any benefit you derive or expect and its amount or value, and the referred entity's name."
+  - "Make the disclosure on the approved Form 8 and have the buyer acknowledge it in writing on the Form 8, both BEFORE the contract of sale is entered into."
+  - "Treat 'benefit' broadly - it covers monetary or other benefits (s 157(4))."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: "I refer some buyers to [referred entity name]; I have [a commercial/personal relationship with them] and [receive / expect to receive a benefit of $X]. Please review and sign this Form 8 before we proceed to contract."
+  avoid_saying:
+    - "Telling a buyer that a verbal mention of a referral fee is enough - the disclosure must be on the approved Form 8 and acknowledged in writing before the contract."
+    - "you should be fine"
+
+exceptions: []
+
+penalty: "Maximum 200 penalty units (POA s 157(1)). No statutory recovery or disgorgement remedy for an undisclosed benefit."
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-INT-001
+  - RULE-COMM-004
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - benefit-disclosure
+  - form-8
+  - referred-entity
+  - property-occupations-act-2014
+  - prospective-buyer

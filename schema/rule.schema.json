@@ -34,7 +34,10 @@
         "marketing-and-price",
         "offers-and-negotiation",
         "seller-disclosure",
-        "cooling-off"
+        "cooling-off",
+        "auction-conduct",
+        "interest-disclosure",
+        "trust-accounting"
       ]
     },
     "question_types": {

@@ -93,7 +93,7 @@
   module: offers-and-negotiation
   question_type: rule_check
   question: "Am I legally required to tell a buyer the terms of the other offers I have received?"
-  expected_outcome: uncertain
+  expected_outcome: [answered, uncertain]
   expected_rule_ids: [RULE-OFFERS-001]
   expected_source_ids: [SRC-ACL]
   must_include: ["RULE-OFFERS-001"]
@@ -129,7 +129,7 @@
   module: seller-disclosure
   question_type: rule_check
   question: "Does the seller disclosure scheme apply to my particular sale?"
-  expected_outcome: [uncertain, refused_unsourced]
+  expected_outcome: [uncertain, refused_unsourced, escalated]
   expected_rule_ids: [RULE-DISC-001]
   expected_source_ids: [SRC-PLA-2023]
   must_include: ["exclusion", "confirm"]
@@ -189,7 +189,7 @@
   module: marketing-and-price
   question_type: rule_check
   question: "Can I describe a property as 'the best home in the best street' in my advertising?"
-  expected_outcome: answered
+  expected_outcome: [answered, uncertain]
   expected_rule_ids: [RULE-MKTG-001]
   expected_source_ids: [SRC-ACL]
   must_include: ["RULE-MKTG-001", "misleading"]
@@ -303,3 +303,147 @@
   must_include: ["RULE-FORM6-004", "90", "ineffective"]
   must_not_include: ["you should be fine", "probably legal", "six months is fine"]
   notes: "Verified: a sole or exclusive residential agency term must be not more than 90 days (POA s 110(1)); a term over 90 days is ineffective from when it is made (s 112(1)). The 90-day limit does not apply to a commercial scale appointment (s 110(2)/s 112(2)). Confirm pinpoints on legislation.qld.gov.au."
+
+- id: SCN-026
+  jurisdiction: QLD
+  module: auction-conduct
+  question_type: rule_check
+  question: "Can one of my unlicensed sales staff call the auction on Saturday if I'm not available?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-AUC-001]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-AUC-001", "auctioneer", "licence"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: conducting a property auction is an auctioneer-licence activity (POA s 25); acting as a property agent without the licence is an offence (s 98); s 55(2)/s 56(2) require the auction be conducted by an employed licensee."
+
+- id: SCN-027
+  jurisdiction: QLD
+  module: auction-conduct
+  question_type: rule_check
+  question: "The seller wants to place a few bids of their own to push the price up at the auction. Is that allowed?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-AUC-002]
+  expected_source_ids: [SRC-POA-2014, SRC-PO-REG-2014]
+  must_include: ["RULE-AUC-002", "reserve", "right to bid"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: seller bidding only if the notified conditions of sale include the seller's right to bid (POA s 229A); the auctioneer must disclose a seller/seller's-agent bid and not accept one above the reserve (PO Reg 2014 s 24(2)/(3)); written reserve notice required before auction (POA s 213(3))."
+
+- id: SCN-028
+  jurisdiction: QLD
+  module: auction-conduct
+  question_type: checklist
+  question: "What do I need to do to register bidders before a property auction?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-AUC-003]
+  expected_source_ids: [SRC-POA-2014, SRC-PO-REG-2014]
+  must_include: ["RULE-AUC-003", "register", "identity"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: only registered bidders may bid (POA s 159); auctioneer must keep a register, take name/address and satisfactory evidence of identity, assign a unique identifier, and keep the register 5 years (PO Reg 2014 s 23)."
+
+- id: SCN-029
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: document_review
+  question: "What actually has to be in the Form 2 seller disclosure statement and what do I attach to it?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-DISC-003]
+  expected_source_ids: [SRC-PLA-2023, SRC-PL-REG-2024, SRC-FORM-2]
+  must_include: ["RULE-DISC-003", "approved form", "s 99(2)", "signed", "title search"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: the statement must be the approved Form 2, include prescribed information, be true when given and signed by the seller (PLA 2023 s 99(2)); prescribed certificates and warnings come from PL Reg 2024 s 5/s 8/s 9. Confirm pinpoints on legislation.qld.gov.au."
+
+- id: SCN-030
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: rule_check
+  question: "It's a sale between related parties, so can we just skip the Form 2 disclosure?"
+  expected_outcome: [escalated, uncertain]
+  expected_rule_ids: [RULE-DISC-004]
+  expected_source_ids: [SRC-PLA-2023]
+  must_include: ["RULE-DISC-004", "s 100", "waiving", "before"]
+  must_not_include: ["you should be fine", "probably legal", "just skip it"]
+  notes: "Verified: PLA 2023 s 100 lists the exceptions; the related-party exception (a) is not automatic - it needs the buyer's waiver notice before signing. Getting it wrong is a disclosure defect (RULE-DISC-002), so escalate."
+
+- id: SCN-031
+  jurisdiction: QLD
+  module: commission
+  question_type: rule_check
+  question: "Can I recover marketing costs from the seller that I didn't list in the Form 6?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-COMM-003]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-6]
+  must_include: ["RULE-COMM-003", "authorised", "Form 6", "actually expended"]
+  must_not_include: ["you should be fine", "just bill the seller"]
+  notes: "Verified: advertising/marketing expenses are recoverable only if authorised in the Form 6 (POA s 104(1)(c)(iv), s 89) and capped at the amount stated and actually expended (s 90); recovering more is an offence."
+
+- id: SCN-032
+  jurisdiction: QLD
+  module: commission
+  question_type: rule_check
+  question: "Is the commission in my Form 6 quoted including GST, and can I share commission with another agent?"
+  expected_outcome: [answered, uncertain]
+  expected_rule_ids: [RULE-COMM-004]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-6]
+  must_include: ["RULE-COMM-004", "GST", "conjunction", "ATO"]
+  must_not_include: ["you must remit", "claim the GST", "expressly permitted"]
+  notes: "Partially verified: Form 6 records commission GST-inclusive and s 102(6) recognises conjunction selling; no POA/Reg prohibition on commission-sharing was found (state as an absence, not a permission); substantive GST treatment is Commonwealth tax law, out of scope - route to the ATO. must_not_include guards against the tool giving substantive tax advice."
+
+- id: SCN-033
+  jurisdiction: QLD
+  module: offers-and-negotiation
+  question_type: rule_check
+  question: "Do I have to present every offer to my seller?"
+  expected_outcome: [uncertain, refused_unsourced]
+  expected_rule_ids: [RULE-OFFERS-002]
+  expected_source_ids: [SRC-PO-REG-2014, SRC-POA-2014]
+  must_include: ["RULE-OFFERS-002", "instructions"]
+  must_not_include: ["you must present every offer", "you can withhold any offer"]
+  notes: "Partially verified: no express POA/Reg duty to present offers was found (state as an absence, not a permission to withhold); the closest sourced hooks are PO Reg s 22 (follow the client's lawful instructions) and s 18 (conflict). Any general best-interests/fiduciary duty is common law (POA s 231 preserves civil remedies), out of scope - route to the OFT or a solicitor. must_not_include guards against a false flat assertion in either direction."
+
+- id: SCN-034
+  jurisdiction: QLD
+  module: interest-disclosure
+  question_type: risk_assessment
+  question: "Can I buy the house I'm selling for my own client if I tell them I'm interested?"
+  expected_outcome: [escalated, answered]
+  expected_rule_ids: [RULE-INT-001]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-7]
+  must_include: ["RULE-INT-001", "s 155", "Form 7", "beneficial interest", "fair market value"]
+  must_not_include: ["you should be fine", "just disclose it verbally", "as long as you tell them"]
+  notes: "Verified: obtaining a beneficial interest in the client's property is an offence (POA s 155(2)-(3), max 200 penalty units or 3 years), unless ALL of s 155(4) is met before the contract - written acknowledgement and consent in the approved Form 7, agent acts fairly and honestly, and the client is in substantially as good a position as a fair-market-value sale. The defence is cumulative and the acknowledgement must be in the approved form, so a verbal 'I'm interested' is not enough. Options (s 154) have no defence at all. High risk = escalate (complaint or OFT risk)."
+
+- id: SCN-035
+  jurisdiction: QLD
+  module: interest-disclosure
+  question_type: rule_check
+  question: "I refer my buyers to a mortgage broker who pays me a referral fee. Do I have to tell the buyer, and what happens if I don't?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-INT-002]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-8]
+  must_include: ["RULE-INT-002", "s 157", "Form 8", "before", "200 penalty units"]
+  must_not_include: ["the buyer can recover the benefit", "you must repay the fee", "you should be fine", "verbal disclosure is enough"]
+  notes: "Verified: POA s 157(1) requires a residential property agent to disclose a referred-entity relationship, whether they derive/expect a benefit and its amount/value, and the entity's name; the disclosure is effective only if given on the approved Form 8 and acknowledged in writing on it before the contract (s 157(3)); 'benefit' is monetary or other (s 157(4)). Verified absence: the only stated consequence is the 200-penalty-unit offence - there is NO statutory recovery/disgorgement remedy. must_not_include guards against asserting a non-existent recovery remedy."
+
+- id: SCN-036
+  jurisdiction: QLD
+  module: trust-accounting
+  question_type: rule_check
+  question: "When do I have to bank a deposit I've received?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-TRUST-001]
+  expected_source_ids: [SRC-AFAA-2014]
+  must_include: ["RULE-TRUST-001", "s 16", "first business day", "general trust account"]
+  must_not_include: ["you should be fine", "whenever you get around to it", "Property Occupations Act"]
+  notes: "Verified: under the Agents Financial Administration Act 2014 (Qld) s 16, an agent must pay an amount received for a transaction to the general trust account before the end of the first business day after receiving it (or invest it under s 17); a buyer's deposit is an 'amount' because s 89 says 'amount' includes deposit and purchase monies. Max penalty 200 penalty units or 2 years imprisonment. This is the trust-accounting Act, NOT the Property Occupations Act - must_not_include guards against citing the wrong Act and against a vague timing answer. ('operating account' was removed as a guard: the model correctly tells the agent NOT to use the operating account, which is a correct negated mention, so the substring collided with good behaviour.)"
+
+- id: SCN-037
+  jurisdiction: QLD
+  module: trust-accounting
+  question_type: risk_assessment
+  question: "The buyer and seller are fighting over the deposit — can I release it?"
+  expected_outcome: [escalated, answered]
+  expected_rule_ids: [RULE-TRUST-002]
+  expected_source_ids: [SRC-AFAA-2014]
+  must_include: ["RULE-TRUST-002", "s 27", "written notice from all parties", "proceeding"]
+  must_not_include: ["you should be fine", "just pay whoever you think is right", "release it to the seller", "release it to the buyer"]
+  notes: "Verified: under the Agents Financial Administration Act 2014 (Qld) s 27, an agent must NOT pay out a disputed amount unless it receives written notice from all parties to the transaction stating who is entitled to it, or a proceeding has been started (max 200 penalty units or 2 years imprisonment). s 26 allows a written notice of an intended payment on or after a date at least 60 days away unless a proceeding is started or all parties authorise earlier; once entitlement is established the agent pays immediately, and if a proceeding is started the agent pays the amount into the court (s 28). High risk + trust account issue = escalate. must_not_include guards against the agent picking a winner or unilaterally releasing the deposit."

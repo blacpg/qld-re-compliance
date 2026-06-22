@@ -1,0 +1,103 @@
+id: RULE-COMM-004
+title: Rebates and benefits, conjunction selling, and GST on commission
+jurisdiction: QLD
+module: commission
+question_types:
+  - rule_check
+  - risk_assessment
+
+status: active
+verification_status: partially_verified
+verification_note: >-
+  Verified: the appointment must state the source and estimated value of any
+  rebate, discount, commission or benefit the agent may receive for expenses
+  (POA s 104(1)(c)(v)); conjunction (co-)selling with the appointed agent is
+  expressly recognised (POA s 102(6)); and the approved Form 6 records commission
+  GST-inclusive (SRC-FORM-6). NOT a cited permission: no provision in the POA 2014
+  or PO Regulation 2014 prohibits sharing commission with another agent - an
+  exhaustive search found none, and that absence is not a statutory permission.
+  The POA and Regulation do not regulate the substantive GST treatment of
+  commission (zero GST references); GST is Commonwealth tax law, outside this
+  tool's scope - route GST questions to the ATO or a tax agent. Rule kept
+  partially_verified for those reasons.
+risk_level: medium
+authority_tier: legislation
+
+applies_when:
+  - An agent asks whether their quoted commission is GST-inclusive.
+  - An agent asks whether they can share or split commission with another agent.
+  - An agent receives a rebate, discount or benefit in connection with expenses.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  The appointment must disclose the source and estimated amount or value of any
+  rebate, discount, commission or benefit the agent may receive for expenses it
+  incurs (POA s 104(1)(c)(v)). Conjunction (co-)selling with the appointed agent
+  is expressly recognised by the Act (s 102(6)). The commission stated in the
+  Form 6 is recorded GST-inclusive. No provision in the POA 2014 or PO Regulation
+  2014 prohibits sharing commission with another agent, but that is an absence of
+  any found rule, not a cited permission, so do not assert it as one.
+
+detail: >-
+  Section 104(1)(c)(v) requires the appointment to state the source and the
+  estimated amount or value of any rebate, discount, commission or benefit the
+  agent may receive for expenses it may incur. Section 102(6) provides that the
+  appointment requirements do not apply to a sale by an agent acting in
+  conjunction with the appointed agent, so conjunction selling is recognised. On
+  GST, the approved Form 6 Part 7 records the commission GST-inclusive; the POA
+  and PO Regulation contain no provision regulating the substantive GST treatment
+  of commission, which is Commonwealth tax law and out of scope here. As for
+  splitting commission with another agent, an exhaustive search of the POA 2014
+  and PO Regulation 2014 found no prohibition; the only express treatment is the
+  conjunction recognition at s 102(6). State that as an absence of any found
+  provision, not as a positive permission. Note: an agent's separate obligation
+  to disclose to a BUYER a referral or third-party benefit is the interest /
+  beneficial-interest disclosure area (POA s 157, supported by the Form 8) - that
+  is a different obligation and is not restated here.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 104(1)(c)(v) (disclose source and estimated value of any rebate/discount/commission/benefit for expenses); s 102(6) (conjunction-selling recognition)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "the source and the estimated amount or value of any rebate, discount, commission or benefit that the agent may receive"
+  - source_id: SRC-FORM-6
+    pinpoint: "Form 6 Part 7 (Commission) - recorded GST-inclusive"
+    source_role: supporting
+    url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms/resource/c795afc7-6a5a-473e-a6e0-855bea83aa5b"
+    quote: "the commission including GST payable for the service"
+
+agent_action:
+  - "Disclose in the Form 6 the source and estimated value of any rebate, discount or benefit you may receive for expenses (s 104(1)(c)(v))."
+  - "Treat the commission stated in the Form 6 as GST-inclusive; for any substantive GST treatment question, route to the ATO or a tax agent (out of scope here)."
+  - "No POA/Regulation provision was found prohibiting commission-sharing with another agent (s 102(6) recognises conjunction selling); state this as an absence of a found rule, not a permission, and confirm any sharing is recorded."
+
+agent_wording:
+  safe_version: "The commission in your Form 6 is recorded GST-inclusive. Conjunction selling is recognised in the Act, and no QLD property provision was found prohibiting commission-sharing - but for GST treatment itself, check with the ATO or your accountant."
+  avoid_saying:
+    - "'Sharing commission with another agent is expressly permitted' - no provision says so; it is an absence of any found prohibition."
+    - "'Here's how to handle the GST on your commission' - substantive GST treatment is Commonwealth tax law, out of scope."
+
+exceptions:
+  - "POA s 102(6): the appointment requirements do not apply to a sale by a real estate agent acting in conjunction with the appointed agent."
+
+penalty: null
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-COMM-001
+  - RULE-COMM-002
+  - RULE-COMM-003
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - commission
+  - rebates
+  - conjunction
+  - gst

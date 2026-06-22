@@ -1,0 +1,87 @@
+id: RULE-AUC-001
+title: A property auction must be conducted by a licensed auctioneer
+jurisdiction: QLD
+module: auction-conduct
+question_types:
+  - rule_check
+  - risk_assessment
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - A property is to be, or is being, sold or offered for sale by auction.
+  - Deciding who may call or conduct a property auction.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  Calling or conducting a property auction is an auctioneer-licence activity and
+  must be done by a licensed auctioneer. An auctioneer licence authorises the
+  holder to sell or offer for sale real property by way of auction as an agent
+  for others for reward (Property Occupations Act 2014 s 25). A person must not
+  act as a property agent unless the person holds the licence and acts under its
+  authority (s 98), and a licensed corporation or individual may auction property
+  only if the auction is conducted by an auctioneer who is an employed licensee
+  (s 55(2) / s 56(2)).
+
+detail: >-
+  Under the Property Occupations Act 2014 a "property agent" is defined to include
+  an auctioneer or a real estate agent (s 15). An auctioneer licence is the
+  licence that authorises selling or offering real property for sale by way of
+  auction as an agent for others for reward (s 25, "What an auctioneer licence
+  authorises"). Acting as a property agent without holding the licence and acting
+  under its authority is an offence under s 98, carrying a maximum penalty of 200
+  penalty units or 2 years imprisonment. A licensed corporation (s 55(2)) or
+  licensed individual (s 56(2)) may auction property only if the auction is
+  conducted by an auctioneer who is an employed licensee. The practical effect is
+  that a property auction must be called and conducted by a licensed auctioneer.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 15 (definition of property agent); s 25 \"What an auctioneer licence authorises\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "property agent is an auctioneer or a real estate agent"
+  - source_id: SRC-POA-2014
+    pinpoint: "s 98 \"Acting as a property agent\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "a person must not act as a property agent unless the person holds the licence and acts under its authority"
+  - source_id: SRC-POA-2014
+    pinpoint: "s 55(2); s 56(2)"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: null
+
+agent_action:
+  - "Ensure any property auction is called and conducted by a person who holds a current QLD auctioneer licence."
+  - "If the auction is run by a licensed agency, the auctioneer must be an employed licensee of that agency."
+
+agent_wording:
+  safe_version: null
+  avoid_saying:
+    - "Letting an unlicensed person call or conduct a property auction."
+
+exceptions: []
+
+penalty: "Acting as a property agent without the licence: max 200 penalty units or 2 years imprisonment (POA s 98)."
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-AUC-002
+  - RULE-AUC-003
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - auction
+  - licensing
+  - auctioneer
