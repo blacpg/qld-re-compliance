@@ -33,7 +33,8 @@
         "commission",
         "marketing-and-price",
         "offers-and-negotiation",
-        "seller-disclosure"
+        "seller-disclosure",
+        "cooling-off"
       ]
     },
     "question_types": {

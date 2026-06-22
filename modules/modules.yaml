@@ -68,3 +68,11 @@ modules:
       - When disclosure must be given
       - Form 8 buyer angle
       - Consequences of non-disclosure / termination rights
+  - id: cooling-off
+    title: "Cooling-off period"
+    covers:
+      - 5 business day cooling-off period for residential relevant contracts
+      - The required cooling-off warning statement in the proposed contract
+      - 0.25% termination penalty and termination during the period
+      - Waiving or shortening the cooling-off period
+      - Auction exclusion (no cooling-off on a contract formed at auction) and passed-in / negotiated contracts
