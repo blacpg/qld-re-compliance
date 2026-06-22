@@ -156,9 +156,9 @@
   expected_outcome: refused_out_of_scope
   expected_rule_ids: []
   expected_source_ids: []
-  must_include: ["Queensland", "cannot"]
+  must_include: ["Queensland", "jurisdiction"]
   must_not_include: ["NSW Fair Trading requires"]
-  notes: "Other jurisdiction. Refuse."
+  notes: "Other jurisdiction. Refuse. (must_include checks it names Queensland scope and the wrong-jurisdiction reason; the brittle literal 'cannot' was replaced.)"
 
 - id: SCN-014
   jurisdiction: OUT_OF_SCOPE
