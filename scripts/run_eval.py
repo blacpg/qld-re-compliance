@@ -43,7 +43,7 @@ DOWNLOADS = ROOT / "sources" / "_downloads"
 INTERNAL = ROOT / "internal"
 
 DEFAULT_MODEL = "claude-sonnet-4-6"
-DEFAULT_MAX_TOKENS = 1024
+DEFAULT_MAX_TOKENS = 2048
 DEFAULT_SAVE_DIR = DOWNLOADS / "eval"
 OUTCOME_ENUM = ["answered", "refused_unsourced", "refused_out_of_scope", "escalated", "uncertain"]
 
@@ -237,7 +237,7 @@ def main() -> int:
     ap.add_argument("--max-scenarios", type=int, help="Cap the number of scenarios run")
     ap.add_argument("--dry-run", action="store_true", help="Assemble + print context only; no API call, no cost")
     ap.add_argument("--model", help="Override model (default via EVAL_MODEL or claude-sonnet-4-6)")
-    ap.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS, help="Max output tokens (default 1024)")
+    ap.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS, help="Max output tokens (default 2048)")
     ap.add_argument("--save-output", nargs="?", const=str(DEFAULT_SAVE_DIR), default=None,
                     help="Write transcripts/results to a GITIGNORED path only (default sources/_downloads/eval/)")
     ap.add_argument("--json", action="store_true", help="Print a machine-readable summary")

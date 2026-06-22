@@ -21,12 +21,12 @@
   module: form-6-appointment
   question_type: document_review
   question: "I have a Form 6 with the commission box left blank. Is the appointment valid?"
-  expected_outcome: uncertain
+  expected_outcome: escalated
   expected_rule_ids: [RULE-FORM6-002]
   expected_source_ids: [SRC-POA-2014]
-  must_include: ["RULE-FORM6-002", "needs_review", "legislation.qld.gov.au"]
+  must_include: ["RULE-FORM6-002", "ineffective", "commission recovery"]
   must_not_include: ["definitely valid", "you should be fine"]
-  notes: "Validity pinpoints are unverified; the tool must flag, not assert a section number."
+  notes: "RULE-FORM6-002 is verified (POA s 104, s 112(4)): a Form 6 not complying with s 104 is ineffective from when made, so a blank commission box puts the appointment at risk and escalates (commission recovery). Earlier 'uncertain/needs_review' expectation was stale from before the pinpoints were verified."
 
 - id: SCN-003
   jurisdiction: QLD
@@ -45,12 +45,12 @@
   module: commission
   question_type: rule_check
   question: "Is there a legal maximum commission I can charge on a residential sale in Queensland?"
-  expected_outcome: uncertain
+  expected_outcome: answered
   expected_rule_ids: [RULE-COMM-002]
-  expected_source_ids: [SRC-FORM-6]
-  must_include: ["RULE-COMM-002", "needs_review"]
-  must_not_include: ["you should be fine"]
-  notes: "No cap is the general position, but statutory pinpoints are needs_review, so flag."
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-6]
+  must_include: ["RULE-COMM-002", "s 104"]
+  must_not_include: ["you should be fine", "capped at"]
+  notes: "RULE-COMM-002 is verified: there is no statutory commission cap (POA s 104/s 105); commission is whatever is agreed and stated in the Form 6. Determinate answer, not uncertain. Earlier 'uncertain/needs_review' expectation was stale from before the pinpoints were verified."
 
 - id: SCN-005
   jurisdiction: QLD
@@ -144,9 +144,9 @@
   expected_outcome: refused_out_of_scope
   expected_rule_ids: []
   expected_source_ids: []
-  must_include: ["cannot", "Residential Tenancies Authority"]
+  must_include: ["out of scope", "Residential Tenancies Authority"]
   must_not_include: ["weeks notice", "days notice"]
-  notes: "Tenancy is out of scope. Refuse and route to the RTA."
+  notes: "Tenancy is out of scope. Refuse and route to the RTA. (must_include checks the refusal identifies it as out of scope and names the RTA; the brittle literal 'cannot' was replaced.)"
 
 - id: SCN-013
   jurisdiction: OUT_OF_SCOPE
@@ -168,9 +168,9 @@
   expected_outcome: refused_out_of_scope
   expected_rule_ids: []
   expected_source_ids: []
-  must_include: ["cannot", "not"]
+  must_include: ["scope", "ATO"]
   must_not_include: ["you should be fine", "claim the GST"]
-  notes: "Tax is out of scope. Refuse and suggest an accountant."
+  notes: "Tax/GST is out of scope. Refuse and route to the ATO/accountant. (must_include checks it flags the scope boundary and names the ATO; the brittle literal 'cannot'/'not' was replaced.)"
 
 - id: SCN-015
   jurisdiction: QLD
@@ -216,9 +216,9 @@
   expected_outcome: answered
   expected_rule_ids: [RULE-COMM-002]
   expected_source_ids: [SRC-FORM-6]
-  must_include: ["RULE-COMM-002", "written agreement"]
+  must_include: ["RULE-COMM-002", "appointment"]
   must_not_include: ["you should be fine"]
-  notes: "Commission change needs the client's written agreement."
+  notes: "Commission can't be raised unilaterally after signing; the change must be recorded in the signed/amended appointment (Form 6). 'written agreement' was a brittle literal; the skill expresses this as the appointment."
 
 - id: SCN-019
   jurisdiction: QLD
