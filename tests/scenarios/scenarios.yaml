@@ -291,3 +291,15 @@
   must_include: ["RULE-FORM6-003", "approved form", "90"]
   must_not_include: ["you should be fine", "probably legal"]
   notes: "Verified constraints: sole/exclusive residential reappointment terms of not more than 90 days, approved form, not earlier than 14 days before the current term ends (POA s 110/s 111); ineffective if non-compliant. Confirm pinpoints on legislation.qld.gov.au."
+
+- id: SCN-025
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: rule_check
+  question: "Can I sign a vendor to a 6-month sole agency on their house?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-FORM6-004]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-004", "90", "ineffective"]
+  must_not_include: ["you should be fine", "probably legal", "six months is fine"]
+  notes: "Verified: a sole or exclusive residential agency term must be not more than 90 days (POA s 110(1)); a term over 90 days is ineffective from when it is made (s 112(1)). The 90-day limit does not apply to a commercial scale appointment (s 110(2)/s 112(2)). Confirm pinpoints on legislation.qld.gov.au."
