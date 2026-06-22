@@ -19,6 +19,7 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
 ## Priority 1 — bread-and-butter, currently refused
 
 ### GAP-001 · Form 6 reappointment / variation when changing sale method
+- **✅ BUILT — RULE-FORM6-003 (partially_verified), shipped in PR #3 on 2026-06-22.**
 - **Owner flag: must be answerable.** Raised directly by Antony 2026-06-22.
 - **Question the tool refuses today:** "I'm switching a property from private treaty
   to auction — do I need a new Form 6 or can I vary the existing appointment?"
@@ -31,6 +32,7 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
 - **Module:** form-6-appointment (new rule).
 
 ### GAP-002 · Cooling-off difference: auction vs private treaty
+- **✅ BUILT — RULE-COOL-001 (verified), new `cooling-off` module, shipped in PR #3 on 2026-06-22.**
 - **Question the tool refuses today:** "If I switch to auction, does the buyer still
   get a cooling-off period?"
 - **Why it matters:** directly changes buyer rights on a private-treaty→auction switch;
@@ -41,6 +43,7 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
   before asserting any period or any auction carve-out.
 
 ### GAP-003 · Sole/exclusive agency term limits
+- **✅ BUILT — RULE-FORM6-004 (verified), shipped in PR #3 on 2026-06-22.**
 - **Question the tool refuses today:** "How long can a sole agency appointment run for?"
 - **Declared but unbuilt:** `modules.yaml` form-6-appointment → "Sole vs open appointment
   and term limits".
