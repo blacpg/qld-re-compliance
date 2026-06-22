@@ -1,0 +1,88 @@
+id: RULE-COMM-003
+title: Marketing and advertising expenses are recoverable only if authorised and capped
+jurisdiction: QLD
+module: commission
+question_types:
+  - rule_check
+  - risk_assessment
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent wants to recover advertising or marketing expenses from a seller.
+  - Reviewing what marketing or advertising costs can be charged or kept.
+  - Setting up the expenses section of a Form 6 appointment.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  Advertising and marketing expenses are recoverable only if (i) they are
+  authorised in the Form 6 appointment and (ii) they do not exceed the amount
+  stated in the appointment and actually expended. The appointment must state,
+  for each service, the expenses (including advertising and marketing) the agent
+  is authorised to incur (POA 2014 s 104(1)(c)(iv)). Recovery without proper
+  authorisation is barred by s 89 (see RULE-COMM-001), and s 90 caps what can be
+  sued for, recovered or kept.
+
+detail: >-
+  Section 104(1)(c)(iv) requires the appointment to state, for each service, the
+  expenses (including advertising and marketing expenses) the agent is authorised
+  to incur in performing the service. Section 89 prevents recovery of any reward
+  or expense without proper authorisation under part 4 (covered by RULE-COMM-001).
+  Section 90 restricts recovery to the amount stated and actually expended: a
+  person is not entitled to sue for, recover or keep expenses more than that
+  amount, and recovering or keeping more is an offence (max 200 penalty units).
+  "Actually expended" is the amount spent after deducting any benefit the agent
+  received in connection with the expenses. So the agent cannot charge more than
+  was authorised in the Form 6, and cannot keep more than was genuinely spent.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 104(1)(c)(iv) (expenses, incl. advertising/marketing, agent authorised to incur); s 89 (no recovery without authorisation); s 90 \"Restriction on recovery of reward or expense above amount allowed\""
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "the expenses, including advertising and marketing expenses, the agent is authorised to incur"
+  - source_id: SRC-FORM-6
+    pinpoint: "Form 6 Part 8 (authorised fees, charges and expenses)"
+    source_role: supporting
+    url: "https://www.publications.qld.gov.au/dataset/oft-property-transaction-forms/resource/c795afc7-6a5a-473e-a6e0-855bea83aa5b"
+    quote: null
+
+agent_action:
+  - "State each advertising and marketing expense the agent is authorised to incur in the Form 6 before spending (s 104(1)(c)(iv))."
+  - "Do not charge, recover or keep more than the amount stated in the appointment and actually spent (s 90); recovering or keeping more is an offence."
+  - "Deduct any rebate or benefit received in connection with the expense when working out what was 'actually expended'."
+
+agent_wording:
+  safe_version: "Marketing costs can be recovered only if they're authorised in your Form 6 and limited to what was stated there and actually spent."
+  avoid_saying:
+    - "'Just bill the seller for whatever the campaign cost' if it exceeds the authorised amount in the Form 6."
+    - "'We can keep the agency rebate on top of the marketing charge' - the recoverable amount is net of any benefit received."
+
+exceptions: []
+penalty: >-
+  Recovering or keeping expenses above the amount allowed under s 90 is an offence
+  (maximum 200 penalty units).
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-COMM-001
+  - RULE-COMM-002
+  - RULE-COMM-004
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - commission
+  - expenses
+  - marketing
+  - form-6

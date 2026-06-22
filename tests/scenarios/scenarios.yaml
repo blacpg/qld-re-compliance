@@ -363,3 +363,27 @@
   must_include: ["RULE-DISC-004", "s 100", "waiving", "before"]
   must_not_include: ["you should be fine", "probably legal", "just skip it"]
   notes: "Verified: PLA 2023 s 100 lists the exceptions; the related-party exception (a) is not automatic - it needs the buyer's waiver notice before signing. Getting it wrong is a disclosure defect (RULE-DISC-002), so escalate."
+
+- id: SCN-031
+  jurisdiction: QLD
+  module: commission
+  question_type: rule_check
+  question: "Can I recover marketing costs from the seller that I didn't list in the Form 6?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-COMM-003]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-6]
+  must_include: ["RULE-COMM-003", "authorised", "Form 6", "actually expended"]
+  must_not_include: ["you should be fine", "just bill the seller"]
+  notes: "Verified: advertising/marketing expenses are recoverable only if authorised in the Form 6 (POA s 104(1)(c)(iv), s 89) and capped at the amount stated and actually expended (s 90); recovering more is an offence."
+
+- id: SCN-032
+  jurisdiction: QLD
+  module: commission
+  question_type: rule_check
+  question: "Is the commission in my Form 6 quoted including GST, and can I share commission with another agent?"
+  expected_outcome: [answered, uncertain]
+  expected_rule_ids: [RULE-COMM-004]
+  expected_source_ids: [SRC-POA-2014, SRC-FORM-6]
+  must_include: ["RULE-COMM-004", "GST", "conjunction", "ATO"]
+  must_not_include: ["you must remit", "claim the GST", "expressly permitted"]
+  notes: "Partially verified: Form 6 records commission GST-inclusive and s 102(6) recognises conjunction selling; no POA/Reg prohibition on commission-sharing was found (state as an absence, not a permission); substantive GST treatment is Commonwealth tax law, out of scope - route to the ATO. must_not_include guards against the tool giving substantive tax advice."
