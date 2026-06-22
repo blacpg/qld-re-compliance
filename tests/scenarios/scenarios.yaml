@@ -267,3 +267,27 @@
   must_include: ["RULE-COOL-001", "warning statement", "cooling-off"]
   must_not_include: ["you should be fine", "probably legal"]
   notes: "Verified: warning statement required (POA s 165(2)); 5 business day period (s 166(1)); 0.25% termination penalty (s 159). Surface the safe_version wording."
+
+- id: SCN-023
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: rule_check
+  question: "I'm switching a property from private treaty to auction — do I need a new Form 6 or can I vary the existing one?"
+  expected_outcome: uncertain
+  expected_rule_ids: [RULE-FORM6-003]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-003", "Form 6", "approved form"]
+  must_not_include: ["just cross out", "you should be fine", "probably legal"]
+  notes: "Partially verified: the constraints (approved-form content or ineffective; 90-day reappointment) are sourced, but the Act does not prescribe new-vs-amend for a change of sale method and the OFT guidance is silent, so route to OFT/solicitor rather than asserting the mechanic."
+
+- id: SCN-024
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: checklist
+  question: "I'm renewing a sole agency on a house — what do I have to get right so the appointment stays effective?"
+  expected_outcome: uncertain
+  expected_rule_ids: [RULE-FORM6-003]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-003", "approved form", "90"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified constraints: sole/exclusive residential reappointment terms of not more than 90 days, approved form, not earlier than 14 days before the current term ends (POA s 110/s 111); ineffective if non-compliant. Confirm pinpoints on legislation.qld.gov.au."

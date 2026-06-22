@@ -1,0 +1,112 @@
+id: RULE-FORM6-003
+title: Changing the method of sale or renewing an appointment — new Form 6 versus varying the existing one
+jurisdiction: QLD
+module: form-6-appointment
+question_types:
+  - rule_check
+  - checklist
+
+status: active
+verification_status: partially_verified
+verification_note: >-
+  Verified: the binding constraints are sourced. An appointment is the written
+  authority to act and the client must first appoint the agent (POA s 102(1)); it
+  must contain the required content in the approved form (s 104) or it is
+  ineffective from when it is made (s 112(4)). For a sole or exclusive residential
+  agency the agent may be reappointed for one or more terms of not more than 90
+  days (s 110(1)), not earlier than 14 days before the current term ends
+  (s 110(3)), and the reappointment must be in the approved form (s 111(1)) or it
+  is ineffective (s 111(2)). The Act mentions varying appointment terms only on
+  assignment (s 113(5)), and an appointment may be revoked on 30 days written
+  notice unless an earlier end is agreed in writing (s 114(1)). NOT verified: no
+  express provision in the Property Occupations Act 2014 prescribes whether a
+  change of the method of sale (e.g. private treaty to auction) must be recorded
+  by a new Form 6 or by amending the existing appointment, and the Queensland OFT
+  "Appointment to act as a property agent" guidance is silent on this. That
+  specific new-versus-vary mechanic is therefore left to OFT or a solicitor, and
+  the rule is kept partially_verified for that reason.
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent is changing a property's method of sale (e.g. private treaty to auction) and asks whether a new Form 6 is needed or the existing appointment can be varied.
+  - An agent is renewing or reappointing for a sole or exclusive residential agency and asks how to do it correctly.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  Whichever route you take, the appointment in force must comply with the
+  approved-form content requirements or it is ineffective from when it is made,
+  which puts your authority to act and your commission at risk. For a sole or
+  exclusive residential agency, observe the maximum 90-day term and the
+  approved-form reappointment timing. No official source prescribes whether a
+  change of the method of sale must be a brand-new Form 6 or an amendment of the
+  existing appointment, so confirm that specific mechanic with the OFT or a
+  solicitor before relying on it.
+
+detail: >-
+  The Property Occupations Act 2014 (Qld) fixes the constraints but not the
+  new-versus-vary mechanic for a change of sale method. A client must first
+  appoint the agent (s 102(1)); the appointment must include the required content
+  in the approved form (s 104), and an appointment that does not comply with
+  s 104 is ineffective from the time it is made (s 112(4)). For a sole or
+  exclusive agency for the sale of residential property, an agent may be
+  reappointed for one or more terms of not more than 90 days (s 110(1)) and it is
+  an offence to reappoint earlier than 14 days before the current term ends
+  (s 110(3)); a reappointment must be in the approved form (s 111(1)) and one that
+  does not comply is ineffective from when it is made (s 111(2)). The only place
+  the Act mentions varying appointment terms is on assignment: s 113(5) "does not
+  authorise the assignee to vary the terms of the appointment without the client's
+  agreement". An appointment (other than an open listing, or an unassigned
+  sole/exclusive agency) may be revoked by either party on at least 30 days
+  written notice unless the parties agree in writing to an earlier end day
+  (s 114(1)). The Act and the OFT appointment guidance are silent on whether a
+  change of the method of sale must be a new Form 6 or an amendment, so that
+  mechanic is not stated here.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 102(1) (client must first appoint the agent); s 104 (required content in the approved form); s 112(4) (ineffective if it does not comply with s 104); s 110(1) and s 110(3) (reappointment terms of not more than 90 days; not earlier than 14 days before term ends); s 111(1) and s 111(2) (reappointment in the approved form or ineffective); s 113(5) (varying terms on assignment); s 114(1) (revocation on 30 days written notice)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "does not authorise the assignee to vary the terms of the appointment without the client's agreement"
+  - source_id: SRC-OFT-APPOINTMENT
+    pinpoint: "Appointment guidance — silent on whether a change of sale method is a new Form 6 or an amendment"
+    source_role: supporting
+    url: "https://www.qld.gov.au/law/laws-regulated-industries-and-accountability/queensland-laws-and-regulations/regulated-industries-and-licensing/regulated-industries-licensing-and-legislation/property-industry-regulation/legal-requirements-for-the-property-industry/appointment-to-act-as-a-property-agent"
+    quote: null
+
+agent_action:
+  - "Make sure the appointment you are relying on is complete in the approved form; if it does not comply it is ineffective from when it is made (s 104, s 112(4))."
+  - "For a sole or exclusive residential agency, keep each term to not more than 90 days, reappoint in the approved form, and do not reappoint earlier than 14 days before the current term ends (s 110, s 111)."
+  - "Do not assume a change of method of sale can simply be hand-amended onto the existing Form 6, or that it always needs a new one; the Act does not prescribe this. Confirm the correct route with the OFT or a solicitor before acting."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: "The appointment I act under has to be complete in the approved form or it is not effective. The Act sets the 90-day reappointment rules for a sole or exclusive listing, but it does not spell out whether switching to auction needs a new Form 6 or just an amendment, so I will confirm that with the OFT or a solicitor before we change it."
+  avoid_saying:
+    - "'Just cross out private treaty and write auction on the existing Form 6' as if the Act allows it; the Act does not prescribe this."
+    - "'You always need a brand-new Form 6 to change the method of sale'; no source states this."
+
+exceptions: []
+penalty: null
+
+human_escalation_required: true
+escalation_reason:
+  - possible commission recovery issue
+
+related_rules:
+  - RULE-FORM6-001
+  - RULE-FORM6-002
+  - RULE-COMM-001
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - appointment
+  - form-6
+  - reappointment
+  - method-of-sale
+  - variation
