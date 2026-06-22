@@ -1,0 +1,130 @@
+id: RULE-TRUST-002
+title: Paying trust money out, and handling a disputed deposit
+jurisdiction: QLD
+module: trust-accounting
+question_types:
+  - rule_check
+  - risk_assessment
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent asks when, or to whom, trust money may be paid out.
+  - A transaction is finalised and the agent wants to draw the deposit, the agent's fee, or transaction expenses.
+  - The buyer and seller (or any parties) are in dispute over who is entitled to a deposit.
+  - An agent asks whether they can release a deposit that is being fought over.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  An amount paid to a trust account must be kept in the account until it is paid
+  out under the Act, and may be paid out only in a way permitted under the Act
+  (Agents Financial Administration Act 2014 (Qld) s 21; max 200 penalty units or 2
+  years imprisonment). After a transaction is finalised the agent is authorised to
+  draw to pay the person entitled (or someone else per that person's written
+  direction), and to draw the agent's own transaction fee; transaction expenses may
+  be drawn as they become payable (s 22). A DISPUTED amount must NOT be paid out
+  unless the agent receives written notice from all parties to the transaction
+  stating who is entitled to it, or a proceeding has been started (s 27; max 200
+  penalty units or 2 years imprisonment). The agent may give all parties written
+  notice that it will pay a stated party on or after a stated date at least 60 days
+  after the notice, unless a proceeding is started or all parties authorise an
+  earlier payment (s 26). Once entitlement is established under s 27 the agent must
+  pay that person immediately; if a proceeding is started the agent must pay the
+  amount to the court in which the proceeding was started (s 28).
+
+detail: >-
+  Under the Agents Financial Administration Act 2014 (Qld), s 21 ("When payments
+  may be made from trust accounts") provides that an amount paid to a trust account
+  must be kept in the account until it is paid out under the Act, and may be paid
+  out only in a way permitted under the Act. The maximum penalty is 200 penalty
+  units or 2 years imprisonment.
+
+  Section 22 ("Permitted drawings from trust accounts") sets out the authorised
+  drawings: after the transaction is finalised the agent is authorised to draw to
+  pay the person entitled to the amount (or someone else per that person's written
+  direction), and to draw the agent's own transaction fee; transaction expenses may
+  be drawn as they become payable.
+
+  Where an amount is in dispute, the Act is strict. Section 26 ("When amount in
+  dispute may be paid") lets the agent give all parties written notice that it will
+  pay a stated party on or after a stated date - which must be at least 60 days
+  after the notice - unless a proceeding is started or all parties authorise an
+  earlier payment. Section 27 ("Dealing with amount in dispute") provides that the
+  agent must NOT pay out the amount in dispute unless it receives written notice
+  from all parties to the transaction stating who is entitled to it, or a proceeding
+  has been started (max 200 penalty units or 2 years imprisonment). Section 28
+  provides that once the entitled person is established under s 27 the agent must
+  pay them immediately, and if a proceeding is started the agent must pay the amount
+  to the court in which the proceeding was started.
+
+sources:
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 21 'When payments may be made from trust accounts' (kept in account until paid out under the Act; paid out only as permitted; max 200 penalty units or 2 years imprisonment)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 22 'Permitted drawings from trust accounts' (after transaction finalised: pay person entitled or per their written direction, and the agent's transaction fee; expenses as they become payable)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 26 'When amount in dispute may be paid' (written notice to all parties; pay stated party on or after a date at least 60 days after notice, unless a proceeding is started or all parties authorise earlier payment)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 27 'Dealing with amount in dispute' (must not pay out unless written notice from all parties stating who is entitled, or a proceeding started; max 200 penalty units or 2 years imprisonment)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 28 (entitled person established under s 27: pay immediately; proceeding started: pay the amount to the court in which the proceeding was started)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+
+agent_action:
+  - "Keep trust money in the trust account until it is paid out as the Act permits (s 21); only draw it in a permitted way."
+  - "After the transaction is finalised, draw to pay the person entitled (or per their written direction), draw your transaction fee, and draw transaction expenses as they become payable (s 22)."
+  - "If parties are in dispute over a deposit, do NOT release it: you may only pay out once you have written notice from all parties stating who is entitled, or a proceeding has been started (s 27)."
+  - "You may give all parties written notice of an intended payment to a stated party on or after a date at least 60 days away, unless a proceeding is started or all parties authorise an earlier payment (s 26)."
+  - "Once entitlement is established under s 27, pay immediately; if a proceeding is started, pay the amount into the court in which the proceeding was started (s 28)."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: null
+  avoid_saying:
+    - "Telling either party you will just release the disputed deposit to them now - s 27 forbids paying out a disputed amount without written notice from all parties or a started proceeding."
+    - "Suggesting you can decide who is right and pay them - entitlement must be established under s 27, or paid into court under s 28."
+    - "you should be fine"
+
+exceptions:
+  - "A disputed amount may be paid out where the agent receives written notice from all parties stating who is entitled to it, or a proceeding has been started (s 27)."
+  - "Under s 26 the agent may pay a stated party on or after a stated date at least 60 days after notice, unless a proceeding is started or all parties authorise an earlier payment."
+
+penalty: "Maximum 200 penalty units or 2 years imprisonment (AFAA s 21 and s 27)."
+
+human_escalation_required: true
+escalation_reason:
+  - trust account issue
+
+related_rules:
+  - RULE-TRUST-001
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - trust-account
+  - disputed-deposit
+  - agents-financial-administration-act-2014
+  - trust-money
+  - permitted-drawings

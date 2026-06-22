@@ -91,3 +91,11 @@ modules:
       - Disclosing to a prospective buyer a referral relationship and any benefit, on the Form 8, before the contract
       - What "obtain", "beneficial interest" and "benefit" cover
       - Offence consequences only (no statutory recovery / disgorgement remedy for an undisclosed buyer benefit)
+  - id: trust-accounting
+    title: "Trust accounting"
+    covers:
+      - A deposit / trust money must be paid into the general trust account before the end of the first business day after receipt (or invested), with "amount" including deposit and purchase monies
+      - No other payments into a trust account, and trust money is not available to the agent's creditors
+      - Trust money stays in the account until paid out as the Act permits; permitted drawings after a transaction is finalised (person entitled, agent's fee, expenses)
+      - Handling a disputed deposit: no pay-out without written notice from all parties or a started proceeding; 60-day notice option; pay the entitled person or pay into court
+      - Agents Financial Administration Act 2014, not the Property Occupations Act 2014

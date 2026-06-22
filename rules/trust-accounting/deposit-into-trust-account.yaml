@@ -1,0 +1,124 @@
+id: RULE-TRUST-001
+title: A deposit / trust money must be paid into the agent's trust account
+jurisdiction: QLD
+module: trust-accounting
+question_types:
+  - rule_check
+  - risk_assessment
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent receives a deposit, or purchase monies, for a transaction (e.g. a buyer's deposit on a contract of sale).
+  - An agent receives any trust money in connection with a transaction.
+  - An agent asks when, or where, a deposit they have received must be banked.
+  - An agent asks whether trust money can be used for the agency's own purposes or reached by the agency's creditors.
+
+does_not_apply_when:
+  - The amount is a refund of an authorised, receipted agent expense (which is excluded from "amount" under s 89).
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  An agent who receives an "amount" for a transaction must, before the end of the
+  first business day after receiving it, pay it into the agent's general trust
+  account (or invest it under s 17) (Agents Financial Administration Act 2014 (Qld)
+  s 16; max 200 penalty units or 2 years imprisonment). A buyer's deposit and
+  purchase monies are caught: "amount" received by an agent for a transaction
+  "includes deposit and purchase monies for the transaction" (s 89), excluding
+  refunds of authorised, receipted agent expenses. The agent must not pay into a
+  trust account any amount other than one required to be paid in under s 16 or s 17
+  (s 18), and trust money cannot be used to pay, or be attached or taken in
+  execution by, the agent's creditors (s 20).
+
+detail: >-
+  Under the Agents Financial Administration Act 2014 (Qld) - the trust-accounting
+  Act for property agents, NOT the Property Occupations Act 2014 - s 16 ("Dealing
+  with amount on receipt") requires an agent, before the end of the first business
+  day after receiving an amount, to pay it to the agent's general trust account or
+  invest it under s 17. The maximum penalty is 200 penalty units or 2 years
+  imprisonment.
+
+  Section 89 defines "amount", received by an agent for a transaction, to include
+  deposit and purchase monies for the transaction (it excludes refunds of
+  authorised, receipted agent expenses). A buyer's deposit is therefore an "amount"
+  caught by s 16 and must be banked into the general trust account within that
+  timeframe.
+
+  The Act then ring-fences the trust account. Section 18 ("No other payments to
+  trust account") provides that an agent must not pay into a trust account an amount
+  other than one that must be paid in under s 16 or s 17. Section 20 ("Trust money
+  not available to agent's creditors") provides that trust money cannot be used to
+  pay a debt of the agent's creditor, nor be attached or taken in execution by a
+  creditor.
+
+  Supporting context for the trust-account framework: s 9 (who may open a trust
+  account), s 11 (requirements for opening and keeping trust accounts), and s 12
+  (the account's name must include "trust account").
+
+sources:
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 16 'Dealing with amount on receipt' (pay to general trust account before end of first business day, or invest under s 17; max 200 penalty units or 2 years imprisonment)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 89 (definition of 'amount' includes deposit and purchase monies for the transaction)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: "includes deposit and purchase monies for the transaction"
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 18 'No other payments to trust account' (must not pay in an amount other than one required under s 16 or s 17)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 20 'Trust money not available to agent's creditors' (cannot pay a creditor's debt, nor be attached or taken in execution)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+  - source_id: SRC-AFAA-2014
+    pinpoint: "s 9 (who may open a trust account); s 11 (requirements for opening/keeping trust accounts); s 12 (account name must include 'trust account')"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-018"
+    quote: null
+
+agent_action:
+  - "Bank a deposit (and any other trust money) you receive into the agency's general trust account before the end of the first business day after you receive it (or invest it under s 17)."
+  - "Treat a buyer's deposit and purchase monies as an 'amount' caught by s 16 - s 89 says so."
+  - "Do not pay anything into the trust account other than amounts required to be paid in under s 16 or s 17 (s 18)."
+  - "Never use trust money for the agency's own purposes or to pay the agency's creditors - it is not available to them (s 20)."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: null
+  avoid_saying:
+    - "Telling someone a deposit can sit in a general operating account or be held personally - it must go to the general trust account before the end of the first business day after receipt."
+    - "Suggesting trust money can be used to cover the agency's bills or be reached by a creditor - s 20 prohibits this."
+    - "you should be fine"
+
+exceptions:
+  - "A refund of an authorised, receipted agent expense is excluded from 'amount' under s 89."
+  - "Instead of paying to the general trust account, the agent may invest the amount under s 17."
+
+penalty: "Maximum 200 penalty units or 2 years imprisonment (AFAA s 16)."
+
+human_escalation_required: false
+escalation_reason: []
+
+related_rules:
+  - RULE-TRUST-002
+
+last_source_check: 2026-06-22
+next_review_due: 2026-09-20
+tags:
+  - trust-account
+  - deposit
+  - agents-financial-administration-act-2014
+  - trust-money
+  - banking

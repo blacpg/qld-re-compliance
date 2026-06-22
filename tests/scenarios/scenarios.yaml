@@ -423,3 +423,27 @@
   must_include: ["RULE-INT-002", "s 157", "Form 8", "before", "200 penalty units"]
   must_not_include: ["the buyer can recover the benefit", "you must repay the fee", "you should be fine", "verbal disclosure is enough"]
   notes: "Verified: POA s 157(1) requires a residential property agent to disclose a referred-entity relationship, whether they derive/expect a benefit and its amount/value, and the entity's name; the disclosure is effective only if given on the approved Form 8 and acknowledged in writing on it before the contract (s 157(3)); 'benefit' is monetary or other (s 157(4)). Verified absence: the only stated consequence is the 200-penalty-unit offence - there is NO statutory recovery/disgorgement remedy. must_not_include guards against asserting a non-existent recovery remedy."
+
+- id: SCN-036
+  jurisdiction: QLD
+  module: trust-accounting
+  question_type: rule_check
+  question: "When do I have to bank a deposit I've received?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-TRUST-001]
+  expected_source_ids: [SRC-AFAA-2014]
+  must_include: ["RULE-TRUST-001", "s 16", "first business day", "general trust account"]
+  must_not_include: ["you should be fine", "operating account", "whenever you get around to it", "Property Occupations Act"]
+  notes: "Verified: under the Agents Financial Administration Act 2014 (Qld) s 16, an agent must pay an amount received for a transaction to the general trust account before the end of the first business day after receiving it (or invest it under s 17); a buyer's deposit is an 'amount' because s 89 says 'amount' includes deposit and purchase monies. Max penalty 200 penalty units or 2 years imprisonment. This is the trust-accounting Act, NOT the Property Occupations Act - must_not_include guards against citing the wrong Act and against a vague timing answer."
+
+- id: SCN-037
+  jurisdiction: QLD
+  module: trust-accounting
+  question_type: risk_assessment
+  question: "The buyer and seller are fighting over the deposit — can I release it?"
+  expected_outcome: [escalated, answered]
+  expected_rule_ids: [RULE-TRUST-002]
+  expected_source_ids: [SRC-AFAA-2014]
+  must_include: ["RULE-TRUST-002", "s 27", "written notice from all parties", "proceeding"]
+  must_not_include: ["you should be fine", "just pay whoever you think is right", "release it to the seller", "release it to the buyer"]
+  notes: "Verified: under the Agents Financial Administration Act 2014 (Qld) s 27, an agent must NOT pay out a disputed amount unless it receives written notice from all parties to the transaction stating who is entitled to it, or a proceeding has been started (max 200 penalty units or 2 years imprisonment). s 26 allows a written notice of an intended payment on or after a date at least 60 days away unless a proceeding is started or all parties authorise earlier; once entitlement is established the agent pays immediately, and if a proceeding is started the agent pays the amount into the court (s 28). High risk + trust account issue = escalate. must_not_include guards against the agent picking a winner or unilaterally releasing the deposit."
