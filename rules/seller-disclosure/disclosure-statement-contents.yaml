@@ -1,0 +1,85 @@
+id: RULE-DISC-003
+title: What the seller disclosure statement (Form 2) must contain
+jurisdiction: QLD
+module: seller-disclosure
+question_types:
+  - rule_check
+  - document_review
+  - checklist
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - Preparing or checking the contents of a Form 2 seller disclosure statement.
+  - An agent asks what must be in the disclosure statement or what documents must go with it.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+  - The question is only about WHEN the statement must be given (that is RULE-DISC-001).
+  - The question is about the consequences of missing or defective disclosure (that is RULE-DISC-002).
+
+requirement: >-
+  The disclosure statement must be in the approved Form 2, include the
+  information prescribed by regulation, be completed with information that is
+  true when given to the buyer, and be signed by the seller (or an authorised
+  agent). It must be accompanied by the prescribed certificates and carry the
+  prescribed warnings.
+
+detail: |-
+  Property Law Act 2023 (Qld) s 99(2) requires the disclosure statement to: (a) be in the approved form; (b) include the information prescribed by regulation; (c) be completed with information that is true at the time it is given to the buyer; and (d) be signed by the seller. Section 99(3) requires the approved form to contain the warnings and other statements prescribed by regulation. Under s 97 the seller may sign personally or by an agent authorised to act for the seller.
+
+  The Property Law Regulation 2024 fills in the detail:
+  - s 5 ("Prescribed certificates for disclosure statement for sale of lot") prescribes the documents that must accompany the statement. The main categories are: a title search; a copy of the registered plan of survey; specified building, planning and QBCC notices; competent-authority notices; Environmental Protection Act notices; for a property with a regulated pool, a pool compliance certificate (or the prescribed no-certificate notice); for a community titles scheme, the community management statement and a body corporate certificate; and for a BUGTA scheme, a body corporate certificate.
+  - s 8 ("Prescribed information for disclosure statement") prescribes the information the statement must include, such as the seller's name and the lot details.
+  - s 9 prescribes the warnings and other statements in schedule 1 for the approved form.
+
+sources:
+  - source_id: SRC-PLA-2023
+    pinpoint: "s 99(2); s 99(3); s 97"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2023-027"
+    quote: "the disclosure statement must ... be in the approved form ... be signed by the seller"
+  - source_id: SRC-PL-REG-2024
+    pinpoint: "s 5 (prescribed certificates); s 8 (prescribed information); s 9 (warnings, sch 1)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2024-0211"
+    quote: null
+  - source_id: SRC-FORM-2
+    pinpoint: "approved form (Form 2) under PLA 2023 s 99(2)"
+    source_role: supporting
+    url: "https://www.publications.qld.gov.au/dataset/property-law-act-2023-forms"
+    quote: null
+
+agent_action:
+  - "Use the current approved Form 2; do not draft a substitute document."
+  - "Attach every prescribed certificate (title search, registered plan, relevant notices, pool/CMS/body corporate documents as applicable) under PL Reg 2024 s 5."
+  - "Make sure the statement is complete, true at the time it is given, carries the prescribed warnings, and is signed by the seller or an authorised agent."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions:
+  - "Whether disclosure is required at all depends on the exclusions in PLA 2023 s 100 (see RULE-DISC-004)."
+
+penalty: null
+
+human_escalation_required: false
+
+related_rules:
+  - RULE-DISC-001
+  - RULE-DISC-002
+  - RULE-DISC-004
+
+last_source_check: 2026-06-22
+next_review_due: 2026-08-21
+tags:
+  - seller-disclosure
+  - form-2
+  - property-law-act-2023
+  - property-law-regulation-2024

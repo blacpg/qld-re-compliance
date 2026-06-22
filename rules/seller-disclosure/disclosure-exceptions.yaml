@@ -1,0 +1,95 @@
+id: RULE-DISC-004
+title: Sales excluded from the seller disclosure obligation
+jurisdiction: QLD
+module: seller-disclosure
+question_types:
+  - rule_check
+  - risk_assessment
+
+status: active
+verification_status: verified
+verification_note: null
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - An agent asks whether a particular sale is exempt from the seller disclosure requirement.
+  - Deciding whether the Form 2 disclosure can be skipped for a specific transaction.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  The seller is not required to comply with s 99 only in the specific cases
+  listed in PLA 2023 s 100. Several of those cases are NOT automatic: related-
+  party and high-value sales need an active waiver notice from the buyer before
+  signing, and the rates-recovery and long-term-tenant cases need a prescribed
+  notice from the seller. Getting an exception wrong means disclosure was
+  required and was not given, which is a defect. Confirm and escalate.
+
+detail: |-
+  Property Law Act 2023 (Qld) s 100 ("Exceptions to requirement") lists the cases where the seller need not comply with s 99, including:
+  (a) the buyer and seller are related AND the buyer gives a notice waiving compliance before signing;
+  (b) the buyer is the State, the Commonwealth, another State, a local government, a constructing authority, a statutory body, a listed corporation, or a subsidiary of a listed corporation;
+  (c) a local government selling to recover overdue rates or charges (with the prescribed notice);
+  (d) the State selling to a tenant of at least 3 years (with the prescribed notice);
+  (e) co-owners, where one co-owner acquires another co-owner's interest;
+  (f) adjoining owners adjusting a common boundary;
+  (g) a contract giving effect to a court order, enforcement warrant, or Family Law Act financial agreement;
+  (h) transmission or transfer on death;
+  (i) a sale under the Acquisition of Land Act 1967 s 41;
+  (j) exercise of an option where the seller already complied with s 99 for the option; and
+  (k) high-value lots over the prescribed amount (or, if none is prescribed, more than $10,000,000 including GST) AND the buyer gives a notice waiving compliance before signing.
+
+  Key nuance: exceptions (a) related-party and (k) high-value require an ACTIVE waiver notice from the buyer; (c) and (d) require a prescribed notice from the seller. These exceptions are not automatic. If the exception does not actually apply, disclosure was required and its absence is a defect (see RULE-DISC-002). Because of that risk, route to OFT or a solicitor rather than assuming the sale is exempt.
+
+sources:
+  - source_id: SRC-PLA-2023
+    pinpoint: "s 100 \"Exceptions to requirement\" (Pt 7 div 4); s 99"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2023-027"
+    quote: "Exceptions to requirement"
+  - source_id: SRC-PL-REG-2024
+    pinpoint: "prescribed amount and prescribed notices for s 100 exceptions"
+    source_role: supporting
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/sl-2024-0211"
+    quote: null
+  - source_id: SRC-FORM-2
+    pinpoint: "approved form (Form 2) — required unless a s 100 exception applies"
+    source_role: supporting
+    url: "https://www.publications.qld.gov.au/dataset/property-law-act-2023-forms"
+    quote: null
+
+agent_action:
+  - "Do not assume a sale is exempt; check it against the specific list in PLA 2023 s 100."
+  - "For related-party (a) and high-value (k) exceptions, confirm the buyer has given the waiver notice BEFORE signing."
+  - "For rates-recovery (c) and long-term-tenant (d) exceptions, confirm the seller has given the prescribed notice."
+  - "If the exception is uncertain, treat disclosure as required and refer to OFT or a solicitor."
+
+agent_wording:
+  safe_version: null
+  avoid_saying: []
+
+exceptions:
+  - "This rule itself states the exceptions to s 99; whether a given sale falls within one must be confirmed for the specific facts."
+
+penalty: null
+
+human_escalation_required: true
+escalation_reason:
+  - seller disclosure defect
+  - contract termination consequence
+
+related_rules:
+  - RULE-DISC-001
+  - RULE-DISC-002
+  - RULE-DISC-003
+
+last_source_check: 2026-06-22
+next_review_due: 2026-08-21
+tags:
+  - seller-disclosure
+  - exceptions
+  - property-law-act-2023
+  - property-law-regulation-2024

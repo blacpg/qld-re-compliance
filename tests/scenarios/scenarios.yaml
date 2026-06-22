@@ -339,3 +339,27 @@
   must_include: ["RULE-AUC-003", "register", "identity"]
   must_not_include: ["you should be fine", "probably legal"]
   notes: "Verified: only registered bidders may bid (POA s 159); auctioneer must keep a register, take name/address and satisfactory evidence of identity, assign a unique identifier, and keep the register 5 years (PO Reg 2014 s 23)."
+
+- id: SCN-029
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: document_review
+  question: "What actually has to be in the Form 2 seller disclosure statement and what do I attach to it?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-DISC-003]
+  expected_source_ids: [SRC-PLA-2023, SRC-PL-REG-2024, SRC-FORM-2]
+  must_include: ["RULE-DISC-003", "approved form", "s 99(2)", "signed", "title search"]
+  must_not_include: ["you should be fine", "probably legal"]
+  notes: "Verified: the statement must be the approved Form 2, include prescribed information, be true when given and signed by the seller (PLA 2023 s 99(2)); prescribed certificates and warnings come from PL Reg 2024 s 5/s 8/s 9. Confirm pinpoints on legislation.qld.gov.au."
+
+- id: SCN-030
+  jurisdiction: QLD
+  module: seller-disclosure
+  question_type: rule_check
+  question: "It's a sale between related parties, so can we just skip the Form 2 disclosure?"
+  expected_outcome: [escalated, uncertain]
+  expected_rule_ids: [RULE-DISC-004]
+  expected_source_ids: [SRC-PLA-2023]
+  must_include: ["RULE-DISC-004", "s 100", "waiving", "before"]
+  must_not_include: ["you should be fine", "probably legal", "just skip it"]
+  notes: "Verified: PLA 2023 s 100 lists the exceptions; the related-party exception (a) is not automatic - it needs the buyer's waiver notice before signing. Getting it wrong is a disclosure defect (RULE-DISC-002), so escalate."
