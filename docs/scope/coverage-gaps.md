@@ -51,6 +51,26 @@ the 9 built rules — several module `covers:` bullets have no backing rule file
   appointment-term fields; SRC-OFT-APPOINTMENT.
 - **Module:** form-6-appointment (new rule).
 
+### GAP-011 · Form 6 execution — signing, dating, and the "draft / not finalised" copy
+- **✅ BUILT — RULE-FORM6-005 (partially_verified), 2026-07-02.**
+- **Owner flag: must be answerable.** Raised directly by Antony 2026-07-02 (an agent
+  signed a Form 6 that was only a RealWorks "draft" watermark, not a finalised copy).
+- **Question the tool refused before:** "My agent signed a Form 6 but the copy was a
+  draft, not a finalised version — is the appointment valid?" The corpus covered s 104
+  content and s 112(4) ineffectiveness (RULE-FORM6-002) but had **no rule on execution** —
+  that the appointment must be signed and dated by both parties and a copy given to the
+  client (POA s 109) — and nothing on the status of a forms-software "draft" watermark.
+- **Why it matters:** routine listing paperwork; a defectively executed or unfinalised
+  appointment can put authority to act and commission recovery at risk (links
+  RULE-FORM6-002, RULE-COMM-001).
+- **Verified basis:** POA 2014 s 109(1) (signed and dated by client + agent or authorised
+  signatory), s 109(2) (copy to client; max 200 penalty units), s 104 / s 112(4)
+  (content ineffectiveness). **Nuance kept honest:** s 112 ties ineffectiveness to a s 104
+  content failure, not expressly to a s 109 signing/dating defect, and no source addresses
+  a "draft" watermark — so whether a given execution/finalisation defect defeats the
+  appointment is left to the OFT or a solicitor (partially_verified).
+- **Module:** form-6-appointment.
+
 ---
 
 ## Priority 2 — common, in-scope, not yet covered

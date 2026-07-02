@@ -1,0 +1,119 @@
+id: RULE-FORM6-005
+title: An appointment must be signed and dated by both parties and a copy given to the client
+jurisdiction: QLD
+module: form-6-appointment
+question_types:
+  - rule_check
+  - document_review
+  - checklist
+
+status: active
+verification_status: partially_verified
+verification_note: >-
+  Verified against the Property Occupations Act 2014 (Qld): an appointment under
+  s 102(1) or (3) "must be signed and dated by" (a) the client and (b) the
+  property agent (or someone authorised or apparently authorised to sign for the
+  agent) (s 109(1)); and the agent "must give a copy of the signed appointment to
+  the client", with a maximum penalty of 200 penalty units (s 109(2)). Also
+  verified: an appointment that does not comply with the general-content
+  requirements of s 104 is ineffective from the time it is made (s 112(4)). NOT
+  verified / important nuance: the ineffectiveness trigger in s 112 is expressly
+  tied to a s 104 (content) failure, not to a s 109 (signing/dating) failure. The
+  Act does not spell out, in s 112, that a pure signing-or-dating defect renders
+  an otherwise complete appointment "ineffective" — a defectively executed
+  document may simply not be a validly made appointment, and s 109(2) is enforced
+  by penalty. Whether a given execution defect defeats the appointment (and any
+  commission entitlement) is therefore left to the OFT or a solicitor. There is
+  also no source in this repository addressing the status of a forms-software
+  "draft" watermark; a watermark is not itself a statutory element, so the test
+  is whether the executed document actually meets s 104 and s 109.
+risk_level: high
+authority_tier: legislation
+
+applies_when:
+  - Reviewing whether a Form 6 was validly executed (signed, dated, and a copy given to the client).
+  - An agent asks whether a signed but "draft", unlocked, undated, or not-finalised Form 6 is a valid appointment.
+  - Checking who must sign and date the appointment and whether the client must receive a copy.
+
+does_not_apply_when:
+  - The question relates to property management or a residential tenancy.
+  - The question relates to another jurisdiction.
+
+requirement: >-
+  A Form 6 appointment must be signed and dated by both the client and the agent
+  (or a person authorised to sign for the agent), and the agent must give the
+  client a copy of the signed appointment. Separately, the appointment must
+  contain the required content in the approved form or it is ineffective from
+  when it is made. A software "draft" watermark is not a statutory element in
+  itself, but it is a warning sign that the document may not be the finalised,
+  fully executed version: confirm the executed copy is complete under s 104 and
+  properly signed and dated under s 109. If it is not, do not rely on it — the
+  agent's authority to act and entitlement to commission may be at risk, and this
+  should be checked with the OFT or a solicitor.
+
+detail: >-
+  The Property Occupations Act 2014 (Qld) treats content and execution as two
+  separate requirements. On content, an appointment must include the matters set
+  by s 104 in the approved form, and an appointment that does not comply with
+  s 104 is ineffective from the time it is made (s 112(4)). On execution, s 109(1)
+  requires an appointment under s 102(1) or (3) to be "signed and dated by" the
+  client and the property agent (or someone authorised or apparently authorised
+  to sign for the agent), and s 109(2) requires the agent to give a copy of the
+  signed appointment to the client (maximum penalty 200 penalty units). The
+  ineffectiveness provision in s 112 is expressly linked to a s 104 (content)
+  failure; the Act does not, in s 112, state that a signing or dating defect on
+  its own makes an otherwise complete appointment ineffective. So a document that
+  is complete under s 104 and signed and dated by both parties under s 109 is
+  validly executed regardless of any "draft" watermark a forms platform prints;
+  conversely, a document missing required content, an undated document, or one not
+  signed by both parties may fail s 104 and/or s 109 despite carrying signatures.
+  Whether a specific execution defect defeats the appointment and any commission
+  entitlement is not resolved by this rule and should be confirmed with the OFT or
+  a solicitor.
+
+sources:
+  - source_id: SRC-POA-2014
+    pinpoint: "s 109(1) (appointment must be signed and dated by the client and the agent or a person authorised to sign for the agent); s 109(2) (agent must give the client a copy of the signed appointment; max 200 penalty units); s 104 (general content of appointment in the approved form); s 112(4) (ineffective from when made if it does not comply with s 104)"
+    source_role: primary
+    url: "https://www.legislation.qld.gov.au/view/html/inforce/current/act-2014-022"
+    quote: "must be signed and dated by"
+  - source_id: SRC-FORM-6
+    pinpoint: "the approved form — client and agent signature and date fields"
+    source_role: supporting
+    url: null
+    quote: null
+
+agent_action:
+  - "Check the executed Form 6 is signed and dated by both the client and the agent (or a person authorised to sign for the agent), and that the client was given a copy (s 109)."
+  - "Check the same copy is complete in the approved form under s 104; a Form 6 that does not comply with s 104 is ineffective from when it is made (s 112(4))."
+  - "Treat a 'draft' watermark or an unlocked/not-finalised forms-software status as a prompt to confirm the executed copy is the finalised version and matches, field-for-field, what the parties actually signed; re-execute the finalised form if it does not."
+  - "Do not rely on the appointment or invoice for commission if execution or content is in doubt; confirm with the OFT or a solicitor first."
+  - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
+
+agent_wording:
+  safe_version: "A Form 6 has to be signed and dated by both the client and me, I have to give the client a copy, and it has to be complete in the approved form. A 'draft' watermark isn't itself a legal defect, but it's a sign the form may not be the finalised version, so I'll confirm the executed copy is complete and properly signed before I rely on it, and check with the OFT or a solicitor if anything is missing."
+  avoid_saying:
+    - "'A draft watermark automatically makes the appointment invalid' — no source in scope states that; the test is s 104 content and s 109 signing and dating."
+    - "'It's signed, so it's fine' — signatures alone do not cure missing s 104 content or a missing date, and the client must also have been given a copy (s 109)."
+
+exceptions: []
+penalty: "s 109(2): maximum penalty 200 penalty units for failing to give the client a copy of the signed appointment."
+
+human_escalation_required: true
+escalation_reason:
+  - possible commission recovery issue
+  - whether a specific execution or finalisation defect defeats the appointment is not resolved by statute and needs OFT or a solicitor
+
+related_rules:
+  - RULE-FORM6-001
+  - RULE-FORM6-002
+  - RULE-COMM-001
+
+last_source_check: 2026-07-02
+next_review_due: 2026-09-30
+tags:
+  - appointment
+  - form-6
+  - execution
+  - signing
+  - validity
