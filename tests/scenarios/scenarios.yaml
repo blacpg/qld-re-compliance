@@ -447,3 +447,27 @@
   must_include: ["RULE-TRUST-002", "s 27", "written notice from all parties", "proceeding"]
   must_not_include: ["you should be fine", "just pay whoever you think is right", "release it to the seller", "release it to the buyer"]
   notes: "Verified: under the Agents Financial Administration Act 2014 (Qld) s 27, an agent must NOT pay out a disputed amount unless it receives written notice from all parties to the transaction stating who is entitled to it, or a proceeding has been started (max 200 penalty units or 2 years imprisonment). s 26 allows a written notice of an intended payment on or after a date at least 60 days away unless a proceeding is started or all parties authorise earlier; once entitlement is established the agent pays immediately, and if a proceeding is started the agent pays the amount into the court (s 28). High risk + trust account issue = escalate. must_not_include guards against the agent picking a winner or unilaterally releasing the deposit."
+
+- id: SCN-038
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: document_review
+  question: "My agent signed a Form 6 but the copy is only a draft, not a finalised version — is the appointment valid?"
+  expected_outcome: [escalated, answered]
+  expected_rule_ids: [RULE-FORM6-005]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-005", "s 109", "signed and dated", "commission recovery"]
+  must_not_include: ["you should be fine", "a draft watermark makes it invalid", "signatures alone", "definitely valid"]
+  notes: "RULE-FORM6-005 (partially_verified): a Form 6 must be signed and dated by both client and agent and a copy given to the client (POA s 109), and must be complete in the approved form or it is ineffective (s 104, s 112(4)). A software 'draft' watermark is not itself a statutory element, so the test is whether the executed copy meets s 104 and s 109; whether a given execution/finalisation defect defeats the appointment is not resolved by statute, so it escalates (commission recovery). Guards against both 'it's fine' and the over-claim that a watermark automatically invalidates."
+
+- id: SCN-039
+  jurisdiction: QLD
+  module: form-6-appointment
+  question_type: rule_check
+  question: "Who has to sign and date a Form 6, and do I have to give the seller a copy?"
+  expected_outcome: answered
+  expected_rule_ids: [RULE-FORM6-005]
+  expected_source_ids: [SRC-POA-2014]
+  must_include: ["RULE-FORM6-005", "s 109", "signed and dated", "copy"]
+  must_not_include: ["you should be fine", "only the client signs", "no need to give a copy"]
+  notes: "Verified limb of RULE-FORM6-005: POA s 109(1) requires the appointment to be signed and dated by both the client and the agent (or a person authorised to sign for the agent); s 109(2) requires the agent to give the client a copy of the signed appointment (max 200 penalty units). Determinate, sourced answer."

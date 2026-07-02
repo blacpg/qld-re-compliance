@@ -57,6 +57,7 @@ escalation_reason:
 
 related_rules:
   - RULE-FORM6-001
+  - RULE-FORM6-005
   - RULE-COMM-001
 
 last_source_check: 2026-06-20
