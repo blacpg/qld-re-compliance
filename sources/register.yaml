@@ -171,3 +171,29 @@ sources:
     licence: "© Commonwealth of Australia (CC BY). Cited and linked."
     pinpoint_style: "page section"
     notes: "ACCC guidance that agents must not mislead consumers about price or to encourage higher offers. Exact landing URL to be confirmed."
+
+  - source_id: SRC-REIQ-FORM6
+    title: "REIQ practical guidance on the PO Form 6 appointment"
+    jurisdiction: QLD
+    type: industry_commentary
+    authority_tier: industry_commentary
+    publisher: "Real Estate Institute of Queensland (REIQ)"
+    official_url: "https://www.reiq.com/articles/appointment-to-act-paperwork/"
+    version_or_as_at: "as at retrieved_date"
+    retrieved_date: 2026-07-02
+    licence: "© REIQ. Cited and linked, not reproduced."
+    pinpoint_style: "page section"
+    notes: "Industry-body practical guidance, NOT a source of law and never the sole basis for a mandatory rule. Aligns with POA 2014 s 104/s 109: all sections of the Form 6 should be completed for a valid appointment, it must be signed before the agent acts, the client must be given a signed copy, and a fresh Form 6 is advised for major amendments (e.g. fees/commission). Supporting citation only."
+
+  - source_id: SRC-REALWORKS-HELP
+    title: "Realworks help centre — Finalising a Form"
+    jurisdiction: QLD
+    type: industry_commentary
+    authority_tier: industry_commentary
+    publisher: "Realworks (REIQ)"
+    official_url: "https://help.realworks.com.au/docs/forms/finalising-a-form/"
+    version_or_as_at: "as at retrieved_date"
+    retrieved_date: 2026-07-02
+    licence: "© Realworks / REIQ. Cited and linked, not reproduced."
+    pinpoint_style: "help article section"
+    notes: "Software-workflow help, NOT a source of law. Records that in Realworks finalising a form removes the 'DRAFT' watermark and locks it from editing, and that finalising precedes sending for signatures; a not-finalised form can be reverted to Draft only while unsigned, and a signed form must be voided and duplicated to edit. Used only to explain the practical meaning of a 'draft' watermark. Supporting citation only."

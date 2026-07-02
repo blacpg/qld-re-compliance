@@ -23,10 +23,13 @@ verification_note: >-
   an otherwise complete appointment "ineffective" — a defectively executed
   document may simply not be a validly made appointment, and s 109(2) is enforced
   by penalty. Whether a given execution defect defeats the appointment (and any
-  commission entitlement) is therefore left to the OFT or a solicitor. There is
-  also no source in this repository addressing the status of a forms-software
-  "draft" watermark; a watermark is not itself a statutory element, so the test
-  is whether the executed document actually meets s 104 and s 109.
+  commission entitlement) is therefore left to the OFT or a solicitor. A watermark
+  is not itself a statutory element, so the test is whether the executed document
+  actually meets s 104 and s 109. On the practical meaning of the watermark,
+  Realworks help (SRC-REALWORKS-HELP) and REIQ guidance (SRC-REIQ-FORM6) are cited
+  as supporting industry_commentary only — they explain that finalising removes the
+  "DRAFT" watermark and precedes signing, and reinforce the statutory position;
+  they are never the basis for the mandatory limbs, which rest on POA s 104/s 109.
 risk_level: high
 authority_tier: legislation
 
@@ -71,6 +74,19 @@ detail: >-
   entitlement is not resolved by this rule and should be confirmed with the OFT or
   a solicitor.
 
+  Practical workflow context (industry commentary, not law): in the Realworks forms
+  platform the "DRAFT" watermark is removed only when the form is finalised, which
+  also locks it, and finalising is done before the form is sent for signing. A form
+  can be reverted from finalised back to draft only while it is still unsigned; once
+  signatures are collected it must be voided and duplicated to be edited. So a copy
+  that is both signed and still carrying a "DRAFT" watermark is anomalous — it did
+  not go through the normal finalise-then-sign flow (for example it may have been
+  printed while in draft and signed off-platform) — and is a prompt to confirm the
+  finalised, executed version is complete and matches what the parties signed. REIQ
+  practical guidance is consistent with the statutory position above: complete every
+  section, sign before acting, give the client a signed copy, and prepare a fresh
+  Form 6 for major amendments.
+
 sources:
   - source_id: SRC-POA-2014
     pinpoint: "s 109(1) (appointment must be signed and dated by the client and the agent or a person authorised to sign for the agent); s 109(2) (agent must give the client a copy of the signed appointment; max 200 penalty units); s 104 (general content of appointment in the approved form); s 112(4) (ineffective from when made if it does not comply with s 104)"
@@ -82,11 +98,22 @@ sources:
     source_role: supporting
     url: null
     quote: null
+  - source_id: SRC-REALWORKS-HELP
+    pinpoint: "Finalising a Form — finalising removes the DRAFT watermark and locks the form; done before sending for signing"
+    source_role: supporting
+    url: "https://help.realworks.com.au/docs/forms/finalising-a-form/"
+    quote: "the 'DRAFT' watermark is removed"
+  - source_id: SRC-REIQ-FORM6
+    pinpoint: "PO Form 6 practical guidance — complete all sections, sign before acting, give the client a signed copy, fresh form for major amendments"
+    source_role: supporting
+    url: "https://www.reiq.com/articles/appointment-to-act-paperwork/"
+    quote: null
 
 agent_action:
   - "Check the executed Form 6 is signed and dated by both the client and the agent (or a person authorised to sign for the agent), and that the client was given a copy (s 109)."
   - "Check the same copy is complete in the approved form under s 104; a Form 6 that does not comply with s 104 is ineffective from when it is made (s 112(4))."
   - "Treat a 'draft' watermark or an unlocked/not-finalised forms-software status as a prompt to confirm the executed copy is the finalised version and matches, field-for-field, what the parties actually signed; re-execute the finalised form if it does not."
+  - "In Realworks specifically, a copy that is signed yet still shows the 'DRAFT' watermark is anomalous — finalising removes the watermark and normally precedes signing — so finalise the form, re-check it against what was signed, and confirm with the OFT or a solicitor if it was signed off-platform while in draft."
   - "Do not rely on the appointment or invoice for commission if execution or content is in doubt; confirm with the OFT or a solicitor first."
   - "Before relying on the specific section numbers, confirm them on legislation.qld.gov.au."
 
